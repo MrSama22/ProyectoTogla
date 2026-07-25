@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Antigravity Web</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Background Animated Gradients -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    
+    <main class="app-container">
+      <header>
+        <div class="header-top">
+          <h1>ANTIGRAVITY</h1>
+          <button id="btnSettings" class="btn-icon" title="Configurar Cámara">⚙️</button>
+        </div>
+        <p class="subtitle">Validación por Inteligencia Artificial</p>
+      </header>
+
+      <section class="camera-container">
+        <!-- Contenedor del video y overlays -->
+        <div class="video-wrapper">
+          <video id="videoElement" autoplay playsinline muted></video>
+          <!-- Contenedor para dibujar rectángulos faciales -->
+          <canvas id="overlayCanvas"></canvas>
+          <!-- Overlay de escaneo (barra que baja y sube) -->
+          <div class="scan-line"></div>
+          
+          <!-- Guía visual del rostro (Óvalo) -->
+          <div id="faceGuide" class="face-guide"></div>
+          
+          <!-- Botón para rotar la vista (Izquierda) -->
+          <button id="btnRotateView" style="position: absolute; bottom: 15px; left: 15px; z-index: 10; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.2); color: white; border-radius: 12px; height: 40px; padding: 0 15px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.2s;" title="Rotar Vista">
+            ⤵️ Girar 90°
+          </button>
+          
+          <!-- Botón para alternar cámara (Derecha) -->
+          <button id="btnFlipCamera" class="btn-control btn-right" title="Voltear Cámara">🔄</button>
+          
+          <!-- Slider para Zoom -->
+          <div id="zoomContainer" style="position: absolute; top: 15px; left: 50%; transform: translateX(-50%); z-index: 10; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.2); color: white; border-radius: 12px; height: 40px; padding: 0 15px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; cursor: default; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="Desliza para hacer zoom">
+            <span id="zoomLabel" style="font-weight: bold; min-width: 55px; text-align: left; white-space: nowrap;">🔍 1x</span>
+            <input type="range" id="zoomSlider" min="1" max="5" step="0.1" value="1" style="width: 100px; cursor: pointer;">
+          </div>
+
+          <!-- Elemento para QR (si la librería html5-qrcode lo necesita, inyectará aquí) -->
+          <div id="qr-reader" style="display: none;"></div>
+        </div>
+        
+        <!-- Contenedor para input manual (Oculto por defecto) -->
+        <div id="manualCodeContainer" class="hidden" style="margin-top: 15px; display: flex; gap: 10px; max-width: 640px; margin-left: auto; margin-right: auto; flex-wrap: wrap;">
+          <input type="text" id="manualCodeInput" placeholder="O escriba su código manualmente" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(0,0,0,0.4); color: white; min-width: 200px;" />
+          <button id="btnSubmitCode" class="btn btn-primary">Aceptar Código</button>
+        </div>
+        
+        <!-- Feedback de distancia de rostro -->
+        <div id="feedbackText" class="feedback-text">Iniciando sistema...</div>
+      </section>
+
+      <section class="controls">
+        <button id="btnRegister" class="btn btn-primary">
+          <span class="icon">➕</span> Registrarse
+        </button>
+        <button id="btnLogin" class="btn btn-secondary">
+          <span class="icon">🔓</span> Ingresar
+        </button>
+      </section>
+      
+      <!-- Estado actual de la aplicación -->
+      <div id="appState" class="app-state">Listo para operar</div>
+
+    </main>
+
+    <!-- Contenedor para Notificaciones (Toasts) -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Modal de Configuración de Cámara -->
+    <div id="cameraModal" class="modal-overlay hidden">
+      <div class="modal-content">
+        <h2>Configurar Cámara</h2>
+        <p>Selecciona la cámara que deseas usar:</p>
+        <select id="cameraSelect" class="styled-select">
+          <option value="">Cargando cámaras...</option>
+        </select>
+        <div class="modal-actions" style="justify-content: center;">
+          <button id="btnCloseModal" class="btn btn-secondary">Cerrar</button>
+        </div>
+        
+        <hr style="border: none; border-top: 1px solid var(--glass-border); margin-top: 5px;">
+        
+        <div style="text-align: center;">
+          <button id="btnClearDB" class="btn btn-danger" style="width: 100%; font-size: 0.9rem;">
+            🗑️ Borrar Todos los Registros
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
