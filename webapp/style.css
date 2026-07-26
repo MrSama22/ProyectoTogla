@@ -336,44 +336,53 @@ h1 {
   border-top: 1px solid var(--glass-border);
 }
 
-/* Toasts Notification System */
+/* Toasts Notification System (Dynamic Island / iPhone Style) */
 .toast-container {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  z-index: 1000;
+  align-items: center;
+  gap: 12px;
+  z-index: 9999;
+  width: 90%;
+  max-width: 350px;
+  pointer-events: none;
 }
 
 .toast {
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-left: 4px solid var(--primary);
+  background: rgba(30, 30, 35, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   color: white;
-  padding: 16px 24px;
-  border-radius: 8px;
-  font-weight: 600;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-  transform: translateX(120%);
-  animation: slideIn 0.4s forwards, fadeOut 0.4s forwards 3s;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  transform: translateY(-150%) scale(0.9);
+  opacity: 0;
+  animation: dynamicIslandIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, dynamicIslandOut 0.4s cubic-bezier(0.36, 0, 0.66, -0.56) forwards 3s;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
+  pointer-events: auto;
 }
 
-.toast.success { border-color: var(--success); }
-.toast.warning { border-color: var(--warning); }
-.toast.error { border-color: var(--danger); }
+.toast.success { border-bottom: 3px solid var(--success); }
+.toast.warning { border-bottom: 3px solid var(--warning); }
+.toast.error { border-bottom: 3px solid var(--danger); }
 
-@keyframes slideIn {
-  to { transform: translateX(0); }
+@keyframes dynamicIslandIn {
+  to { transform: translateY(0) scale(1); opacity: 1; }
 }
 
-@keyframes fadeOut {
-  to { opacity: 0; transform: translateY(10px); }
+@keyframes dynamicIslandOut {
+  to { transform: translateY(-150%) scale(0.9); opacity: 0; }
 }
 
 /* Utility colors for text */
@@ -441,4 +450,40 @@ h1 {
   display: flex;
   gap: 10px;
   margin-top: 10px;
+}
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+  
+  .app-container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .video-wrapper {
+    border-radius: 12px;
+  }
+
+  .controls {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .toast-container {
+    top: 10px;
+    width: 95%;
+  }
 }
