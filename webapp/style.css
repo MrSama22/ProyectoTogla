@@ -561,6 +561,9 @@ h1 {
 @media (max-width: 600px) {
   body {
     padding: 15px;
+    padding-bottom: 40px;
+    overflow-y: auto;
+    align-items: flex-start;
   }
   
   .app-container {

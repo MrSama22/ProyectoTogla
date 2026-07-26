@@ -35,6 +35,15 @@ let cameraRotations = JSON.parse(localStorage.getItem('cameraRotations')) || {};
 let viewRotation = 0;
 let isAutoRotateEnabled = localStorage.getItem('autoRotateEnabled') !== 'false';
 
+// Utilidad para evitar que la rotación regrese 360 grados hacia atrás visualmente
+function getClosestRotation(current, targetNormalized) {
+  const currentNormalized = ((current % 360) + 360) % 360;
+  let diff = targetNormalized - currentNormalized;
+  if (diff > 180) diff -= 360;
+  if (diff < -180) diff += 360;
+  return current + diff;
+}
+
 // Optimizador de escaneo
 let stopScanningFlag = false;
 let isScanning = false;
@@ -246,7 +255,7 @@ function startBackgroundRotationScanner() {
           const normalizedView = ((viewRotation % 360) + 360) % 360;
           
           if (normalizedAngle !== normalizedView && currentZoom === 1 && isAutoRotateEnabled) {
-            viewRotation = normalizedAngle;
+            viewRotation = getClosestRotation(viewRotation, normalizedAngle);
             const camKey = currentCameraId || currentFacingMode;
             cameraRotations[camKey] = viewRotation;
             localStorage.setItem('cameraRotations', JSON.stringify(cameraRotations));
@@ -578,10 +587,10 @@ function iniciarEscaneoFacial(callback) {
         lostFaceFrames = 0;
         
         // ¡MAGIA! Auto-rotación visual inteligente
-        const normalizedAngle = angle < 0 ? angle + 360 : angle;
-        const normalizedView = viewRotation % 360;
+        const normalizedAngle = ((angle % 360) + 360) % 360;
+        const normalizedView = ((viewRotation % 360) + 360) % 360;
         if (normalizedAngle !== normalizedView && currentZoom === 1 && isAutoRotateEnabled) {
-          viewRotation = normalizedAngle;
+          viewRotation = getClosestRotation(viewRotation, normalizedAngle);
           // Guardar en caché
           const camKey = currentCameraId || currentFacingMode;
           cameraRotations[camKey] = viewRotation;
@@ -713,7 +722,8 @@ btnFlipCamera.addEventListener('click', async () => {
 // ==========================================
 function applyViewRotation() {
   let scale = 1;
-  if (viewRotation === 90 || viewRotation === 270) {
+  const normalizedRotation = ((viewRotation % 360) + 360) % 360;
+  if (normalizedRotation === 90 || normalizedRotation === 270) {
     if (video.videoHeight > 0) {
       const ratio = video.videoWidth / video.videoHeight;
       scale = Math.max(ratio, 1/ratio);
@@ -735,11 +745,11 @@ function applyViewRotation() {
 }
 
 btnRotateView.addEventListener('click', () => {
-  viewRotation = (viewRotation + 90) % 360;
+  viewRotation += 90;
   
   // Guardar configuración en el caché para esta cámara en específico
   const camKey = currentCameraId || currentFacingMode;
-  cameraRotations[camKey] = viewRotation;
+  cameraRotations[camKey] = ((viewRotation % 360) + 360) % 360;
   localStorage.setItem('cameraRotations', JSON.stringify(cameraRotations));
   
   applyViewRotation();
@@ -889,11 +899,7 @@ function showToast(message, type = 'success') {
   const toast = document.createElement('div');
   toast.className = `toast ${type}`;
   
-  let icon = '✅';
-  if (type === 'error') icon = '❌';
-  if (type === 'warning') icon = '⚠️';
-  
-  toast.innerHTML = `<span>${icon}</span> <span>${message}</span>`;
+  toast.innerHTML = `<span>${message}</span>`;
   container.appendChild(toast);
   
   setTimeout(() => toast.remove(), 3500);
