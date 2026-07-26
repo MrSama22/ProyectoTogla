@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <title>Proyecto Antigravity Web</title>
+    <title>Colegio Santo Domingo Bilingüe</title>
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,11 @@
     
     <main class="app-container">
       <header>
-        <div class="header-top">
-          <h1>ANTIGRAVITY</h1>
-          <button id="btnSettings" class="btn-icon" title="Configurar Cámara">⚙️</button>
+        <div class="header-top" style="justify-content: center; position: relative;">
+          <img src="/logo-colegio.png" alt="Colegio Santo Domingo Bilingüe" style="max-height: 80px; object-fit: contain;" />
+          <button id="btnSettings" class="btn-icon" title="Configurar Cámara" style="position: absolute; right: 0;">⚙️</button>
         </div>
-        <p class="subtitle">Validación por Inteligencia Artificial</p>
+        <p class="subtitle" style="margin-top: 10px; font-weight: 600; color: #e2e8f0; letter-spacing: 1px;">Control de Acceso Biométrico</p>
       </header>
 
       <section class="camera-container">
@@ -37,18 +37,29 @@
           <!-- Guía visual del rostro (Óvalo) -->
           <div id="faceGuide" class="face-guide"></div>
           
-          <!-- Botón para rotar la vista (Izquierda) -->
-          <button id="btnRotateView" style="position: absolute; bottom: 15px; left: 15px; z-index: 10; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.2); color: white; border-radius: 12px; height: 40px; padding: 0 15px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.2s;" title="Rotar Vista">
-            ⤵️ Girar 90°
-          </button>
+          <!-- Drawer Rotate (Izquierda) -->
+          <div class="drawer drawer-left">
+            <div class="drawer-content">
+              <button id="btnRotateView" class="drawer-btn" title="Rotar Vista">⤵️ Girar</button>
+            </div>
+            <div class="drawer-tab" onclick="this.parentElement.classList.toggle('open')"><span class="arrow">▶</span></div>
+          </div>
           
-          <!-- Botón para alternar cámara (Derecha) -->
-          <button id="btnFlipCamera" class="btn-control btn-right" title="Voltear Cámara">🔄</button>
+          <!-- Drawer Flip (Derecha) -->
+          <div class="drawer drawer-right">
+            <div class="drawer-tab" onclick="this.parentElement.classList.toggle('open')"><span class="arrow">◀</span></div>
+            <div class="drawer-content">
+              <button id="btnFlipCamera" class="drawer-btn" title="Voltear Cámara">🔄 Voltear</button>
+            </div>
+          </div>
           
-          <!-- Slider para Zoom -->
-          <div id="zoomContainer" style="position: absolute; top: 15px; left: 50%; transform: translateX(-50%); z-index: 10; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.2); color: white; border-radius: 12px; height: 40px; padding: 0 15px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; cursor: default; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" title="Desliza para hacer zoom">
-            <span id="zoomLabel" style="font-weight: bold; min-width: 55px; text-align: left; white-space: nowrap;">🔍 1x</span>
-            <input type="range" id="zoomSlider" min="1" max="5" step="0.1" value="1" style="width: 100px; cursor: pointer;">
+          <!-- Drawer Zoom (Arriba) -->
+          <div class="drawer drawer-top">
+            <div class="drawer-content" id="zoomContainer">
+              <span id="zoomLabel" style="font-weight: bold; min-width: 55px; text-align: left; white-space: nowrap;">🔍 1x</span>
+              <input type="range" id="zoomSlider" min="1" max="5" step="0.1" value="1" style="width: 100px; cursor: pointer;">
+            </div>
+            <div class="drawer-tab" onclick="this.parentElement.classList.toggle('open')"><span class="arrow" style="margin-right: 5px;">▼</span> Zoom</div>
           </div>
 
           <!-- Elemento para QR (si la librería html5-qrcode lo necesita, inyectará aquí) -->
@@ -90,6 +101,11 @@
         <select id="cameraSelect" class="styled-select">
           <option value="">Cargando cámaras...</option>
         </select>
+        <div style="margin-top: 15px; margin-bottom: 15px; display: flex; align-items: center; justify-content: space-between;">
+          <label for="autoRotateToggle" style="font-weight: bold; cursor: pointer;">Giro Automático de IA</label>
+          <input type="checkbox" id="autoRotateToggle" checked style="width: 18px; height: 18px; cursor: pointer;">
+        </div>
+        
         <div class="modal-actions" style="justify-content: center;">
           <button id="btnCloseModal" class="btn btn-secondary">Cerrar</button>
         </div>

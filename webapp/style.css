@@ -1,12 +1,12 @@
 :root {
-  --primary: #6366f1;
-  --primary-hover: #4f46e5;
-  --secondary: #ec4899;
-  --secondary-hover: #db2777;
-  --bg-dark: #0f172a;
+  --primary: #002845; /* Azul oscuro institucional */
+  --primary-hover: #001f35;
+  --secondary: #d62828; /* Rojo del escudo */
+  --secondary-hover: #b02020;
+  --bg-dark: #0f172a; /* Fondo muy oscuro para que el texto blanco del logo resalte */
   --text-light: #f8fafc;
-  --glass-bg: rgba(30, 41, 59, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-bg: rgba(0, 40, 69, 0.75); /* Cristal tintado de azul institucional */
+  --glass-border: rgba(255, 255, 255, 0.15);
   --success: #22c55e;
   --warning: #f59e0b;
   --danger: #ef4444;
@@ -146,6 +146,12 @@ h1 {
   overflow: hidden;
   border: 2px solid var(--glass-border);
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  touch-action: none;
+  cursor: grab;
+}
+
+.video-wrapper:active {
+  cursor: grabbing;
 }
 
 #videoElement, #overlayCanvas {
@@ -162,42 +168,140 @@ h1 {
   z-index: 2;
 }
 
-/* Floating Camera Controls */
-.btn-control {
+/* Floating Drawers (Apple Style Collapsible Menus) */
+.drawer {
   position: absolute;
-  bottom: 15px;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  pointer-events: none; /* Dejar pasar clics a la cámara si no es sobre el drawer */
+}
+
+.drawer-tab, .drawer-content {
+  pointer-events: auto;
+}
+
+.drawer-tab {
   background: var(--glass-bg);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   color: white;
-  font-size: 1.5rem;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: all 0.2s;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: background 0.3s;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.drawer-tab:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.btn-left {
-  left: 15px;
+.drawer-content {
+  position: absolute;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  opacity: 0;
+  pointer-events: none;
+}
+.drawer.open .drawer-content {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
 }
 
-.btn-right {
-  right: 15px;
+/* Elementos internos de los controles */
+.drawer .arrow {
+  display: inline-block;
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.drawer-top.open .arrow { transform: scaleY(-1); }
+.drawer-left.open .arrow { transform: scaleX(-1); }
+.drawer-right.open .arrow { transform: scaleX(-1); }
+
+.drawer-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.btn-control:hover {
-  background: var(--primary);
-  transform: scale(1.1);
+/* TOP DRAWER (Zoom) */
+.drawer-top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.drawer-top .drawer-tab {
+  padding: 5px 25px;
+  border-radius: 0 0 16px 16px;
+  border-top: none;
+}
+.drawer-top .drawer-content {
+  top: 100%;
+  left: 50%;
+  margin-top: 10px;
+  transform: translate(-50%, -50px) scale(0.8);
+}
+.drawer-top.open .drawer-content {
+  transform: translate(-50%, 0) scale(1);
 }
 
-.btn-control:active {
-  transform: scale(0.95);
+/* LEFT DRAWER (Rotate) */
+.drawer-left {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.drawer-left .drawer-tab {
+  padding: 15px 5px;
+  border-radius: 0 16px 16px 0;
+  border-left: none;
+}
+.drawer-left .drawer-content {
+  left: 100%;
+  top: 50%;
+  margin-left: 10px;
+  transform: translate(-50px, -50%) scale(0.8);
+}
+.drawer-left.open .drawer-content {
+  transform: translate(0, -50%) scale(1);
+}
+
+/* RIGHT DRAWER (Flip) */
+.drawer-right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.drawer-right .drawer-tab {
+  padding: 15px 5px;
+  border-radius: 16px 0 0 16px;
+  border-right: none;
+}
+.drawer-right .drawer-content {
+  right: 100%;
+  top: 50%;
+  margin-right: 10px;
+  transform: translate(50px, -50%) scale(0.8);
+}
+.drawer-right.open .drawer-content {
+  transform: translate(0, -50%) scale(1);
 }
 
 /* Scanner Animation (GPU Accelerated) */
@@ -292,14 +396,15 @@ h1 {
 }
 
 .btn-primary {
-  background: var(--primary);
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
 
 .btn-primary:hover {
-  background: var(--primary-hover);
+  background: #f1f5f9;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
 }
 
 .btn-secondary {

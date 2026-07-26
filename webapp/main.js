@@ -33,6 +33,7 @@ const offCtx = offscreenCanvas.getContext('2d', { willReadFrequently: true });
 // Control de vista
 let cameraRotations = JSON.parse(localStorage.getItem('cameraRotations')) || {};
 let viewRotation = 0;
+let isAutoRotateEnabled = localStorage.getItem('autoRotateEnabled') !== 'false';
 
 // Optimizador de escaneo
 let stopScanningFlag = false;
@@ -57,6 +58,7 @@ const cameraModal = document.getElementById('cameraModal');
 const btnCloseModal = document.getElementById('btnCloseModal');
 const btnClearDB = document.getElementById('btnClearDB');
 const cameraSelect = document.getElementById('cameraSelect');
+const autoRotateToggle = document.getElementById('autoRotateToggle');
 const btnFlipCamera = document.getElementById('btnFlipCamera');
 const btnRotateView = document.getElementById('btnRotateView');
 const zoomSlider = document.getElementById('zoomSlider');
@@ -70,6 +72,15 @@ let currentFaceMatcher = null; // Para optimizar el inicio de sesión
 let lastQRErrorTime = 0; // Para evitar spam de notificaciones QR
 let currentZoom = 1; // Nivel de zoom digital
 let backgroundRotationInterval = null; // Escáner de orientación en idle
+
+// Variables de desplazamiento (Pan & Drag)
+let panX = 0;
+let panY = 0;
+let isDragging = false;
+let startX = 0;
+let startY = 0;
+let startPanX = 0;
+let startPanY = 0;
 
 // ==========================================
 // INICIALIZACIÓN
@@ -101,6 +112,16 @@ async function initApp() {
     
     // Iniciar cámara inmediatamente después de cargar los modelos
     await startCamera();
+    
+    // Inicializar estado del interruptor de rotación automática
+    if (autoRotateToggle) {
+      autoRotateToggle.checked = isAutoRotateEnabled;
+      autoRotateToggle.addEventListener('change', (e) => {
+        isAutoRotateEnabled = e.target.checked;
+        localStorage.setItem('autoRotateEnabled', isAutoRotateEnabled);
+        showToast(isAutoRotateEnabled ? "Giro automático activado" : "Giro automático desactivado", "info");
+      });
+    }
     
     showToast("Sistema Listo", "success");
     feedbackText.innerHTML = "Cámara activa. Seleccione una acción (Registrar o Ingresar).";
@@ -206,11 +227,13 @@ function startBackgroundRotationScanner() {
         offCtx.rotate((angle * Math.PI) / 180);
         offCtx.scale(scaleFactor, scaleFactor);
         
-        // Recorte interno (Zoom) para que la IA vea lo mismo que el usuario
+        // Recorte interno (Zoom y Desplazamiento) para que la IA vea lo mismo que el usuario
         const sw = video.videoWidth / currentZoom;
         const sh = video.videoHeight / currentZoom;
-        const sx = (video.videoWidth - sw) / 2;
-        const sy = (video.videoHeight - sh) / 2;
+        const visualRatioX = video.videoWidth / videoWrapper.offsetWidth;
+        const visualRatioY = video.videoHeight / videoWrapper.offsetHeight;
+        const sx = (video.videoWidth - sw) / 2 - (panX * visualRatioX);
+        const sy = (video.videoHeight - sh) / 2 - (panY * visualRatioY);
         
         offCtx.drawImage(video, sx, sy, sw, sh, -video.videoWidth / 2, -video.videoHeight / 2, video.videoWidth, video.videoHeight);
         offCtx.restore();
@@ -222,7 +245,7 @@ function startBackgroundRotationScanner() {
           const normalizedAngle = ((angle % 360) + 360) % 360;
           const normalizedView = ((viewRotation % 360) + 360) % 360;
           
-          if (normalizedAngle !== normalizedView) {
+          if (normalizedAngle !== normalizedView && currentZoom === 1 && isAutoRotateEnabled) {
             viewRotation = normalizedAngle;
             const camKey = currentCameraId || currentFacingMode;
             cameraRotations[camKey] = viewRotation;
@@ -521,11 +544,13 @@ function iniciarEscaneoFacial(callback) {
         offCtx.rotate((angle * Math.PI) / 180);
         offCtx.scale(scaleFactor, scaleFactor);
         
-        // Aplicar recorte interno (Zoom Óptico para la IA)
+        // Aplicar recorte interno (Zoom Óptico y Desplazamiento para la IA)
         const sw = video.videoWidth / currentZoom;
         const sh = video.videoHeight / currentZoom;
-        const sx = (video.videoWidth - sw) / 2;
-        const sy = (video.videoHeight - sh) / 2;
+        const visualRatioX = video.videoWidth / videoWrapper.offsetWidth;
+        const visualRatioY = video.videoHeight / videoWrapper.offsetHeight;
+        const sx = (video.videoWidth - sw) / 2 - (panX * visualRatioX);
+        const sy = (video.videoHeight - sh) / 2 - (panY * visualRatioY);
         
         offCtx.drawImage(video, sx, sy, sw, sh, -video.videoWidth / 2, -video.videoHeight / 2, video.videoWidth, video.videoHeight);
         offCtx.restore();
@@ -555,7 +580,7 @@ function iniciarEscaneoFacial(callback) {
         // ¡MAGIA! Auto-rotación visual inteligente
         const normalizedAngle = angle < 0 ? angle + 360 : angle;
         const normalizedView = viewRotation % 360;
-        if (normalizedAngle !== normalizedView) {
+        if (normalizedAngle !== normalizedView && currentZoom === 1 && isAutoRotateEnabled) {
           viewRotation = normalizedAngle;
           // Guardar en caché
           const camKey = currentCameraId || currentFacingMode;
@@ -616,11 +641,13 @@ function startQRScanner(onSuccess) {
     tempCanvas.width = video.videoWidth;
     tempCanvas.height = video.videoHeight;
     
-    // Zoom interno para el lector QR
+    // Zoom interno y desplazamiento para el lector QR
     const sw = video.videoWidth / currentZoom;
     const sh = video.videoHeight / currentZoom;
-    const sx = (video.videoWidth - sw) / 2;
-    const sy = (video.videoHeight - sh) / 2;
+    const visualRatioX = video.videoWidth / videoWrapper.offsetWidth;
+    const visualRatioY = video.videoHeight / videoWrapper.offsetHeight;
+    const sx = (video.videoWidth - sw) / 2 - (panX * visualRatioX);
+    const sy = (video.videoHeight - sh) / 2 - (panY * visualRatioY);
     
     ctx.drawImage(video, sx, sy, sw, sh, 0, 0, tempCanvas.width, tempCanvas.height);
     
@@ -682,26 +709,28 @@ btnFlipCamera.addEventListener('click', async () => {
 });
 
 // ==========================================
-// CONTROL DE VISTA (ROTAR CAMARA)
+// CONTROL DE VISTA (ROTAR CAMARA Y ZOOM/PAN)
 // ==========================================
 function applyViewRotation() {
   let scale = 1;
   if (viewRotation === 90 || viewRotation === 270) {
-    // Calcular la escala necesaria para que el video cubra el contenedor cuando se rota 90 o 270 grados
     if (video.videoHeight > 0) {
       const ratio = video.videoWidth / video.videoHeight;
       scale = Math.max(ratio, 1/ratio);
     }
   }
   
-  // Aplicar zoom digital
   scale *= currentZoom;
   
-  const transformStyle = `rotate(${viewRotation}deg) scale(${scale})`;
+  // Limitar el pan visual para que no se vea negro en los bordes
+  if (currentZoom === 1) {
+    panX = 0; panY = 0;
+  }
+  
+  const transformStyle = `translate(${panX}px, ${panY}px) rotate(${viewRotation}deg) scale(${scale})`;
   video.style.transform = transformStyle;
   canvas.style.transform = transformStyle;
   
-  // El óvalo siempre debe mantenerse vertical y centrado porque el rostro humano siempre es vertical
   faceGuide.style.transform = `translate(-50%, -50%)`;
 }
 
@@ -718,13 +747,61 @@ btnRotateView.addEventListener('click', () => {
 
 zoomSlider.addEventListener('input', (e) => {
   currentZoom = parseFloat(e.target.value);
-  
-  // Formatear para que 1, 2, 3 no tengan decimal, pero 1.5 sí
   const zoomText = Number.isInteger(currentZoom) ? currentZoom.toString() : currentZoom.toFixed(1);
   zoomLabel.innerHTML = `🔍 ${zoomText}x`;
   
+  if (currentZoom === 1) {
+    panX = 0; panY = 0;
+  }
   applyViewRotation();
 });
+
+// Eventos de Arrastre (Pan)
+function startDrag(e) {
+  if (currentZoom <= 1) return;
+  
+  // No iniciar el arrastre si el usuario está tocando el slider de zoom, los botones o las pestañas de menú
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'BUTTON' || e.target.closest('button') || e.target.closest('.drawer')) return;
+  
+  isDragging = true;
+  startX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+  startY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+  startPanX = panX;
+  startPanY = panY;
+}
+
+function doDrag(e) {
+  if (!isDragging) return;
+  e.preventDefault(); // Evitar scroll nativo en móviles
+  const currentX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+  const currentY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+  
+  // Calcular límites de arrastre basados en el zoom
+  // (Asumiendo que a más zoom, más podemos arrastrar)
+  const maxPanX = (videoWrapper.offsetWidth * currentZoom - videoWrapper.offsetWidth) / 2;
+  const maxPanY = (videoWrapper.offsetHeight * currentZoom - videoWrapper.offsetHeight) / 2;
+
+  panX = startPanX + (currentX - startX);
+  panY = startPanY + (currentY - startY);
+  
+  // Limitar a los bordes visuales
+  panX = Math.max(-maxPanX, Math.min(maxPanX, panX));
+  panY = Math.max(-maxPanY, Math.min(maxPanY, panY));
+  
+  applyViewRotation();
+}
+
+function endDrag() {
+  isDragging = false;
+}
+
+videoWrapper.addEventListener('mousedown', startDrag);
+videoWrapper.addEventListener('mousemove', doDrag);
+window.addEventListener('mouseup', endDrag);
+
+videoWrapper.addEventListener('touchstart', startDrag, { passive: false });
+videoWrapper.addEventListener('touchmove', doDrag, { passive: false });
+window.addEventListener('touchend', endDrag);
 
 // ==========================================
 // CONFIGURACIÓN DE CÁMARA (AJUSTES)
