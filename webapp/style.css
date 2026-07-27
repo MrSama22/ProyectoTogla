@@ -586,9 +586,20 @@ h1 {
 .table-responsive {
   width: 100%;
   overflow-x: auto;
+  overflow-y: auto;
+  max-height: 40vh; /* Permite scroll interno para que el contenedor principal no crezca infinito */
   border-radius: 12px;
   border: 1px solid var(--glass-border);
   background: rgba(0, 0, 0, 0.2);
+}
+
+.table-responsive::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
 }
 
 .glass-table {
@@ -599,15 +610,19 @@ h1 {
   min-width: 600px;
 }
 
-.glass-table th, .glass-table td {
+.glass-table th {
   padding: 12px 15px;
-  border-bottom: 1px solid var(--glass-border);
+  background: rgba(0, 40, 69, 0.95);
+  font-weight: 600;
+  border-bottom: 2px solid var(--glass-border);
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
-.glass-table th {
-  background: rgba(255, 255, 255, 0.05);
-  font-weight: 600;
-  white-space: nowrap;
+.glass-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--glass-border);
 }
 
 .glass-table tbody tr:hover {
