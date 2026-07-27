@@ -33,9 +33,11 @@ const rotationAngles = [0, 90, -90];
 const offscreenCanvas = document.createElement('canvas');
 const offCtx = offscreenCanvas.getContext('2d', { willReadFrequently: true });
 
-// Control de vista
+// Control de vista y orientación
 let cameraRotations = JSON.parse(localStorage.getItem('cameraRotations')) || {};
+let cameraMirrors = JSON.parse(localStorage.getItem('cameraMirrors')) || {};
 let viewRotation = 0;
+let isMirrored = false;
 let isAutoRotateEnabled = localStorage.getItem('autoRotateEnabled') !== 'false';
 
 // Utilidad para evitar que la rotación regrese 360 grados hacia atrás visualmente
@@ -73,6 +75,7 @@ const cameraSelect = document.getElementById('cameraSelect');
 const autoRotateToggle = document.getElementById('autoRotateToggle');
 const btnFlipCamera = document.getElementById('btnFlipCamera');
 const btnRotateView = document.getElementById('btnRotateView');
+const btnMirrorCamera = document.getElementById('btnMirrorCamera');
 const zoomSlider = document.getElementById('zoomSlider');
 const zoomLabel = document.getElementById('zoomLabel');
 const faceGuide = document.getElementById('faceGuide');
@@ -184,9 +187,10 @@ async function startCamera() {
         canvas.width = video.videoWidth;
         canvas.height = video.videoHeight;
         
-        // Cargar y aplicar rotación guardada para esta cámara
+        // Cargar y aplicar rotación y orientación (espejo) guardada para esta cámara
         const camKey = currentCameraId || currentFacingMode;
         viewRotation = cameraRotations[camKey] || 0;
+        isMirrored = cameraMirrors[camKey] || false;
         applyViewRotation();
         
         startBackgroundRotationScanner(); // Iniciar auto-rotación constante
@@ -365,8 +369,9 @@ function onQRRegistered(decodedText) {
 async function registrarRostro(detection, faceDescriptor) {
   const box = detection.detection.box;
   const faceWidth = box.width;
-  const minW = video.videoWidth * 0.15;
-  const maxW = video.videoWidth * 0.65;
+  // En móviles el rostro puede verse más pequeño o más grande dependiendo de la cámara frontal
+  const minW = video.videoWidth * 0.12;
+  const maxW = video.videoWidth * 0.85;
   
   if (faceWidth < minW) {
     feedbackText.innerHTML = "<span class='text-warning'>⚠️ Acércate un poco más</span>";
@@ -573,8 +578,8 @@ function iniciarEscaneoFacial(callback) {
         offCtx.drawImage(video, sx, sy, sw, sh, -video.videoWidth / 2, -video.videoHeight / 2, video.videoWidth, video.videoHeight);
         offCtx.restore();
         
-        // Ejecutar inferencia usando el modelo ultra-rápido pero con 85% de exigencia para evitar alucinaciones
-        const options = new faceapi.TinyFaceDetectorOptions({ inputSize: 320, scoreThreshold: 0.85 });
+        // Ejecutar inferencia usando el modelo ultra-rápido (reducido a 0.65 para evitar fallos en móviles con cámaras menos nítidas o iluminación pobre)
+        const options = new faceapi.TinyFaceDetectorOptions({ inputSize: 320, scoreThreshold: 0.65 });
         detection = await faceapi.detectSingleFace(offscreenCanvas, options).withFaceLandmarks().withFaceDescriptor();
         
         if (detection) {
@@ -746,11 +751,34 @@ function applyViewRotation() {
     panX = 0; panY = 0;
   }
   
-  const transformStyle = `translate(${panX}px, ${panY}px) rotate(${viewRotation}deg) scale(${scale})`;
+  const scaleX = isMirrored ? -scale : scale;
+  const transformStyle = `translate(${panX}px, ${panY}px) rotate(${viewRotation}deg) scaleX(${scaleX}) scaleY(${scale})`;
   video.style.transform = transformStyle;
   canvas.style.transform = transformStyle;
   
   faceGuide.style.transform = `translate(-50%, -50%)`;
+}
+
+if (btnMirrorCamera) {
+  btnMirrorCamera.addEventListener('click', () => {
+    if (!camaraActiva) return;
+    isMirrored = !isMirrored;
+    const camKey = currentCameraId || currentFacingMode;
+    cameraMirrors[camKey] = isMirrored;
+    localStorage.setItem('cameraMirrors', JSON.stringify(cameraMirrors));
+    
+    video.style.transition = 'transform 0.3s ease';
+    canvas.style.transition = 'transform 0.3s ease';
+    
+    applyViewRotation();
+    
+    setTimeout(() => {
+      video.style.transition = 'none';
+      canvas.style.transition = 'none';
+    }, 300);
+    
+    showToast(isMirrored ? "Modo espejo activado" : "Modo espejo desactivado", "info");
+  });
 }
 
 btnRotateView.addEventListener('click', () => {
@@ -1251,8 +1279,8 @@ class InteractiveTour {
         onLeave: () => document.querySelector('.drawer-top').classList.remove('open')
       },
       {
-        selector: '#btnRotateView',
-        text: 'En la pestaña izquierda está el botón para <b>Girar la cámara 90°</b>, útil si la imagen sale torcida.',
+        selector: '.drawer-left .drawer-content',
+        text: 'En la pestaña izquierda verás controles para <b>Girar 90°</b> o cambiar la <b>Orientación (Espejo)</b>, ideal si usas la cámara frontal.',
         position: 'right',
         onEnter: () => document.querySelector('.drawer-left').classList.add('open'),
         onLeave: () => document.querySelector('.drawer-left').classList.remove('open')
