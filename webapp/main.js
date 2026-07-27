@@ -830,10 +830,20 @@ zoomSlider.addEventListener('change', () => {
     video.style.transition = 'none';
     canvas.style.transition = 'none';
   }, 400);
-  
   // Cerrar el drawer de zoom automáticamente al terminar de ajustar
   document.querySelector('.drawer-top').classList.remove('open');
 });
+
+// Mostrar el drawer de zoom temporalmente al usar gestos
+let zoomDrawerTimeout = null;
+function showZoomDrawerTemporarily() {
+  const drawer = document.querySelector('.drawer-top');
+  drawer.classList.add('open');
+  if (zoomDrawerTimeout) clearTimeout(zoomDrawerTimeout);
+  zoomDrawerTimeout = setTimeout(() => {
+    drawer.classList.remove('open');
+  }, 1500);
+}
 
 // Eventos de Arrastre (Pan) y Gestos (Zoom)
 let initialPinchDistance = null;
@@ -884,6 +894,8 @@ function handleDoubleClick(e) {
   zoomSlider.value = currentZoom;
   const zoomText = Number.isInteger(currentZoom) ? currentZoom.toString() : currentZoom.toFixed(1);
   zoomLabel.innerHTML = `🔍 ${zoomText}x`;
+  
+  showZoomDrawerTemporarily();
   
   // Añadir transición suave SOLO para este salto
   video.style.transition = 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)';
@@ -947,6 +959,8 @@ function doDrag(e) {
       zoomSlider.value = currentZoom;
       const zoomText = Number.isInteger(currentZoom) ? currentZoom.toString() : currentZoom.toFixed(1);
       zoomLabel.innerHTML = `🔍 ${zoomText}x`;
+      
+      showZoomDrawerTemporarily();
       
       if (currentZoom === 1) {
         panX = 0; panY = 0;
