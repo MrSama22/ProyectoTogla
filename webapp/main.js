@@ -728,6 +728,10 @@ btnFlipCamera.addEventListener('click', async () => {
   camaraActiva = false;
   
   showToast("Cambiando cámara...", "warning");
+  
+  // Cerrar automáticamente
+  document.querySelector('.drawer-right').classList.remove('open');
+  
   await startCamera();
 });
 
@@ -776,8 +780,10 @@ if (btnMirrorCamera) {
       video.style.transition = 'none';
       canvas.style.transition = 'none';
     }, 300);
-    
     showToast(isMirrored ? "Modo espejo activado" : "Modo espejo desactivado", "info");
+    
+    // Cerrar automáticamente
+    document.querySelector('.drawer-left').classList.remove('open');
   });
 }
 
@@ -799,6 +805,9 @@ btnRotateView.addEventListener('click', () => {
     video.style.transition = 'none';
     canvas.style.transition = 'none';
   }, 400);
+  
+  // Cerrar automáticamente
+  document.querySelector('.drawer-left').classList.remove('open');
 });
 
 zoomSlider.addEventListener('input', (e) => {
@@ -821,6 +830,9 @@ zoomSlider.addEventListener('change', () => {
     video.style.transition = 'none';
     canvas.style.transition = 'none';
   }, 400);
+  
+  // Cerrar el drawer de zoom automáticamente al terminar de ajustar
+  document.querySelector('.drawer-top').classList.remove('open');
 });
 
 // Eventos de Arrastre (Pan) y Gestos (Zoom)
