@@ -369,9 +369,9 @@ function onQRRegistered(decodedText) {
 async function registrarRostro(detection, faceDescriptor) {
   const box = detection.detection.box;
   const faceWidth = box.width;
-  // En móviles el rostro puede verse más pequeño o más grande dependiendo de la cámara frontal
-  const minW = video.videoWidth * 0.12;
-  const maxW = video.videoWidth * 0.85;
+  // Ajustado para que las guías de "Acércate" o "Aléjate" sigan funcionando bien
+  const minW = video.videoWidth * 0.18;
+  const maxW = video.videoWidth * 0.65;
   
   if (faceWidth < minW) {
     feedbackText.innerHTML = "<span class='text-warning'>⚠️ Acércate un poco más</span>";
