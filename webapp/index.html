@@ -88,6 +88,87 @@
       <!-- Estado actual de la aplicación -->
       <div id="appState" class="app-state">Listo para operar</div>
 
+      <!-- Sección de Tabla de Registros -->
+      <section class="records-section" style="margin-top: 20px; width: 100%;">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px; margin-bottom: 10px; flex-wrap: wrap; gap: 15px;">
+          <div style="display: flex; flex-direction: column; min-width: 150px;">
+            <h2 style="font-size: 1.2rem; margin: 0;">Historial de Ingresos</h2>
+            <span id="recordCounter" style="font-size: 0.8rem; color: #94a3b8; margin-top: 4px;">Cargando...</span>
+          </div>
+          <button id="btnToggleFilters" class="btn-glass" style="margin: 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px;">
+              <line x1="21" y1="6" x2="3" y2="6"></line>
+              <line x1="21" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="18" x2="3" y2="18"></line>
+              <circle cx="8" cy="6" r="3" fill="var(--bg-dark)"></circle>
+              <circle cx="16" cy="12" r="3" fill="var(--bg-dark)"></circle>
+              <circle cx="10" cy="18" r="3" fill="var(--bg-dark)"></circle>
+            </svg>
+            Filtros
+          </button>
+        </div>
+        
+        <!-- Panel de Filtros Desplegable -->
+        <div id="filterPanel" class="filter-panel hidden">
+          <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 15px;">
+            <div style="flex: 1; min-width: 140px;">
+              <span style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 5px; display: block;">Buscar por Nombre:</span>
+              <input type="text" id="searchName" class="filter-input" placeholder="🔍 Ej. Juan Perez" style="margin-top: 0;">
+            </div>
+            <div style="flex: 1; min-width: 140px;">
+              <span style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 5px; display: block;">Buscar por Código:</span>
+              <input type="text" id="searchCode" class="filter-input" placeholder="🔍 Ej. 12345" style="margin-top: 0;">
+            </div>
+          </div>
+          
+          <div class="filter-modes">
+            <span style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 5px; display: block;">Rango de tiempo:</span>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 10px;">
+              <label class="radio-label">
+                <input type="radio" name="dateMode" value="all" checked> Toda la vida
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="dateMode" value="today"> Hoy
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="dateMode" value="custom"> Rango Personalizado
+              </label>
+            </div>
+          </div>
+          
+          <div id="customDateInputs" class="custom-dates hidden" style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 15px;">
+            <div style="display: flex; flex-direction: column; flex: 1; min-width: 140px;">
+              <span style="font-size: 0.75rem; color: rgba(255,255,255,0.7);">Desde:</span>
+              <input type="datetime-local" id="filterStart" class="filter-input" style="color-scheme: dark; margin-top: 2px;">
+            </div>
+            <div style="display: flex; flex-direction: column; flex: 1; min-width: 140px;">
+              <span style="font-size: 0.75rem; color: rgba(255,255,255,0.7);">Hasta:</span>
+              <input type="datetime-local" id="filterEnd" class="filter-input" style="color-scheme: dark; margin-top: 2px;">
+            </div>
+          </div>
+          
+          <div style="text-align: right; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;">
+            <button id="btnClearFilters" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.85rem; background: rgba(255,50,50,0.2); border-color: rgba(255,50,50,0.5);">
+              ❌ Limpiar Todo
+            </button>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="glass-table" id="recordsTable">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Nombre</th>
+                <th>Código</th>
+              </tr>
+            </thead>
+            <tbody id="recordsTableBody">
+              <!-- Las filas se generarán dinámicamente aquí -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
     </main>
 
     <!-- Contenedor para Notificaciones (Toasts) -->

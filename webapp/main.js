@@ -6,6 +6,23 @@ import jsQR from 'jsqr';
 // ==========================================
 let modoActual = 'idle'; // 'idle', 'registro', 'validacion'
 let dbEstudiantes = JSON.parse(localStorage.getItem('estudiantes')) || [];
+let dbIngresos = JSON.parse(localStorage.getItem('ingresos')) || [];
+
+// Generar datos de prueba si el historial está vacío (Solicitud del usuario)
+if (dbIngresos.length === 0) {
+  const now = new Date();
+  for (let i = 0; i < 10; i++) {
+    // Restar un número aleatorio de horas para simular ingresos recientes y de días anteriores (hasta 15 días atrás)
+    const randomHours = Math.floor(Math.random() * (24 * 15));
+    const randomDate = new Date(now.getTime() - (randomHours * 60 * 60 * 1000));
+    dbIngresos.push({
+      nombre: `Estudiante Prueba ${i+1}`,
+      qr: `8000${i}X`,
+      timestamp: randomDate.toISOString()
+    });
+  }
+  localStorage.setItem('ingresos', JSON.stringify(dbIngresos));
+}
 
 // Limpieza automática de registros corruptos (Ej: cuando el QR se leyó en blanco por error)
 const longitudOriginal = dbEstudiantes.length;
@@ -396,11 +413,14 @@ async function registrarRostro(detection, faceDescriptor) {
     const newStudent = {
       nombre: `Estudiante_${qrDataTemporal}`,
       qr: qrDataTemporal,
-      descriptor: Array.from(meanDescriptor)
+      descriptor: Array.from(meanDescriptor),
+      timestamp: new Date().toISOString()
     };
     
     dbEstudiantes.push(newStudent);
     localStorage.setItem('estudiantes', JSON.stringify(dbEstudiantes));
+    
+    if (typeof renderTable === 'function') renderTable();
     
     showToast(`¡Estudiante Registrado con Éxito!`, "success");
     detenerProcesos();
@@ -468,6 +488,7 @@ function onQRValidated(decodedText) {
   
   const estudiante = dbEstudiantes.find(e => e.qr === decodedText);
   if (estudiante) {
+    registrarIngreso(estudiante);
     showToast(`✅ ¡INGRESO EXITOSO: ${estudiante.nombre}! (Por Carnet)`, "success");
     detenerProcesos();
   } else {
@@ -494,6 +515,8 @@ async function validarRostro(detection, faceDescriptor) {
   const bestMatch = currentFaceMatcher.findBestMatch(faceDescriptor);
   
   if (bestMatch.label !== 'unknown') {
+    const estudiante = dbEstudiantes.find(e => e.nombre === bestMatch.label);
+    if (estudiante) registrarIngreso(estudiante);
     showToast(`✅ ¡INGRESO EXITOSO: ${bestMatch.label}! (Por Rostro)`, "success");
     detenerProcesos();
   } else {
@@ -747,12 +770,21 @@ function applyViewRotation() {
 btnRotateView.addEventListener('click', () => {
   viewRotation += 90;
   
-  // Guardar configuración en el caché para esta cámara en específico
+  // Guardar configuración en el caché
   const camKey = currentCameraId || currentFacingMode;
   cameraRotations[camKey] = ((viewRotation % 360) + 360) % 360;
   localStorage.setItem('cameraRotations', JSON.stringify(cameraRotations));
   
+  // Añadir transición suave para el salto de rotación
+  video.style.transition = 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)';
+  canvas.style.transition = 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)';
+  
   applyViewRotation();
+  
+  setTimeout(() => {
+    video.style.transition = 'none';
+    canvas.style.transition = 'none';
+  }, 400);
 });
 
 zoomSlider.addEventListener('input', (e) => {
@@ -766,12 +798,107 @@ zoomSlider.addEventListener('input', (e) => {
   applyViewRotation();
 });
 
-// Eventos de Arrastre (Pan)
-function startDrag(e) {
-  if (currentZoom <= 1) return;
+// Cuando el usuario hace clic en una parte de la barra (salto) o suelta el drag, suavizamos ese último frame
+zoomSlider.addEventListener('change', () => {
+  video.style.transition = 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)';
+  canvas.style.transition = 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)';
+  applyViewRotation();
+  setTimeout(() => {
+    video.style.transition = 'none';
+    canvas.style.transition = 'none';
+  }, 400);
+});
+
+// Eventos de Arrastre (Pan) y Gestos (Zoom)
+let initialPinchDistance = null;
+let initialPinchZoom = 1;
+let lastTap = 0;
+
+function getPinchDistance(e) {
+  return Math.hypot(
+    e.touches[0].clientX - e.touches[1].clientX,
+    e.touches[0].clientY - e.touches[1].clientY
+  );
+}
+
+function handleDoubleClick(e) {
+  if (currentZoom > 1) {
+    currentZoom = 1;
+    panX = 0; panY = 0;
+  } else {
+    currentZoom = 3.5;
+    
+    // Calcular coordenadas del toque o clic
+    const rect = videoWrapper.getBoundingClientRect();
+    let clientX, clientY;
+    
+    if (e.type.includes('touch') && e.touches && e.touches.length > 0) {
+      clientX = e.touches[0].clientX;
+      clientY = e.touches[0].clientY;
+    } else {
+      clientX = e.clientX;
+      clientY = e.clientY;
+    }
+    
+    const offsetX = (clientX - rect.left) - (rect.width / 2);
+    const offsetY = (clientY - rect.top) - (rect.height / 2);
+    
+    // Trasladar el punto clickeado al centro de la pantalla
+    panX = -offsetX * currentZoom;
+    panY = -offsetY * currentZoom;
+    
+    // Limitar el paneo para no salirnos de los bordes
+    const maxPanX = (rect.width * currentZoom - rect.width) / 2;
+    const maxPanY = (rect.height * currentZoom - rect.height) / 2;
+    
+    panX = Math.max(-maxPanX, Math.min(maxPanX, panX));
+    panY = Math.max(-maxPanY, Math.min(maxPanY, panY));
+  }
   
-  // No iniciar el arrastre si el usuario está tocando el slider de zoom, los botones o las pestañas de menú
+  zoomSlider.value = currentZoom;
+  const zoomText = Number.isInteger(currentZoom) ? currentZoom.toString() : currentZoom.toFixed(1);
+  zoomLabel.innerHTML = `🔍 ${zoomText}x`;
+  
+  // Añadir transición suave SOLO para este salto
+  video.style.transition = 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)';
+  canvas.style.transition = 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)';
+  
+  applyViewRotation();
+  
+  // Quitar la transición después de la animación para no afectar el drag
+  setTimeout(() => {
+    video.style.transition = 'none';
+    canvas.style.transition = 'none';
+  }, 400);
+}
+
+videoWrapper.addEventListener('dblclick', (e) => {
   if (e.target.tagName === 'INPUT' || e.target.tagName === 'BUTTON' || e.target.closest('button') || e.target.closest('.drawer')) return;
+  handleDoubleClick(e);
+});
+
+function startDrag(e) {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'BUTTON' || e.target.closest('button') || e.target.closest('.drawer')) return;
+  
+  if (e.type === 'touchstart') {
+    const currentTime = new Date().getTime();
+    const tapLength = currentTime - lastTap;
+    if (tapLength < 300 && tapLength > 0 && e.touches.length === 1) {
+      handleDoubleClick(e);
+      e.preventDefault();
+      return;
+    }
+    lastTap = currentTime;
+  }
+  
+  if (e.touches && e.touches.length === 2) {
+    isDragging = false;
+    initialPinchDistance = getPinchDistance(e);
+    initialPinchZoom = currentZoom;
+    return;
+  }
+
+  if (currentZoom <= 1) return;
   
   isDragging = true;
   startX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
@@ -781,20 +908,39 @@ function startDrag(e) {
 }
 
 function doDrag(e) {
+  if (e.touches && e.touches.length === 2) {
+    e.preventDefault();
+    if (initialPinchDistance) {
+      const currentDistance = getPinchDistance(e);
+      const scaleChange = currentDistance / initialPinchDistance;
+      let newZoom = initialPinchZoom * scaleChange;
+      
+      newZoom = Math.max(parseFloat(zoomSlider.min), Math.min(parseFloat(zoomSlider.max), newZoom));
+      
+      currentZoom = newZoom;
+      zoomSlider.value = currentZoom;
+      const zoomText = Number.isInteger(currentZoom) ? currentZoom.toString() : currentZoom.toFixed(1);
+      zoomLabel.innerHTML = `🔍 ${zoomText}x`;
+      
+      if (currentZoom === 1) {
+        panX = 0; panY = 0;
+      }
+      applyViewRotation();
+    }
+    return;
+  }
+
   if (!isDragging) return;
-  e.preventDefault(); // Evitar scroll nativo en móviles
+  e.preventDefault();
   const currentX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
   const currentY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
   
-  // Calcular límites de arrastre basados en el zoom
-  // (Asumiendo que a más zoom, más podemos arrastrar)
   const maxPanX = (videoWrapper.offsetWidth * currentZoom - videoWrapper.offsetWidth) / 2;
   const maxPanY = (videoWrapper.offsetHeight * currentZoom - videoWrapper.offsetHeight) / 2;
 
   panX = startPanX + (currentX - startX);
   panY = startPanY + (currentY - startY);
   
-  // Limitar a los bordes visuales
   panX = Math.max(-maxPanX, Math.min(maxPanX, panX));
   panY = Math.max(-maxPanY, Math.min(maxPanY, panY));
   
@@ -803,6 +949,7 @@ function doDrag(e) {
 
 function endDrag() {
   isDragging = false;
+  initialPinchDistance = null;
 }
 
 videoWrapper.addEventListener('mousedown', startDrag);
@@ -883,9 +1030,12 @@ btnCloseModal.addEventListener('click', () => {
 });
 
 btnClearDB.addEventListener('click', () => {
-  if (confirm("¿Estás seguro de que quieres borrar TODOS los estudiantes registrados? Esta acción no se puede deshacer.")) {
+  if (confirm("¿Estás seguro de que quieres borrar TODOS los estudiantes y el historial de ingresos? Esta acción no se puede deshacer.")) {
     dbEstudiantes = [];
+    dbIngresos = [];
     localStorage.removeItem('estudiantes');
+    localStorage.removeItem('ingresos');
+    if (typeof renderTable === 'function') renderTable();
     showToast("Base de datos eliminada", "success");
     cameraModal.classList.add('hidden');
   }
@@ -904,5 +1054,197 @@ function showToast(message, type = 'success') {
   
   setTimeout(() => toast.remove(), 3500);
 }
+
+// ==========================================
+// REGISTRO DE INGRESOS
+// ==========================================
+function registrarIngreso(estudiante) {
+  const ingreso = {
+    nombre: estudiante.nombre,
+    qr: estudiante.qr,
+    timestamp: new Date().toISOString()
+  };
+  dbIngresos.push(ingreso);
+  localStorage.setItem('ingresos', JSON.stringify(dbIngresos));
+  if (typeof renderTable === 'function') renderTable();
+}
+
+// ==========================================
+// TABLA DE REGISTROS (INGRESOS)
+// ==========================================
+window.renderTable = function() {
+  const tbody = document.getElementById('recordsTableBody');
+  if (!tbody) return;
+  
+  tbody.innerHTML = '';
+  
+  // Ordenar ingresos de más reciente a más antiguo
+  const sortedIngresos = [...dbIngresos].sort((a, b) => {
+    const timeA = a.timestamp ? new Date(a.timestamp).getTime() : 0;
+    const timeB = b.timestamp ? new Date(b.timestamp).getTime() : 0;
+    return timeB - timeA;
+  });
+  
+  // Obtener filtros unificados
+  const searchNameInput = document.getElementById('searchName');
+  const searchCodeInput = document.getElementById('searchCode');
+  const filterStartInput = document.getElementById('filterStart');
+  const filterEndInput = document.getElementById('filterEnd');
+  
+  const sName = searchNameInput ? searchNameInput.value.toLowerCase() : '';
+  const sCode = searchCodeInput ? searchCodeInput.value.toLowerCase() : '';
+  const fStart = filterStartInput && filterStartInput.value ? new Date(filterStartInput.value).getTime() : null;
+  const fEnd = filterEndInput && filterEndInput.value ? new Date(filterEndInput.value).getTime() : null;
+
+  let totalEncontrados = 0;
+
+  sortedIngresos.forEach(ingreso => {
+    let dateStr = 'Sin fecha';
+    let ingresoTime = 0;
+    
+    if (ingreso.timestamp) {
+      const d = new Date(ingreso.timestamp);
+      dateStr = d.toLocaleString();
+      ingresoTime = d.getTime();
+    }
+    
+    const code = ingreso.qr || '';
+    const name = ingreso.nombre || '';
+    
+    // Aplicar filtros de fecha y hora según el modo seleccionado
+    const dateModeRadios = document.getElementsByName('dateMode');
+    let selectedMode = 'all';
+    for (const radio of dateModeRadios) {
+      if (radio.checked) {
+        selectedMode = radio.value;
+        break;
+      }
+    }
+    
+    if (selectedMode === 'today') {
+      const startOfToday = new Date();
+      startOfToday.setHours(0, 0, 0, 0);
+      const endOfToday = new Date();
+      endOfToday.setHours(23, 59, 59, 999);
+      if (ingresoTime < startOfToday.getTime() || ingresoTime > endOfToday.getTime()) return;
+    } 
+    else if (selectedMode === 'custom') {
+      if (fStart || fEnd) {
+        if (fStart && !fEnd) {
+          // Lógica especial: Si solo hay "Desde", filtramos desde esa hora hasta el final de ESE MISMO DÍA
+          const startObj = new Date(fStart);
+          const endOfDay = new Date(startObj);
+          endOfDay.setHours(23, 59, 59, 999);
+          if (ingresoTime < fStart || ingresoTime > endOfDay.getTime()) return;
+        } else {
+          // Lógica de rango completo
+          if (fStart && ingresoTime < fStart) return;
+          if (fEnd && ingresoTime > fEnd) return;
+        }
+      }
+    }
+    
+    if (sName) {
+      if (!name.toLowerCase().includes(sName)) return;
+    }
+    
+    if (sCode) {
+      if (!code.toLowerCase().startsWith(sCode)) return;
+    }
+    
+    totalEncontrados++;
+    
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${dateStr}</td>
+      <td>${name}</td>
+      <td>${code}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  const recordCounter = document.getElementById('recordCounter');
+  if (recordCounter) {
+    if (sName || sCode || document.querySelector('input[name="dateMode"]:checked')?.value !== 'all') {
+      recordCounter.textContent = `Ingresos totales: ${dbIngresos.length} | Filtrados: ${totalEncontrados}`;
+    } else {
+      recordCounter.textContent = `Ingresos totales: ${dbIngresos.length}`;
+    }
+  }
+}
+
+const searchNameEl = document.getElementById('searchName');
+const searchCodeEl = document.getElementById('searchCode');
+const fStartEl = document.getElementById('filterStart');
+const fEndEl = document.getElementById('filterEnd');
+const btnClear = document.getElementById('btnClearFilters');
+const btnToggleFilters = document.getElementById('btnToggleFilters');
+const filterPanel = document.getElementById('filterPanel');
+const customDateInputs = document.getElementById('customDateInputs');
+const dateModeRadios = document.getElementsByName('dateMode');
+
+// Helper para bloquear fechas futuras
+function setMaxDateInputs() {
+  const now = new Date();
+  const tzOffset = now.getTimezoneOffset() * 60000;
+  const localISOTime = (new Date(now - tzOffset)).toISOString().slice(0, 16);
+  if(fStartEl) fStartEl.max = localISOTime;
+  if(fEndEl) fEndEl.max = localISOTime;
+}
+
+setMaxDateInputs();
+setInterval(setMaxDateInputs, 60000); // Update max date every minute
+
+// Alternar panel de filtros
+if (btnToggleFilters && filterPanel) {
+  btnToggleFilters.addEventListener('click', () => {
+    filterPanel.classList.toggle('hidden');
+    setMaxDateInputs(); // Ensure max date is up to date when opened
+  });
+}
+
+// Escuchar cambios en los modos de fecha
+dateModeRadios.forEach(radio => {
+  radio.addEventListener('change', (e) => {
+    if (e.target.value === 'custom') {
+      customDateInputs.classList.remove('hidden');
+    } else {
+      customDateInputs.classList.add('hidden');
+    }
+    renderTable();
+  });
+});
+
+if(searchNameEl) {
+  searchNameEl.addEventListener('input', renderTable);
+  searchNameEl.addEventListener('keyup', renderTable);
+}
+
+if(searchCodeEl) {
+  searchCodeEl.addEventListener('input', renderTable);
+  searchCodeEl.addEventListener('keyup', renderTable);
+}
+
+if(fStartEl) fStartEl.addEventListener('change', renderTable);
+if(fEndEl) fEndEl.addEventListener('change', renderTable);
+
+if (btnClear) {
+  btnClear.addEventListener('click', () => {
+    if (searchNameEl) searchNameEl.value = '';
+    if (searchCodeEl) searchCodeEl.value = '';
+    if (fStartEl) fStartEl.value = '';
+    if (fEndEl) fEndEl.value = '';
+    // Restaurar radio button a 'all'
+    const defaultRadio = Array.from(dateModeRadios).find(r => r.value === 'all');
+    if (defaultRadio) {
+      defaultRadio.checked = true;
+      customDateInputs.classList.add('hidden');
+    }
+    renderTable();
+  });
+}
+
+renderTable();
+
 
 window.addEventListener('load', initApp);
