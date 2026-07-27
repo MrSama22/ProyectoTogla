@@ -563,7 +563,9 @@ h1 {
     padding: 15px;
     padding-bottom: 40px;
     overflow-y: auto;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
   
   .app-container {
