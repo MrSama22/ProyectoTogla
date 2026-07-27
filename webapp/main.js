@@ -1286,7 +1286,7 @@ class InteractiveTour {
       {
         selector: '#btnRegister',
         secondarySelector: '.video-wrapper',
-        text: '<b>Registro:</b> Si eres nuevo presiona aquí. Verás este <b>óvalo verde</b> donde debes ubicar tu rostro. Tienes un límite de <b>60 segundos</b> para leer el código de estudiante y luego <b>90 segundos</b> para que la IA capture tu rostro.',
+        text: '<b>Registro:</b> Ubícate en el óvalo verde. Tienes <b>60s</b> para ingresar tu código, y <b>90s</b> para que la IA guarde tu rostro.',
         position: 'bottom',
         onEnter: () => document.getElementById('faceGuide').classList.add('active'),
         onLeave: () => document.getElementById('faceGuide').classList.remove('active')
@@ -1294,19 +1294,19 @@ class InteractiveTour {
       {
         selector: '#btnLogin',
         secondarySelector: '.video-wrapper',
-        text: '<b>Ingreso:</b> Si ya estás registrado, presiona aquí. El sistema escaneará tu rostro en el óvalo y tendrás un límite de <b>30 segundos</b> antes de que se cancele automáticamente por inactividad.',
+        text: '<b>Ingreso:</b> La IA escaneará tu rostro en el óvalo. Se cancelará en <b>30s</b> por inactividad.',
         position: 'bottom',
         onEnter: () => document.getElementById('faceGuide').classList.add('active'),
         onLeave: () => document.getElementById('faceGuide').classList.remove('active')
       },
       {
         selector: '#btnToggleFilters',
-        text: 'Despliega este menú para buscar ingresos por nombre, código de estudiante o rango de fechas.',
+        text: 'Despliega este menú para buscar ingresos por nombre, código o fechas.',
         position: 'top'
       },
       {
         selector: '.table-responsive',
-        text: 'Aquí aparecerá en tiempo real el historial de todas las personas que han ingresado.',
+        text: 'Aquí aparecerá en tiempo real el historial de ingresos.',
         position: 'top'
       }
     ];
@@ -1380,19 +1380,17 @@ class InteractiveTour {
       step.onEnter();
     }
     
-    // Esperar a que las animaciones css terminen (ej. cajones abriéndose)
+    // Fetch and scroll immediately so the animation happens during the timeout
+    this.activeElement = document.querySelector(step.selector);
+    if (!this.activeElement) {
+      console.warn('Tour: Element not found:', step.selector);
+      this.nextStep(); // Skip if missing
+      return;
+    }
+    this.activeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    
+    // Esperar a que las animaciones css y el smooth scroll terminen
     setTimeout(() => {
-      this.activeElement = document.querySelector(step.selector);
-      
-      if (!this.activeElement) {
-        console.warn('Tour: Element not found:', step.selector);
-        this.nextStep(); // Skip if missing
-        return;
-      }
-
-      // Scroll to element
-      this.activeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
       // Highlight
       this.activeElement.classList.add('tour-highlight');
 
@@ -1441,7 +1439,7 @@ class InteractiveTour {
         }
       }
       this.positionTooltip(step.position);
-    }, 450); // 450ms asegura que el drawer (CSS transition 0.4s) terminó de abrirse
+    }, 450); // 450ms asegura que el drawer o el scroll terminaron
   }
 
   positionTooltip(preferredPosition) {

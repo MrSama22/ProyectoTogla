@@ -542,7 +542,7 @@ h1 {
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--secondary);
   border-radius: 16px;
-  padding: 20px;
+  padding: 15px; /* Reducido para ahorrar espacio */
   width: 90%;
   max-width: 320px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(214, 40, 40, 0.3);
@@ -550,6 +550,15 @@ h1 {
   transform: translateY(0);
   transition: opacity 0.3s, transform 0.3s, top 0.4s ease, left 0.4s ease;
   pointer-events: auto;
+}
+
+@media (max-width: 600px) {
+  .tour-tooltip {
+    padding: 12px;
+  }
+  #tourText {
+    font-size: 0.85rem !important;
+  }
 }
 
 .tour-tooltip.hidden {
