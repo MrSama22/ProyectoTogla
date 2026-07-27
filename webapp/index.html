@@ -200,7 +200,16 @@
 
     <!-- Tour Interactivo -->
     <div id="tourOverlay" class="tour-overlay hidden">
-      <div id="tourMask" class="tour-mask"></div>
+      <svg width="100%" height="100%" style="position: absolute; top: 0; left: 0; pointer-events: none;">
+        <defs>
+          <mask id="tourMaskSvg">
+            <rect width="100%" height="100%" fill="white" />
+            <rect id="tourHole1" x="0" y="0" width="0" height="0" fill="black" rx="8" style="transition: all 0.4s ease;" />
+            <rect id="tourHole2" x="0" y="0" width="0" height="0" fill="black" rx="8" style="transition: all 0.4s ease;" />
+          </mask>
+        </defs>
+        <rect width="100%" height="100%" fill="rgba(0,0,0,0.85)" mask="url(#tourMaskSvg)" />
+      </svg>
     </div>
     <div id="tourTooltip" class="tour-tooltip hidden">
       <div class="tour-header">

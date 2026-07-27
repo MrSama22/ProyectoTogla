@@ -1254,18 +1254,50 @@ class InteractiveTour {
     this.steps = [
       {
         selector: '.video-wrapper',
-        text: 'Esta es la cámara. Haz <b>doble clic/pellizco</b> para el zoom. Si despliegas las pestañas ocultas en los bordes, verás controles para <b>Girar</b> o <b>Voltear</b> la cámara. (Puedes cambiar de cámara en Ajustes ⚙️).',
+        text: 'Esta es la cámara principal de la aplicación.',
+        position: 'bottom'
+      },
+      {
+        selector: '#zoomContainer',
+        text: 'Aquí arriba tienes el control de <b>Zoom</b>. (También puedes pellizcar o hacer doble clic en el video).',
+        position: 'bottom',
+        onEnter: () => document.querySelector('.drawer-top').classList.add('open'),
+        onLeave: () => document.querySelector('.drawer-top').classList.remove('open')
+      },
+      {
+        selector: '#btnRotateView',
+        text: 'En la pestaña izquierda está el botón para <b>Girar la cámara 90°</b>, útil si la imagen sale torcida.',
+        position: 'right',
+        onEnter: () => document.querySelector('.drawer-left').classList.add('open'),
+        onLeave: () => document.querySelector('.drawer-left').classList.remove('open')
+      },
+      {
+        selector: '#btnFlipCamera',
+        text: 'En la pestaña derecha tienes el botón para <b>Voltear la cámara</b> (cambiar entre frontal y trasera en móviles).',
+        position: 'left',
+        onEnter: () => document.querySelector('.drawer-right').classList.add('open'),
+        onLeave: () => document.querySelector('.drawer-right').classList.remove('open')
+      },
+      {
+        selector: '#btnSettings',
+        text: 'En <b>Ajustes</b> puedes cambiar manualmente la cámara a usar. Además, la aplicación cuenta con <b>Rotación Automática por IA</b> que girará la cámara sola si detecta que tu rostro está volteado.',
         position: 'bottom'
       },
       {
         selector: '#btnRegister',
-        text: 'Si eres nuevo, presiona aquí. El código de estudiante <b>puedes escribirlo manualmente o escanearlo usando el código de barras/QR de tu carnet</b>.',
-        position: 'bottom'
+        secondarySelector: '.video-wrapper',
+        text: '<b>Registro:</b> Si eres nuevo presiona aquí. Verás este <b>óvalo verde</b> donde debes ubicar tu rostro. Tienes un límite de <b>60 segundos</b> para leer el código de estudiante y luego <b>90 segundos</b> para que la IA capture tu rostro.',
+        position: 'bottom',
+        onEnter: () => document.getElementById('faceGuide').classList.add('active'),
+        onLeave: () => document.getElementById('faceGuide').classList.remove('active')
       },
       {
         selector: '#btnLogin',
-        text: 'Si ya estás registrado, presiona aquí para que la IA escanee tu rostro y valide tu ingreso.',
-        position: 'bottom'
+        secondarySelector: '.video-wrapper',
+        text: '<b>Ingreso:</b> Si ya estás registrado, presiona aquí. El sistema escaneará tu rostro en el óvalo y tendrás un límite de <b>30 segundos</b> antes de que se cancele automáticamente por inactividad.',
+        position: 'bottom',
+        onEnter: () => document.getElementById('faceGuide').classList.add('active'),
+        onLeave: () => document.getElementById('faceGuide').classList.remove('active')
       },
       {
         selector: '#btnToggleFilters',
@@ -1311,12 +1343,24 @@ class InteractiveTour {
   }
 
   endTour() {
+    // Call onLeave for current step if exists
+    if (this.steps[this.currentStepIndex] && this.steps[this.currentStepIndex].onLeave) {
+      this.steps[this.currentStepIndex].onLeave();
+    }
+    
     this.overlay.classList.add('hidden');
     this.tooltip.classList.add('hidden');
     if (this.activeElement) {
       this.activeElement.classList.remove('tour-highlight');
       this.activeElement = null;
     }
+    
+    // Reset SVG mask holes just in case
+    const hole1 = document.getElementById('tourHole1');
+    const hole2 = document.getElementById('tourHole2');
+    if (hole1) { hole1.setAttribute('width', '0'); hole1.setAttribute('height', '0'); }
+    if (hole2) { hole2.setAttribute('width', '0'); hole2.setAttribute('height', '0'); }
+
     document.body.style.overflow = 'auto'; // Restaurar scroll
     localStorage.setItem('tour_visto', 'true');
   }
@@ -1324,45 +1368,80 @@ class InteractiveTour {
   showStep() {
     if (this.activeElement) {
       this.activeElement.classList.remove('tour-highlight');
+      if (this.steps[this.currentStepIndex] && this.steps[this.currentStepIndex].secondarySelector) {
+        const sec = document.querySelector(this.steps[this.currentStepIndex].secondarySelector);
+        if (sec) sec.classList.remove('tour-highlight');
+      }
     }
 
     const step = this.steps[this.currentStepIndex];
-    this.activeElement = document.querySelector(step.selector);
     
-    if (!this.activeElement) {
-      console.warn('Tour: Element not found:', step.selector);
-      this.nextStep(); // Skip if missing
-      return;
+    if (step.onEnter) {
+      step.onEnter();
     }
-
-    // Scroll to element
-    this.activeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-    // Highlight
-    this.activeElement.classList.add('tour-highlight');
-
-    // Update Text
-    this.textEl.innerHTML = step.text;
-    this.indicatorEl.textContent = `Paso ${this.currentStepIndex + 1}/${this.steps.length}`;
     
-    // Buttons state
-    this.btnPrev.style.display = this.currentStepIndex === 0 ? 'none' : 'block';
-    this.btnNext.textContent = this.currentStepIndex === this.steps.length - 1 ? 'Finalizar' : 'Siguiente';
-
-    // Update Mask
+    // Esperar a que las animaciones css terminen (ej. cajones abriéndose)
     setTimeout(() => {
-      const mask = document.getElementById('tourMask');
-      if (mask && this.activeElement) {
+      this.activeElement = document.querySelector(step.selector);
+      
+      if (!this.activeElement) {
+        console.warn('Tour: Element not found:', step.selector);
+        this.nextStep(); // Skip if missing
+        return;
+      }
+
+      // Scroll to element
+      this.activeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Highlight
+      this.activeElement.classList.add('tour-highlight');
+
+      // Update Text
+      this.textEl.innerHTML = step.text;
+      this.indicatorEl.textContent = `Paso ${this.currentStepIndex + 1}/${this.steps.length}`;
+      
+      // Buttons state
+      this.btnPrev.style.display = this.currentStepIndex === 0 ? 'none' : 'block';
+      this.btnNext.textContent = this.currentStepIndex === this.steps.length - 1 ? 'Finalizar' : 'Siguiente';
+
+      // Update SVG Mask
+      const hole1 = document.getElementById('tourHole1');
+      const hole2 = document.getElementById('tourHole2');
+      
+      if (hole1 && this.activeElement) {
         const rect = this.activeElement.getBoundingClientRect();
-        mask.style.top = `${rect.top - 5}px`;
-        mask.style.left = `${rect.left - 5}px`;
-        mask.style.width = `${rect.width + 10}px`;
-        mask.style.height = `${rect.height + 10}px`;
+        hole1.setAttribute('x', rect.left - 5);
+        hole1.setAttribute('y', rect.top - 5);
+        hole1.setAttribute('width', rect.width + 10);
+        hole1.setAttribute('height', rect.height + 10);
+        
         const style = window.getComputedStyle(this.activeElement);
-        mask.style.borderRadius = style.borderRadius !== '0px' ? style.borderRadius : '8px';
+        let rx = style.borderRadius !== '0px' ? parseInt(style.borderRadius) : 8;
+        if (isNaN(rx)) rx = 8;
+        hole1.setAttribute('rx', rx);
+        
+        if (step.secondarySelector && hole2) {
+          const secondary = document.querySelector(step.secondarySelector);
+          if (secondary) {
+            secondary.classList.add('tour-highlight');
+            const rect2 = secondary.getBoundingClientRect();
+            hole2.setAttribute('x', rect2.left - 5);
+            hole2.setAttribute('y', rect2.top - 5);
+            hole2.setAttribute('width', rect2.width + 10);
+            hole2.setAttribute('height', rect2.height + 10);
+            
+            const style2 = window.getComputedStyle(secondary);
+            let rx2 = style2.borderRadius !== '0px' ? parseInt(style2.borderRadius) : 8;
+            if (isNaN(rx2)) rx2 = 8;
+            hole2.setAttribute('rx', rx2);
+          }
+        } else if (hole2) {
+          hole2.setAttribute('width', '0');
+          hole2.setAttribute('height', '0');
+        }
       }
       this.positionTooltip(step.position);
-    }, 300); // Esperar scroll
+    }, 450); // 450ms asegura que el drawer (CSS transition 0.4s) terminó de abrirse
   }
 
   positionTooltip(preferredPosition) {
@@ -1398,6 +1477,10 @@ class InteractiveTour {
   }
 
   nextStep() {
+    if (this.steps[this.currentStepIndex] && this.steps[this.currentStepIndex].onLeave) {
+      this.steps[this.currentStepIndex].onLeave();
+    }
+    
     if (this.currentStepIndex < this.steps.length - 1) {
       this.currentStepIndex++;
       this.showStep();
@@ -1407,6 +1490,10 @@ class InteractiveTour {
   }
 
   prevStep() {
+    if (this.steps[this.currentStepIndex] && this.steps[this.currentStepIndex].onLeave) {
+      this.steps[this.currentStepIndex].onLeave();
+    }
+    
     if (this.currentStepIndex > 0) {
       this.currentStepIndex--;
       this.showStep();
