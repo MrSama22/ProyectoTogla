@@ -1246,5 +1246,185 @@ if (btnClear) {
 
 renderTable();
 
+// ==========================================
+// SISTEMA DE TOUR INTERACTIVO (GLASSMORPHISM)
+// ==========================================
+class InteractiveTour {
+  constructor() {
+    this.steps = [
+      {
+        selector: '.video-wrapper',
+        text: 'Esta es la cámara. Haz <b>doble clic/pellizco</b> para el zoom. Si despliegas las pestañas ocultas en los bordes, verás controles para <b>Girar</b> o <b>Voltear</b> la cámara. (Puedes cambiar de cámara en Ajustes ⚙️).',
+        position: 'bottom'
+      },
+      {
+        selector: '#btnRegister',
+        text: 'Si eres nuevo, presiona aquí. El código de estudiante <b>puedes escribirlo manualmente o escanearlo usando el código de barras/QR de tu carnet</b>.',
+        position: 'bottom'
+      },
+      {
+        selector: '#btnLogin',
+        text: 'Si ya estás registrado, presiona aquí para que la IA escanee tu rostro y valide tu ingreso.',
+        position: 'bottom'
+      },
+      {
+        selector: '#btnToggleFilters',
+        text: 'Despliega este menú para buscar ingresos por nombre, código de estudiante o rango de fechas.',
+        position: 'top'
+      },
+      {
+        selector: '.table-responsive',
+        text: 'Aquí aparecerá en tiempo real el historial de todas las personas que han ingresado.',
+        position: 'top'
+      }
+    ];
+    this.currentStepIndex = 0;
+    
+    this.overlay = document.getElementById('tourOverlay');
+    this.tooltip = document.getElementById('tourTooltip');
+    this.textEl = document.getElementById('tourText');
+    this.indicatorEl = document.getElementById('tourStepIndicator');
+    this.btnNext = document.getElementById('btnTourNext');
+    this.btnPrev = document.getElementById('btnTourPrev');
+    this.btnSkip = document.getElementById('btnTourSkip');
+    
+    this.activeElement = null;
 
-window.addEventListener('load', initApp);
+    if (!this.overlay || !this.tooltip) return;
+
+    this.btnNext.addEventListener('click', () => this.nextStep());
+    this.btnPrev.addEventListener('click', () => this.prevStep());
+    this.btnSkip.addEventListener('click', () => this.endTour());
+    
+    // Check if it's the first visit
+    if (!localStorage.getItem('tour_visto')) {
+      setTimeout(() => this.startTour(), 1000); // Pequeño delay para que cargue la app
+    }
+  }
+
+  startTour() {
+    this.currentStepIndex = 0;
+    this.overlay.classList.remove('hidden');
+    this.tooltip.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Evitar scroll manual durante el tour
+    this.showStep();
+  }
+
+  endTour() {
+    this.overlay.classList.add('hidden');
+    this.tooltip.classList.add('hidden');
+    if (this.activeElement) {
+      this.activeElement.classList.remove('tour-highlight');
+      this.activeElement = null;
+    }
+    document.body.style.overflow = 'auto'; // Restaurar scroll
+    localStorage.setItem('tour_visto', 'true');
+  }
+
+  showStep() {
+    if (this.activeElement) {
+      this.activeElement.classList.remove('tour-highlight');
+    }
+
+    const step = this.steps[this.currentStepIndex];
+    this.activeElement = document.querySelector(step.selector);
+    
+    if (!this.activeElement) {
+      console.warn('Tour: Element not found:', step.selector);
+      this.nextStep(); // Skip if missing
+      return;
+    }
+
+    // Scroll to element
+    this.activeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    // Highlight
+    this.activeElement.classList.add('tour-highlight');
+
+    // Update Text
+    this.textEl.innerHTML = step.text;
+    this.indicatorEl.textContent = `Paso ${this.currentStepIndex + 1}/${this.steps.length}`;
+    
+    // Buttons state
+    this.btnPrev.style.display = this.currentStepIndex === 0 ? 'none' : 'block';
+    this.btnNext.textContent = this.currentStepIndex === this.steps.length - 1 ? 'Finalizar' : 'Siguiente';
+
+    // Update Mask
+    setTimeout(() => {
+      const mask = document.getElementById('tourMask');
+      if (mask && this.activeElement) {
+        const rect = this.activeElement.getBoundingClientRect();
+        mask.style.top = `${rect.top - 5}px`;
+        mask.style.left = `${rect.left - 5}px`;
+        mask.style.width = `${rect.width + 10}px`;
+        mask.style.height = `${rect.height + 10}px`;
+        const style = window.getComputedStyle(this.activeElement);
+        mask.style.borderRadius = style.borderRadius !== '0px' ? style.borderRadius : '8px';
+      }
+      this.positionTooltip(step.position);
+    }, 300); // Esperar scroll
+  }
+
+  positionTooltip(preferredPosition) {
+    if (!this.activeElement) return;
+    const rect = this.activeElement.getBoundingClientRect();
+    const tooltipRect = this.tooltip.getBoundingClientRect();
+    
+    let top = 0;
+    let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
+
+    // Evitar que se salga por los lados
+    if (left < 10) left = 10;
+    if (left + tooltipRect.width > window.innerWidth - 10) {
+      left = window.innerWidth - tooltipRect.width - 10;
+    }
+
+    if (preferredPosition === 'bottom') {
+      top = rect.bottom + 15;
+      // Si se sale por abajo, ponerlo arriba
+      if (top + tooltipRect.height > window.innerHeight) {
+        top = rect.top - tooltipRect.height - 15;
+      }
+    } else {
+      top = rect.top - tooltipRect.height - 15;
+      // Si se sale por arriba, ponerlo abajo
+      if (top < 10) {
+        top = rect.bottom + 15;
+      }
+    }
+
+    this.tooltip.style.top = `${top}px`;
+    this.tooltip.style.left = `${left}px`;
+  }
+
+  nextStep() {
+    if (this.currentStepIndex < this.steps.length - 1) {
+      this.currentStepIndex++;
+      this.showStep();
+    } else {
+      this.endTour();
+    }
+  }
+
+  prevStep() {
+    if (this.currentStepIndex > 0) {
+      this.currentStepIndex--;
+      this.showStep();
+    }
+  }
+}
+
+// Inicializar el tour cuando cargue la app
+let appTour = null;
+window.addEventListener('load', () => {
+  initApp();
+  appTour = new InteractiveTour();
+  
+  // Conectar botón de ayuda
+  const btnHelp = document.getElementById('btnHelp');
+  if (btnHelp) {
+    btnHelp.addEventListener('click', () => {
+      if (appTour) appTour.startTour();
+    });
+  }
+});

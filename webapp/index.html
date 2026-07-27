@@ -15,6 +15,7 @@
   <main class="app-container">
     <header style="text-align: center;">
         <div class="header-top" style="justify-content: center; position: relative;">
+          <button id="btnHelp" class="btn-icon" title="Ayuda Interactiva" style="position: absolute; left: 10px;">❓</button>
           <img src="/logo-colegio.png" alt="Colegio Santo Domingo Bilingüe" style="max-height: 80px; object-fit: contain;" />
           <button id="btnSettings" class="btn-icon" title="Configurar Cámara" style="position: absolute; right: 0;">⚙️</button>
         </div>
@@ -194,6 +195,22 @@
             🗑️ Borrar Todos los Registros
           </button>
         </div>
+      </div>
+    </div>
+
+    <!-- Tour Interactivo -->
+    <div id="tourOverlay" class="tour-overlay hidden">
+      <div id="tourMask" class="tour-mask"></div>
+    </div>
+    <div id="tourTooltip" class="tour-tooltip hidden">
+      <div class="tour-header">
+        <span id="tourStepIndicator" style="font-size: 0.85rem; font-weight: bold; color: var(--secondary);">Paso 1/5</span>
+        <button id="btnTourSkip" class="btn-icon" style="font-size: 0.8rem; padding: 2px;">❌</button>
+      </div>
+      <p id="tourText" style="margin: 10px 0; font-size: 0.95rem; line-height: 1.4;"></p>
+      <div class="tour-actions" style="display: flex; justify-content: space-between; margin-top: 15px;">
+        <button id="btnTourPrev" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.85rem;">Anterior</button>
+        <button id="btnTourNext" class="btn btn-primary" style="padding: 6px 12px; font-size: 0.85rem;">Siguiente</button>
       </div>
     </div>
 

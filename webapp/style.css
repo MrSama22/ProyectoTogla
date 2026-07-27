@@ -98,8 +98,6 @@ header {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  position: absolute;
-  right: 0;
   transition: transform 0.3s;
 }
 
@@ -488,6 +486,71 @@ h1 {
 .text-success { color: var(--success); }
 .text-warning { color: var(--warning); }
 .text-danger { color: var(--danger); }
+
+/* --- Tour Interactivo (Glassmorphism) --- */
+.tour-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9000;
+  opacity: 1;
+  transition: opacity 0.3s;
+  pointer-events: auto; /* Bloquea clics al fondo */
+}
+
+.tour-mask {
+  position: absolute;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.85); /* Sombra oscura masiva que sirve de fondo */
+  pointer-events: none; /* Deja pasar clicks al overlay padre */
+  transition: all 0.4s ease;
+  z-index: 9001;
+  box-sizing: content-box;
+}
+
+.tour-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tour-highlight {
+  /* Añadir un ligero brillo al elemento activo si se desea, aunque no es estricto */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4) !important;
+  transition: box-shadow 0.3s;
+}
+
+.tour-tooltip {
+  position: fixed;
+  z-index: 9002;
+  background: rgba(0, 40, 69, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--secondary);
+  border-radius: 16px;
+  padding: 20px;
+  width: 90%;
+  max-width: 320px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(214, 40, 40, 0.3);
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s, top 0.4s ease, left 0.4s ease;
+  pointer-events: auto;
+}
+
+.tour-tooltip.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+.tour-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 5px;
+}
 
 /* Modal Styles */
 .modal-overlay {
