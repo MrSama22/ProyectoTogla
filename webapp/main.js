@@ -8,21 +8,7 @@ let modoActual = 'idle'; // 'idle', 'registro', 'validacion'
 let dbEstudiantes = JSON.parse(localStorage.getItem('estudiantes')) || [];
 let dbIngresos = JSON.parse(localStorage.getItem('ingresos')) || [];
 
-// Generar datos de prueba si el historial está vacío (Solicitud del usuario)
-if (dbIngresos.length === 0) {
-  const now = new Date();
-  for (let i = 0; i < 10; i++) {
-    // Restar un número aleatorio de horas para simular ingresos recientes y de días anteriores (hasta 15 días atrás)
-    const randomHours = Math.floor(Math.random() * (24 * 15));
-    const randomDate = new Date(now.getTime() - (randomHours * 60 * 60 * 1000));
-    dbIngresos.push({
-      nombre: `Estudiante Prueba ${i+1}`,
-      qr: `8000${i}X`,
-      timestamp: randomDate.toISOString()
-    });
-  }
-  localStorage.setItem('ingresos', JSON.stringify(dbIngresos));
-}
+// Generación automática de datos de prueba desactivada para producción.
 
 // Limpieza automática de registros corruptos (Ej: cuando el QR se leyó en blanco por error)
 const longitudOriginal = dbEstudiantes.length;
