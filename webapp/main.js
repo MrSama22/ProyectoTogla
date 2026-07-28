@@ -2,6 +2,17 @@ import * as faceapi from 'face-api.js';
 import jsQR from 'jsqr';
 
 // ==========================================
+// CONFIGURACIÓN DE INTELIGENCIA ARTIFICIAL (Modifica estos valores para experimentar)
+// ==========================================
+// Qué tan seguro debe estar el sistema de que está viendo una cara (0.1 a 1.0).
+// Si lo subes mucho, no detectará caras en celulares con mala cámara.
+const UMBRAL_DETECCION_ROSTRO = 0.65; 
+
+// Qué tanta diferencia permite al comparar dos caras (Más cerca a 0 es más ESTRICTO).
+// 0.45 es muy seguro. 0.60 es relajado y podría confundir personas similares.
+const UMBRAL_DISTANCIA_RECONOCIMIENTO = 0.45;
+
+// ==========================================
 // ESTADO GLOBALES
 // ==========================================
 let modoActual = 'idle'; // 'idle', 'registro', 'validacion'
@@ -461,8 +472,8 @@ btnLogin.addEventListener('click', async () => {
     const labeledDescriptors = dbEstudiantes.map(est => {
       return new faceapi.LabeledFaceDescriptors(est.nombre, [new Float32Array(est.descriptor)]);
     });
-    // 0.45 es mucho más estricto que 0.60. Evita falsos positivos.
-    currentFaceMatcher = new faceapi.FaceMatcher(labeledDescriptors, 0.45);
+    // Usamos la variable global para fácil configuración
+    currentFaceMatcher = new faceapi.FaceMatcher(labeledDescriptors, UMBRAL_DISTANCIA_RECONOCIMIENTO);
   } else {
     currentFaceMatcher = null;
   }
@@ -590,8 +601,8 @@ function iniciarEscaneoFacial(callback) {
         offCtx.drawImage(video, sx, sy, sw, sh, -video.videoWidth / 2, -video.videoHeight / 2, video.videoWidth, video.videoHeight);
         offCtx.restore();
         
-        // Ejecutar inferencia usando el modelo ultra-rápido (reducido a 0.65 para evitar fallos en móviles con cámaras menos nítidas o iluminación pobre)
-        const options = new faceapi.TinyFaceDetectorOptions({ inputSize: 320, scoreThreshold: 0.65 });
+        // Ejecutar inferencia usando la variable global
+        const options = new faceapi.TinyFaceDetectorOptions({ inputSize: 320, scoreThreshold: UMBRAL_DETECCION_ROSTRO });
         detection = await faceapi.detectSingleFace(offscreenCanvas, options).withFaceLandmarks().withFaceDescriptor();
         
         if (detection) {
