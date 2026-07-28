@@ -738,13 +738,26 @@ btnFlipCamera.addEventListener('click', async () => {
   const stream = video.srcObject;
   if (stream) stream.getTracks().forEach(track => track.stop());
   camaraActiva = false;
-  
   showToast("Cambiando cámara...", "warning");
   
   // Cerrar automáticamente
   document.querySelector('.drawer-right').classList.remove('open');
   
   await startCamera();
+  
+  // Si estábamos a la mitad de un registro o ingreso, hay que reiniciar el motor
+  if (modoActual === 'registro') {
+    if (qrDataTemporal) {
+      // Ya leyó el QR, estaba buscando el rostro
+      iniciarEscaneoFacial(registrarRostro);
+    } else {
+      // Estaba buscando el QR
+      startQRScanner(onQRRegistered);
+    }
+  } else if (modoActual === 'validacion') {
+    startQRScanner(onQRValidated);
+    iniciarEscaneoFacial(validarRostro);
+  }
 });
 
 // ==========================================
