@@ -496,10 +496,22 @@ async function validarRostro(detection, faceDescriptor) {
   
   const box = detection.detection.box;
   const faceWidth = box.width;
-  if (faceWidth < video.videoWidth * 0.15) {
-    feedbackText.innerHTML = "<span class='text-warning'>⚠️ Acércate más</span>";
+  
+  const minW = video.videoWidth * 0.18;
+  const maxW = video.videoWidth * 0.65;
+  
+  if (faceWidth < minW) {
+    feedbackText.innerHTML = "<span class='text-warning'>⚠️ Acércate un poco más</span>";
+    faceGuide.classList.remove('success');
     return;
   }
+  if (faceWidth > maxW) {
+    feedbackText.innerHTML = "<span class='text-warning'>⚠️ Aléjate un poco</span>";
+    faceGuide.classList.remove('success');
+    return;
+  }
+  
+  faceGuide.classList.add('success');
   
   feedbackText.innerHTML = "Analizando Rostro...";
   
