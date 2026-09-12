@@ -26,6 +26,7 @@ sqlite3.register_converter("array", convert_array)
 def init_db(db_name="antigravity.db"):
     """
     Inicializa la base de datos y crea la tabla estudiantes si no existe.
+    Garantiza compatibilidad agregando columnas de grado y grupo sin alterar datos existentes.
     """
     conn = sqlite3.connect(db_name, detect_types=sqlite3.PARSE_DECLTYPES)
     cursor = conn.cursor()
@@ -37,17 +38,25 @@ def init_db(db_name="antigravity.db"):
             face_encoding array NOT NULL
         )
     ''')
+    # Verificar y agregar columnas opcionales grado y grupo
+    cursor.execute("PRAGMA table_info(estudiantes)")
+    columnas = [col[1] for col in cursor.fetchall()]
+    if 'grado' not in columnas:
+        cursor.execute('ALTER TABLE estudiantes ADD COLUMN grado TEXT')
+    if 'grupo' not in columnas:
+        cursor.execute('ALTER TABLE estudiantes ADD COLUMN grupo TEXT')
+
     conn.commit()
     conn.close()
 
 def get_student_by_qr(qr_data, db_name="antigravity.db"):
     """
     Busca un estudiante por los datos de su código QR.
-    Retorna (nombre, face_encoding) o None si no existe.
+    Retorna (nombre, face_encoding, grado, grupo) o None si no existe.
     """
     conn = sqlite3.connect(db_name, detect_types=sqlite3.PARSE_DECLTYPES)
     cursor = conn.cursor()
-    cursor.execute('SELECT nombre, face_encoding FROM estudiantes WHERE qr_data = ?', (qr_data,))
+    cursor.execute('SELECT nombre, face_encoding, grado, grupo FROM estudiantes WHERE qr_data = ?', (qr_data,))
     result = cursor.fetchone()
     conn.close()
     return result
@@ -64,15 +73,17 @@ def get_all_students(db_name="antigravity.db"):
     conn.close()
     return results
 
-def insert_student(nombre, qr_data, face_encoding, db_name="antigravity.db"):
+def insert_student(nombre, qr_data, face_encoding, grado=None, grupo=None, db_name="antigravity.db"):
     """
-    Inserta un nuevo estudiante en la base de datos.
+    Inserta un nuevo estudiante en la base de datos con nombre, grado y grupo.
     """
     conn = sqlite3.connect(db_name, detect_types=sqlite3.PARSE_DECLTYPES)
     cursor = conn.cursor()
     try:
-        cursor.execute('INSERT INTO estudiantes (nombre, qr_data, face_encoding) VALUES (?, ?, ?)',
-                       (nombre, qr_data, face_encoding))
+        cursor.execute('''
+            INSERT INTO estudiantes (nombre, qr_data, face_encoding, grado, grupo)
+            VALUES (?, ?, ?, ?, ?)
+        ''', (nombre, qr_data, face_encoding, str(grado) if grado is not None else None, str(grupo) if grupo is not None else None))
         conn.commit()
         success = True
     except sqlite3.IntegrityError:

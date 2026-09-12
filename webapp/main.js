@@ -1,5 +1,77 @@
 import * as faceapi from 'face-api.js';
 import jsQR from 'jsqr';
+import estudiantesData from './estudiantes.json';
+
+// ==========================================
+// BASE DE DATOS DE ESTUDIANTES OFICIALES
+// ==========================================
+// Mapa optimizado para búsqueda instantánea O(1) por documento
+const mapaEstudiantesOficiales = new Map();
+if (Array.isArray(estudiantesData)) {
+  estudiantesData.forEach(est => {
+    if (est && est.documento) {
+      mapaEstudiantesOficiales.set(String(est.documento).trim(), est);
+    }
+  });
+}
+
+/**
+ * Busca un estudiante por el código escaneado del QR o código manual.
+ * Soporta coincidencia directa por documento, parámetros en URL de boletín,
+ * decodificación Base64 y extracción de 10 dígitos.
+ */
+function buscarEstudiantePorCodigo(codigoRaw) {
+  if (!codigoRaw) return null;
+  const codigo = String(codigoRaw).trim();
+  if (!codigo) return null;
+
+  // 1. Coincidencia directa con el documento exacto
+  if (mapaEstudiantesOficiales.has(codigo)) {
+    return mapaEstudiantesOficiales.get(codigo);
+  }
+
+  // 2. Si el QR es una URL (ej. boletines con ?...&codigo=...), extraer parámetro 'codigo'
+  if (codigo.includes('http://') || codigo.includes('https://') || codigo.includes('codigo=')) {
+    try {
+      const matchParam = codigo.match(/[?&]codigo=([^&]+)/);
+      if (matchParam && matchParam[1]) {
+        const paramVal = decodeURIComponent(matchParam[1]);
+        try {
+          const b64Decoded = atob(paramVal).trim();
+          if (mapaEstudiantesOficiales.has(b64Decoded)) {
+            return mapaEstudiantesOficiales.get(b64Decoded);
+          }
+        } catch (e) {}
+        if (mapaEstudiantesOficiales.has(paramVal)) {
+          return mapaEstudiantesOficiales.get(paramVal);
+        }
+      }
+    } catch (e) {}
+  }
+
+  // 3. Probar si el código está codificado en Base64 directo
+  try {
+    const dec = atob(codigo).trim();
+    if (mapaEstudiantesOficiales.has(dec)) {
+      return mapaEstudiantesOficiales.get(dec);
+    }
+  } catch (e) {}
+
+  // 4. Buscar si contiene una secuencia de 10 dígitos continuos
+  const diezDigitos = codigo.match(/\b\d{10}\b/);
+  if (diezDigitos && mapaEstudiantesOficiales.has(diezDigitos[0])) {
+    return mapaEstudiantesOficiales.get(diezDigitos[0]);
+  }
+
+  // 5. Búsqueda por coincidencia parcial (por si viene con ceros a la izquierda o sufijo)
+  for (const [doc, est] of mapaEstudiantesOficiales.entries()) {
+    if (codigo.endsWith(doc) || doc.endsWith(codigo)) {
+      return est;
+    }
+  }
+
+  return null;
+}
 
 // ==========================================
 // CONFIGURACIÓN DE INTELIGENCIA ARTIFICIAL (Modifica estos valores para experimentar)
@@ -19,7 +91,25 @@ let modoActual = 'idle'; // 'idle', 'registro', 'validacion'
 let dbEstudiantes = JSON.parse(localStorage.getItem('estudiantes')) || [];
 let dbIngresos = JSON.parse(localStorage.getItem('ingresos')) || [];
 
-// Generación automática de datos de prueba desactivada para producción.
+// Actualización retroactiva no destructiva: si existen registros anteriores sin grado o con nombre temporal, sincronizarlos
+if (dbEstudiantes && dbEstudiantes.length > 0) {
+  let huboActualizacion = false;
+  dbEstudiantes.forEach(est => {
+    if ((!est.grado || est.nombre.startsWith('Estudiante_')) && est.qr) {
+      const oficial = buscarEstudiantePorCodigo(est.qr);
+      if (oficial) {
+        est.nombre = oficial.nombre;
+        est.documento = oficial.documento;
+        est.grado = oficial.grado;
+        est.grupo = oficial.grupo;
+        huboActualizacion = true;
+      }
+    }
+  });
+  if (huboActualizacion) {
+    localStorage.setItem('estudiantes', JSON.stringify(dbEstudiantes));
+  }
+}
 
 // Limpieza automática de registros corruptos (Ej: cuando el QR se leyó en blanco por error)
 const longitudOriginal = dbEstudiantes.length;
@@ -31,6 +121,7 @@ if (dbEstudiantes.length !== longitudOriginal) {
 
 let camaraActiva = false;
 let qrDataTemporal = null;
+let estudianteTemporal = null; // Guarda el estudiante oficial identificado en el registro
 let capturasRegistro = [];
 let scanInterval = null;
 let scanQRInterval = null;
@@ -319,6 +410,7 @@ btnRegister.addEventListener('click', async () => {
   appState.textContent = 'Modo: Registro de Estudiante';
   capturasRegistro = [];
   qrDataTemporal = null;
+  estudianteTemporal = null;
   
   // Cambiar botones UI
   btnLogin.innerHTML = `<span class="icon">🚫</span> Cancelar`;
@@ -360,12 +452,23 @@ function onQRRegistered(decodedText) {
   }
   
   qrDataTemporal = decodedText;
-  showToast(`Código Leído: ${decodedText}`, "success");
+  
+  // Buscar en el listado de estudiantes oficiales
+  estudianteTemporal = buscarEstudiantePorCodigo(decodedText);
+  
+  if (estudianteTemporal) {
+    const gradoTexto = (estudianteTemporal.grado !== undefined && estudianteTemporal.grado !== null && estudianteTemporal.grado !== '')
+      ? `Grado ${estudianteTemporal.grado}° ${estudianteTemporal.grupo || ''}`.trim()
+      : '';
+    showToast(`✅ Estudiante: ${estudianteTemporal.nombre} (${gradoTexto})`, "success");
+    feedbackText.innerHTML = `Paso 2: Hola <strong style="color:var(--secondary);">${estudianteTemporal.nombre}</strong> (${gradoTexto})<br>Mire a la cámara para guardar su rostro`;
+  } else {
+    showToast(`Código Leído: ${decodedText}`, "success");
+    feedbackText.innerHTML = "Paso 2: Mire a la cámara para guardar su rostro";
+  }
   
   clearInterval(scanQRInterval); // Detener QR
   manualCodeContainer.classList.add('hidden'); // Ocultar input manual
-  
-  feedbackText.innerHTML = "Paso 2: Mire a la cámara para guardar su rostro";
   
   // Mostrar la guía visual del rostro
   faceGuide.classList.add('active');
@@ -412,8 +515,16 @@ async function registrarRostro(detection, faceDescriptor) {
       meanDescriptor[i] = sum / capturasRegistro.length;
     }
     
+    const nombreFinal = estudianteTemporal ? estudianteTemporal.nombre : `Estudiante_${qrDataTemporal}`;
+    const docFinal = estudianteTemporal ? estudianteTemporal.documento : qrDataTemporal;
+    const gradoFinal = estudianteTemporal ? estudianteTemporal.grado : '';
+    const grupoFinal = estudianteTemporal ? estudianteTemporal.grupo : '';
+
     const newStudent = {
-      nombre: `Estudiante_${qrDataTemporal}`,
+      nombre: nombreFinal,
+      documento: docFinal,
+      grado: gradoFinal,
+      grupo: grupoFinal,
       qr: qrDataTemporal,
       descriptor: Array.from(meanDescriptor),
       timestamp: new Date().toISOString()
@@ -424,7 +535,8 @@ async function registrarRostro(detection, faceDescriptor) {
     
     if (typeof renderTable === 'function') renderTable();
     
-    showToast(`¡Estudiante Registrado con Éxito!`, "success");
+    const gradoInfo = gradoFinal !== '' ? ` (${gradoFinal}° ${grupoFinal})` : '';
+    showToast(`¡${nombreFinal}${gradoInfo} Registrado con Éxito!`, "success");
     detenerProcesos();
   } else {
     showToast(`Captura ${capturasRegistro.length}/3`, "warning");
@@ -491,7 +603,10 @@ function onQRValidated(decodedText) {
   const estudiante = dbEstudiantes.find(e => e.qr === decodedText);
   if (estudiante) {
     registrarIngreso(estudiante);
-    showToast(`✅ ¡INGRESO EXITOSO: ${estudiante.nombre}! (Por Carnet)`, "success");
+    const gradoInfo = (estudiante.grado !== undefined && estudiante.grado !== null && estudiante.grado !== '')
+      ? ` (${estudiante.grado}° ${estudiante.grupo || ''})`.trim()
+      : '';
+    showToast(`✅ ¡INGRESO EXITOSO: ${estudiante.nombre}${gradoInfo}! (Por Carnet)`, "success");
     detenerProcesos();
   } else {
     const now = Date.now();
@@ -531,7 +646,10 @@ async function validarRostro(detection, faceDescriptor) {
   if (bestMatch.label !== 'unknown') {
     const estudiante = dbEstudiantes.find(e => e.nombre === bestMatch.label);
     if (estudiante) registrarIngreso(estudiante);
-    showToast(`✅ ¡INGRESO EXITOSO: ${bestMatch.label}! (Por Rostro)`, "success");
+    const gradoInfo = (estudiante && estudiante.grado !== undefined && estudiante.grado !== null && estudiante.grado !== '')
+      ? ` (${estudiante.grado}° ${estudiante.grupo || ''})`.trim()
+      : '';
+    showToast(`✅ ¡INGRESO EXITOSO: ${bestMatch.label}${gradoInfo}! (Por Rostro)`, "success");
     detenerProcesos();
   } else {
     feedbackText.innerHTML = "<span class='text-danger'>❌ Rostro desconocido</span>";
@@ -726,6 +844,10 @@ function detenerProcesos() {
   
   // Limpiar el texto, pero la cámara sigue encendida
   feedbackText.innerHTML = "Cámara activa. Seleccione una acción.";
+  
+  // Limpiar variables temporales de registro
+  qrDataTemporal = null;
+  estudianteTemporal = null;
   
   // Limpiamos los rectángulos del canvas
   const ctx = canvas.getContext('2d');
@@ -1137,6 +1259,9 @@ function showToast(message, type = 'success') {
 function registrarIngreso(estudiante) {
   const ingreso = {
     nombre: estudiante.nombre,
+    documento: estudiante.documento || estudiante.qr,
+    grado: (estudiante.grado !== undefined && estudiante.grado !== null) ? estudiante.grado : '',
+    grupo: estudiante.grupo || '',
     qr: estudiante.qr,
     timestamp: new Date().toISOString()
   };
@@ -1186,6 +1311,9 @@ window.renderTable = function() {
     
     const code = ingreso.qr || '';
     const name = ingreso.nombre || '';
+    const grado = (ingreso.grado !== undefined && ingreso.grado !== null && ingreso.grado !== '')
+      ? `${ingreso.grado}° ${ingreso.grupo || ''}`.trim()
+      : '-';
     
     // Aplicar filtros de fecha y hora según el modo seleccionado
     const dateModeRadios = document.getElementsByName('dateMode');
@@ -1221,7 +1349,7 @@ window.renderTable = function() {
     }
     
     if (sName) {
-      if (!name.toLowerCase().includes(sName)) return;
+      if (!name.toLowerCase().includes(sName) && !grado.toLowerCase().includes(sName)) return;
     }
     
     if (sCode) {
@@ -1234,6 +1362,7 @@ window.renderTable = function() {
     tr.innerHTML = `
       <td>${dateStr}</td>
       <td>${name}</td>
+      <td><span class="badge-grado">${grado}</span></td>
       <td>${code}</td>
     `;
     tbody.appendChild(tr);

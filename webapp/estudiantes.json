@@ -1,0 +1,8396 @@
+[
+  {
+    "documento": "2024498502",
+    "nombre": "ARANDA SANABRIA LUNA ISABELLA",
+    "grado": 0,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024504496",
+    "nombre": "ARIZA MORA LUCIANA",
+    "grado": 0,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024521479",
+    "nombre": "CASTIBLANCO MORALES JHOSSUE MATIAS",
+    "grado": 0,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024107893",
+    "nombre": "DÍAZ TIBAQUIRA GABRIELA SOFÍA",
+    "grado": 0,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024130870",
+    "nombre": "RIOS ZAMBRANO JUAN JOSE",
+    "grado": 0,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024124876",
+    "nombre": "ACOSTA VEGA MATIAS",
+    "grado": 0,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024526474",
+    "nombre": "BELTRAN CHAPARRO CELESTE",
+    "grado": 0,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024355645",
+    "nombre": "CASTILLO ESCOBAR JUAN DAVID",
+    "grado": 0,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024414586",
+    "nombre": "GOMEZ PAYANENE TANIA ISABELLA",
+    "grado": 0,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024397603",
+    "nombre": "MORA CALDERON ELENA",
+    "grado": 0,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024104896",
+    "nombre": "GONZALEZ GALVIS GUADALUPE",
+    "grado": 0,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023408992",
+    "nombre": "PEREZ MORENO ANDREA VIOLETA",
+    "grado": 1,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024170830",
+    "nombre": "ALVAREZ ALVARADO IAN GABRIEL",
+    "grado": 1,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023835565",
+    "nombre": "AMAYA BENAVIDES HANNA SOFIA",
+    "grado": 1,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023679721",
+    "nombre": "LOPEZ DURAN ANTONELLA",
+    "grado": 1,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024527473",
+    "nombre": "PERDOMO SUAREZ SAMUEL JERONIMO",
+    "grado": 1,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023461939",
+    "nombre": "AMORTEGUI SANCHEZ MARIANA ISABELLA",
+    "grado": 1,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023940460",
+    "nombre": "FLOREZ ALVAREZ EIMMY VIOLETA",
+    "grado": 1,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024404596",
+    "nombre": "GARCIA REVOLLO JOSE GABRIEL",
+    "grado": 1,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023812588",
+    "nombre": "GONZÁLEZ PABÓN SARA VALENTINA",
+    "grado": 1,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023947453",
+    "nombre": "VALERO DIAZ SANTIAGO",
+    "grado": 1,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023734666",
+    "nombre": "ARIAS CASTILLO ANAMARIA",
+    "grado": 1,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024207793",
+    "nombre": "CALLEJAS ANACONA ALAN SAMUEL",
+    "grado": 1,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024369631",
+    "nombre": "ESCOBAR SANCHEZ ISABELLA",
+    "grado": 1,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023671729",
+    "nombre": "GARZON RAMIREZ MIA SALOMÉ",
+    "grado": 1,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024176824",
+    "nombre": "MEJIA HERRERA THIAGO",
+    "grado": 1,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024129871",
+    "nombre": "ORTIZ MATEO GUILLERMO ALEJANDRO",
+    "grado": 1,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024537463",
+    "nombre": "PADILLA DORADO JERONIMO",
+    "grado": 1,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024265735",
+    "nombre": "PINZON DELGADO SARA LUCIANA",
+    "grado": 1,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023404996",
+    "nombre": "ROJAS SOTO JUAN DAVID",
+    "grado": 1,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023619781",
+    "nombre": "SALAMANCA MUÑOZ NICOLL SOFIA",
+    "grado": 1,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023869531",
+    "nombre": "VERGARA OSPINA SAMUEL ANDRES",
+    "grado": 1,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023879521",
+    "nombre": "CAMELO MARIN EMANUEL",
+    "grado": 1,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024380620",
+    "nombre": "CEPEDA CASTILLO YULIETH ANDREA",
+    "grado": 1,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023948452",
+    "nombre": "GUERRERO OLARTE LUCIANA",
+    "grado": 1,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024421579",
+    "nombre": "LIZARAZO REYES MARTINA",
+    "grado": 1,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023580820",
+    "nombre": "MANRIQUE BOHÓRQUEZ MIGUEL ÁNGEL",
+    "grado": 1,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024291709",
+    "nombre": "ROZO GARCIA ALHY MATIAS",
+    "grado": 1,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023668732",
+    "nombre": "VELASQUEZ ACOSTA MARIA JOSE",
+    "grado": 1,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023557843",
+    "nombre": "ABRIL CASTELLANOS ALEJANDRO",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024202798",
+    "nombre": "BELLO GARZÓN DANNA ISABELLA",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024244756",
+    "nombre": "CALVO SEGURA MARIA DE LOS ANGELES",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024416584",
+    "nombre": "ESCOBAR AMAYA ELENA",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023571829",
+    "nombre": "GUEVARA SANCHEZ MEGHAN STEPHANIE",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024525475",
+    "nombre": "LUCENA PEREZ ALICE NATHALIA",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024443557",
+    "nombre": "MORA GARCIA JERONIMO SMITH",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024554446",
+    "nombre": "OJEDA ARIAS MATIAS",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023848552",
+    "nombre": "PÉREZ MORA VALERY SAMANTHA",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023769631",
+    "nombre": "RAMIREZ LOMBANA MARIANA CAMILA",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022206338",
+    "nombre": "ROJAS GUAYARA MARTIN",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024520480",
+    "nombre": "TALERO DIAZ EMILLY NATHALIA",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024270730",
+    "nombre": "VARGAS RIOS ANTONELLA",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022315186",
+    "nombre": "VELANDIA MORA DOMINIC",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024538462",
+    "nombre": "ZAMBRANO VALERO EMMANUEL",
+    "grado": 2,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022291210",
+    "nombre": "CAMACHO MARTINEZ GABRIELA",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024297703",
+    "nombre": "CUPITRA ZARATE MARTIN",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024419581",
+    "nombre": "FLOREZ GONZALEZ VICTORIA",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024272728",
+    "nombre": "GARCIA CASTRO ALEJANDRO",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023876524",
+    "nombre": "GARCIA ORJUELA PEDRO ALEJANDRO",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022296205",
+    "nombre": "GUTIERREZ MARTINEZ JUAN SEBASTIAN",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024480520",
+    "nombre": "HERRERA ALBA DIEGO EMANUEL",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023409991",
+    "nombre": "LEAL SANTAMARIA JERÓNIMO",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022005496",
+    "nombre": "MARTINEZ LOZANO EMMANUEL",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024379621",
+    "nombre": "MORENO GUTIERREZ ALEJANDRO",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022150365",
+    "nombre": "PRADA CABRERA ISABELLA",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023689711",
+    "nombre": "PRIETO CRUZ JUAN MARTIN",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023760640",
+    "nombre": "SALGADO FONSECA EMILIANO",
+    "grado": 2,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024543457",
+    "nombre": "BETANCOURT HENAO MILAN",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022001500",
+    "nombre": "CHACON SANCHEZ KEYLER DAVID",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024529471",
+    "nombre": "DAZA BUSTAMANTE MARIA CELESTE",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024473527",
+    "nombre": "GARCIA TORRES MARTIN",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023773627",
+    "nombre": "LLANOS MARROQUIN SALOME",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024475525",
+    "nombre": "MELO ABAUNZA MAIRA ALEJANDRA",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024366634",
+    "nombre": "OBANDO RODRIGUEZ SARA LUCIANA",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024181819",
+    "nombre": "ORTIZ AGUIRRE EMILIANO",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022384117",
+    "nombre": "OVALLE CASTRO VALERY SARAHI",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024254746",
+    "nombre": "RAMIREZ TRIANA JUAN DIEGO",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024112888",
+    "nombre": "URIBE BENITEZ JOSEPH",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024233767",
+    "nombre": "VARGAS NARANJO JUAN FELIPE",
+    "grado": 2,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024290710",
+    "nombre": "ALVARADO ROMERO JUAN FERNANDO",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024223777",
+    "nombre": "BARRETO PARRA MARIA ANTONIA",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023470930",
+    "nombre": "BOTON LARGO ARICK DALIAN",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024522478",
+    "nombre": "CACERES MONGUI SOL VICTORIA",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024283717",
+    "nombre": "DIAZ VELANDIA LUCIANA",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023719681",
+    "nombre": "DUARTE SANCHEZ MARTIN ANDRES",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023614786",
+    "nombre": "GONZALEZ GALVIS MARIA SALOME",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022133434",
+    "nombre": "LOPEZ ACUNA DUVAN DARIO",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024179821",
+    "nombre": "MARTINEZ SALAZAR JUAN DIEGO",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024216784",
+    "nombre": "PARRA GUTIERREZ LUIS ANGEL",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024422578",
+    "nombre": "PINZON RODRIGUEZ JOHAN ANDRES",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024348652",
+    "nombre": "PULIDO VARGAS MARIA JOSE",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024139861",
+    "nombre": "SAMUDIO DIAZ AMELIA",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024510490",
+    "nombre": "VARGAS TORRES THIAGO JHOSEP",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024423577",
+    "nombre": "ZULUAGA VARGAS NOA LUCIA",
+    "grado": 2,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023439961",
+    "nombre": "BAUTISTA ESCOBAR GABRIELA ALEJANDRA",
+    "grado": 2,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023950450",
+    "nombre": "CASTRO ARTUNDUAGA LIA VICTORIA",
+    "grado": 2,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024442558",
+    "nombre": "LOPEZ PINZON JOAQUIN ANDRES",
+    "grado": 2,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023843557",
+    "nombre": "MURCIA PEREZ JULIAN DAVID",
+    "grado": 2,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023731669",
+    "nombre": "OLAYA BEJARANO MARIA PAZ",
+    "grado": 2,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023440960",
+    "nombre": "ROA ANGEL MARIANA ALEJANDRA",
+    "grado": 2,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023756644",
+    "nombre": "SILVA CACERES AXEL SANTIAGO",
+    "grado": 2,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133382",
+    "nombre": "AGUDELO REYES SARA SOFIA",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024479521",
+    "nombre": "ARANZALES BERNAL JUAN DIEGO",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024171829",
+    "nombre": "ARBOLEDA LANCHEROS ADRIÁN",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024328672",
+    "nombre": "BAUTISTA QUIROZ JACOBO",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024175825",
+    "nombre": "BOHÓRQUEZ BURBANO LAURA VALENTINA",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024235765",
+    "nombre": "CABARICO ANGUITA SARAY ISABELLA",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024132868",
+    "nombre": "CASTIBLANCO RODRIGUEZ JHAMPOL ANDRES",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024367633",
+    "nombre": "CRUZ CARO JUAN PABLO",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024154846",
+    "nombre": "DIAZ PINZÓN JUAN FELIPE",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024236764",
+    "nombre": "FORERO HERRERA LUCIANA",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023855545",
+    "nombre": "GARCIA SAENZ VALERY",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023422978",
+    "nombre": "GOMEZ GARCIA SARA JULIANA",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024128872",
+    "nombre": "GUARIN MARÍN MARIAJOSE",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024209791",
+    "nombre": "HUÉRFANO PEREZ IAN SANTIAGO",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024470530",
+    "nombre": "LOPEZ CASTILLA MARIANNA",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024507493",
+    "nombre": "MARTINEZ CHAPARRO JUAN SEBASTIAN",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021200290",
+    "nombre": "MARÍN RAMÍREZ LUCIANA",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023591809",
+    "nombre": "MELÉNDEZ HERNÁNDEZ ANNIE GABRIELA",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024458542",
+    "nombre": "MOSQUERA RODRIGUEZ JERONIMO",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023653747",
+    "nombre": "ORTIZ ABELLA ROMY JULIANA",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023667733",
+    "nombre": "PUENTES CARDONA JERÓNIMO JESÚS",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022027474",
+    "nombre": "RINCON LOMBANA SAMUEL",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024415585",
+    "nombre": "VALLEJO REVOLLO ELIZABETH SOFIA",
+    "grado": 3,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022133380",
+    "nombre": "ANGULO ROJAS THIAGO ANDRES",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023501899",
+    "nombre": "ARIAS VARGAS SEBASTIAN",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021100119",
+    "nombre": "AYALA PLAZAS MELISSA",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022020481",
+    "nombre": "BETANCOURT BUITRAGO GABRIELA",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022206296",
+    "nombre": "CARRILLO ROMERO MILAN UNAI",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024307693",
+    "nombre": "COY GONZALEZ JUAN MARTÍN",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024140860",
+    "nombre": "ESPITIA GAMERO VICTORIA",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023836564",
+    "nombre": "GIRALDO BENAVIDES MARTIN",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024392608",
+    "nombre": "HIGUERA LEÓN DAVID LEONARDO",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023587813",
+    "nombre": "LEON PULIDO LUCCIANA",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133376",
+    "nombre": "MEDINA TORRES MATHIAS ALEJANDRO",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023844556",
+    "nombre": "NOVOA ORJUELA DAVID SANTIAGO",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023781619",
+    "nombre": "ORTEGA DIAZ MIA LUCIANA",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024386614",
+    "nombre": "PIRAGAUTA VALERO MARTIN",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024284716",
+    "nombre": "RAMIREZ AVILA JULIAN DANIEL",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133479",
+    "nombre": "RODRIGUEZ ARIZA SCARLETE ARIANA",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024257743",
+    "nombre": "RODRIGUEZ BEJARANO MATHIAS",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024476524",
+    "nombre": "ROLDAN SAMUDIO ANGEL ALEJANDRO",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024487513",
+    "nombre": "SANTISTEBAN BAQUERO CRISTHIAN MATHIAS",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024350650",
+    "nombre": "TORRES GARZON MATHIAS",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133503",
+    "nombre": "TORRES SOTO JUAN DIEGO",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024472528",
+    "nombre": "VALERO OCHOA JOSUE",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024378622",
+    "nombre": "VARELA AGUDELO JOAQUIN",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024227773",
+    "nombre": "VEGA GARCIA ISABELLA",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023603797",
+    "nombre": "VILLA HERNANDEZ VICTORIA",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024115885",
+    "nombre": "VIRGÜEZ BAUTISTA LUCIANA",
+    "grado": 3,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024552448",
+    "nombre": "ALBA GUERRA ISABELLA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023488912",
+    "nombre": "ARBOLEDA DIAZ EMMA GABRIELA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022133497",
+    "nombre": "ASCENCIO MURCIA MATIAS",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023755645",
+    "nombre": "BELTRÁN VARGAS ANNIE LUCÍA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024375625",
+    "nombre": "BONILLA TORRES JERONIMO",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022150358",
+    "nombre": "CACERES MERCHAN JUAN PABLO",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023762638",
+    "nombre": "CARDENAS RUIZ GABRIELA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022350151",
+    "nombre": "CORADO HERNANDEZ GAEL",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022017484",
+    "nombre": "CUBIDES ZARATE JULIANA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024203797",
+    "nombre": "DURAN SARMIENTO MANUEL",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024264736",
+    "nombre": "GARCIA BARBOSA ALANA JULIETA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022008493",
+    "nombre": "GUZMAN ROA JERONIMO",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023471929",
+    "nombre": "LARA TORRES ROSA SALOME",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022206329",
+    "nombre": "MANRIQUE DELGADO SAMUEL DAVID",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024134866",
+    "nombre": "MAYORGA ORTIZ SALOME",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022006495",
+    "nombre": "MOGOLLON SALAZAR HANNA SALOME",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024246754",
+    "nombre": "NARIÑO GONZALEZ MATIAS ALEJANDR0",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024455545",
+    "nombre": "NUÑEZ URREA JERONIMO",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024248752",
+    "nombre": "PEÑA ROBLES EMMANUEL SANTIAGO",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023551849",
+    "nombre": "QUEVEDO VELASCO JOHN MATIAS",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024268732",
+    "nombre": "REAL RAMÍREZ ANA SOFÍA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024408592",
+    "nombre": "ROBERTS VIVAS EMILIA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024494506",
+    "nombre": "RODRIGUEZ RIOS SAMANTHA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024325675",
+    "nombre": "ROMERO VEGA SARA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023543857",
+    "nombre": "SIERRA PANADERO SAMANTHA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023955445",
+    "nombre": "SUAREZ VASQUEZ JUAN PABLO",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024247753",
+    "nombre": "TABORDA MARROQUIN GABRIEL FELIPE",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023783617",
+    "nombre": "TORRES TIQUE CHARLAYNE LUCIANA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024511489",
+    "nombre": "VARGAS TORRES ALIX ISABELLA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024345655",
+    "nombre": "VERA RUBIANO SARA MARGARITA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023953447",
+    "nombre": "VILLADA MARTINEZ LIA ISABELLA",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021200236",
+    "nombre": "VILLARRAGA MÉNDEZ SARA GUADALUPE",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024368632",
+    "nombre": "YACUMAL CALDERON CRISTOPHER",
+    "grado": 3,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024215785",
+    "nombre": "ALVARADO POSADA MATIAS",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023572828",
+    "nombre": "BENITEZ RAMIREZ GABRIEL",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024148852",
+    "nombre": "BUENO NEIRA GABRIELA ALEJANDRA",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024263737",
+    "nombre": "CAICEDO CARDOZO CHRISTOPHER",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022016485",
+    "nombre": "CANO TELLEZ BIANCA ANTONELLA",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024295705",
+    "nombre": "CARDONA ESPITIA NICOL JULIANA",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024222778",
+    "nombre": "CORTES CLAVIJO CELESTE",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023432968",
+    "nombre": "CUERVO BARBOSA ISABELLA",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023956444",
+    "nombre": "GARCIA RAMOS JUAN SEBASTIAN",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023526874",
+    "nombre": "GOMEZ RODRIGUEZ MARTINA",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024433567",
+    "nombre": "GONZALEZ PINEDA EMILY SARAY",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024103897",
+    "nombre": "HERRERA MARTÍNEZ MARTIN ALEJANDRO",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024289711",
+    "nombre": "LEON ALFONSO SANTIAGO",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023436964",
+    "nombre": "MARCIALES OSORIO JERÓNIMO",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023407993",
+    "nombre": "MEDINA RODRÍGUEZ ESTEBAN ALEJANDRO",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021200182",
+    "nombre": "MONTANA GÓMEZ MATHÍAS",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024122878",
+    "nombre": "ORDOÑEZ ORJUELA FABIAN MATHIAS",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024143857",
+    "nombre": "QUINTERO GUERRERO VALERY ALEJANDRA",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024466534",
+    "nombre": "RAMIREZ GONZALEZ ANTONELLA",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022022479",
+    "nombre": "ROBLES DAZA ANDRES FELIPE",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024285715",
+    "nombre": "ROMERO HERNANDEZ SOPHIE",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024174826",
+    "nombre": "SANCHEZ CANTE EMMANUEL",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022019482",
+    "nombre": "SARMIENTO SIERRA ALEJANDRA",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023682718",
+    "nombre": "SILVA RODRIGUEZ MANUEL FELIPE",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023601799",
+    "nombre": "USECHE GONZALEZ IAN MATEO",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024361639",
+    "nombre": "VASQUEZ CAGUA JUAN DIEGO",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023437963",
+    "nombre": "VILLAMIL ACEVEDO SANTIAGO",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022183318",
+    "nombre": "ZAMORA RODRIGUEZ SOFIA",
+    "grado": 3,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023570830",
+    "nombre": "AHUMADA PEREZ JAIR SANTIAGO",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022332169",
+    "nombre": "ARAUJO ORDOÑEZ JUAN PABLO",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023822578",
+    "nombre": "ARRIETA CARDONA ELÍAS MANUEL",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022021480",
+    "nombre": "BELTRAN CASTIBLANCO MARTIN",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024228772",
+    "nombre": "BOLAÑOS HERNANDEZ ISABELLA",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024166834",
+    "nombre": "CABRERA RODRÍGUEZ SAMUEL",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021200202",
+    "nombre": "CAÑIZALEZ RUBIANO JUAN JOSÉ",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022091411",
+    "nombre": "CESPEDES MOLINA OSCAR SANTIAGO",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024508492",
+    "nombre": "CRUZ FAJARDO DANNA GABRIELA",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024217783",
+    "nombre": "DURAN JUNCO THIAGO ALEJANDRO",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024338662",
+    "nombre": "FUENTES CORTES MARTIN EMILIO",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021200118",
+    "nombre": "GUERRERO ALDANA MARÍA ISABELLA",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024141859",
+    "nombre": "GÓMEZ HERNANDEZ MELANY GRACE",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024123877",
+    "nombre": "LOZANO LASSO SAMUEL",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023688712",
+    "nombre": "MARTINEZ NAVARRETE JUAN SEBASTIAN",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024461539",
+    "nombre": "MENDOZA JIMENEZ NICOLE VALERIA",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024312688",
+    "nombre": "MURILLO ROMERO JANNA ISABELLA",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022206302",
+    "nombre": "OLARTE AREVALO DANIEL SANTIAGO",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024559441",
+    "nombre": "PEÑA PACHON SALOMÉ",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023958442",
+    "nombre": "QUESADA RINCON MATIAS",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024303697",
+    "nombre": "RAMOS ALFONSO JUAN SEBASTIAN",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024151849",
+    "nombre": "RINCON VILLADIEGO JUAN DAVID",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024164836",
+    "nombre": "RODRÍGUEZ HERNANDEZ RICHARD ANDRÉS",
+    "grado": 3,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023482918",
+    "nombre": "ACEVEDO ZAMORA JUAN JOSE",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020929071",
+    "nombre": "DIAZ SANCHEZ DIEGO",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022029472",
+    "nombre": "FLORIDO SANABRIA CRISTIAN THOMAS",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023647753",
+    "nombre": "GARAVITO BARRETO JERÓNIMO",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024536464",
+    "nombre": "GONZALEZ CHAVEZ SAMUEL",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023629771",
+    "nombre": "GUTIERREZ GUTIERREZ JOAQUÍN",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023830570",
+    "nombre": "JAIME ALDANA SARA GABRIELA",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023654746",
+    "nombre": "LEÓN ROMERO JERÓNIMO",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023459941",
+    "nombre": "LOPEZ LOPEZ MARIA PAULA",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024533467",
+    "nombre": "MANRIQUE GALEANO EDWIN FELIPE",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023951449",
+    "nombre": "MARTÍNEZ VINASCO GABRIEL",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020779221",
+    "nombre": "MUÑETON GUTIÉRREZ LUCIANA MARIA",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023588812",
+    "nombre": "ORDUÑA GÓMEZ ISABELLA",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023568832",
+    "nombre": "PALACIOS SANCHEZ GABRIEL SANTIAGO",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023416984",
+    "nombre": "PEDRAZA GONZÁLEZ SALOMÉ",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023535865",
+    "nombre": "PERDOMO VILLAMIL LUCAS",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022024477",
+    "nombre": "PIEDRAHITA LARA JUAN PABLO",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020577423",
+    "nombre": "RAMIREZ ROJAS MARIANA",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023586814",
+    "nombre": "RIVERA ROMERO GABRIELA",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022133448",
+    "nombre": "RODRIGUEZ GUIO DANIEL ESTEBAN",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023916484",
+    "nombre": "RODRIGUEZ WILCHES LUCIANA",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020738262",
+    "nombre": "ROMERO TORRES GABRIELA ALEJANDRA",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022393108",
+    "nombre": "SALINAS BARRIOS DAVID SANTIAGO",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022361140",
+    "nombre": "SIERRA TORRES MARIA JOSE",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023451949",
+    "nombre": "SUAREZ CERON JACOBO",
+    "grado": 4,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022031470",
+    "nombre": "ALZATE GONZALEZ JUAN DIEGO",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022205296",
+    "nombre": "CAMACHO GONZALEZ MANUEL EMILIO",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024411589",
+    "nombre": "CANTE ORTIZ JOSHUA RUMMENIGGE",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022206389",
+    "nombre": "CASAS ORTIZ SAMANTHA",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023585815",
+    "nombre": "CORREDOR TRUJILLO MARIANA LUCIA",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021100431",
+    "nombre": "CRUZ GONZÁLEZ SERGIO DAVID",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023514886",
+    "nombre": "GONZALEZ MATIZ SOFIA",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023915485",
+    "nombre": "GUZMAN CLAVIJO PAULA SALOME",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023453947",
+    "nombre": "JEREZ MARIN JUAN JOSE",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023706694",
+    "nombre": "LONDOÑO NIÑO MARTIN FERNANDO",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023458942",
+    "nombre": "MARQUEZ POSADA ESTER ABIGAIL",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024381619",
+    "nombre": "MORA PARRA JERONIMO",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022372129",
+    "nombre": "MUÑOZ MARTINEZ LAURA ISABELLA",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023443957",
+    "nombre": "ORJUELA SIERRA SARA GABRIELA",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024541459",
+    "nombre": "ORTEGON HERRERA MARIANA",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023421979",
+    "nombre": "ORTEGON OIDOR MARIO DAVID",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023866534",
+    "nombre": "OSPINA TABORDA GABRIELA",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023520880",
+    "nombre": "PARRA MORENO ANTONELLA",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023536864",
+    "nombre": "PERDOMO VILLAMIL MANUELA",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133379",
+    "nombre": "REYES AMAYA SALOME",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133472",
+    "nombre": "RODRIGUEZ CASTANEDA JERONIMO",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020663337",
+    "nombre": "RUBIANO GALLEGO JERÓNIMO",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024183817",
+    "nombre": "SANCHEZ ARIAS ISABELLA",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023913487",
+    "nombre": "SILVA HUERTAS MARTINA",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022206331",
+    "nombre": "TELLEZ RODRIGUEZ MATIAS",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023548852",
+    "nombre": "VILLARRUEL ARIAS GABRIEL ESTEBAN",
+    "grado": 4,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024427573",
+    "nombre": "BONILLA BENAVIDEZ DAMIAN SEBASTIAN",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022294207",
+    "nombre": "CAMACHO MARTINEZ ISABELLA",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023724676",
+    "nombre": "CASTAÑEDA RODRIGUEZ JUAN SEBASTIÁN",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023637763",
+    "nombre": "CHAPARRO ERAZO ANDRÉS JERONIMO",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022280221",
+    "nombre": "DURAN OVALLE MARTIN",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022091433",
+    "nombre": "GONZALEZ SANDOVAL ANA MARIA",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021100186",
+    "nombre": "LÓPEZ OLMOS SALOME",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023519881",
+    "nombre": "MARTÍNEZ MONTAÑO THIAGO",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023494906",
+    "nombre": "MEDINA APONTE MIRANDA",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022265236",
+    "nombre": "NARVAEZ QUINTERO CRISTIAN FELIPE",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023541859",
+    "nombre": "ORTEGA ZULUAGA EMILIANO",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024481519",
+    "nombre": "PACHON ESTEBAN EILEEN SOFIA",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021100357",
+    "nombre": "PÉREZ BARAJAS SALOMÉ",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022226275",
+    "nombre": "RODRIGUEZ CETINA NOAH",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022318183",
+    "nombre": "RODRIGUEZ MOYA JUAN PABLO",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022256245",
+    "nombre": "ROMERO AHUMADA RAFFAELA",
+    "grado": 4,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022206336",
+    "nombre": "ALDANA RIVERA JULIAN DAVID",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020561439",
+    "nombre": "CARDONA GIL MATÍAS STIVEN",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023609791",
+    "nombre": "CASTELLANOS HURTADO LUCIANA",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024430570",
+    "nombre": "CHAPARRO JAIME MARIA ALEJANDRA",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023650750",
+    "nombre": "CORTES CALVANO ELENA",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023914486",
+    "nombre": "ESPITIA BERMUDEZ JUAN MARTIN",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023564836",
+    "nombre": "GAVIRIA ROJAS MARIA PAZ",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021000322",
+    "nombre": "GUAYARA CORTÉS LUCIANA",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022163338",
+    "nombre": "HERNANDEZ ROA ANA MARIA",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023678722",
+    "nombre": "LANCHEROS DÍAZ SALOMÉ",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023917483",
+    "nombre": "LOPEZ TINJACA JUAN ESTEBAN",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023554846",
+    "nombre": "MEDINA BERNAL JULIANA",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023403997",
+    "nombre": "MENDOZA RODRIGUEZ JUAN SEBASTIAN",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023638762",
+    "nombre": "NEIRA BUSTAMANTE ABIGAIL",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023476924",
+    "nombre": "PADILLA ARDILA LUIS ANDRES",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023540860",
+    "nombre": "PEDROZA MOLINA MARIANA",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022297204",
+    "nombre": "PEREZ HERNANDEZ JOEL",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023490910",
+    "nombre": "PINZÓN BELTRAN MATHIAS",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023598802",
+    "nombre": "QUINTERO MEDINA JUAN JOSE",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022039462",
+    "nombre": "RINCON GONGORA SAMUEL",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023611789",
+    "nombre": "RODRÍGUEZ FONSECA SOFIA ELENA",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022023478",
+    "nombre": "ROMERO ESPEJO MARIANA",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022150353",
+    "nombre": "RUBIO PRADA LUIS MIGUEL",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023412988",
+    "nombre": "SANTAMARIA PALOMO SAMUEL",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022091415",
+    "nombre": "SUAREZ GARCIA ZARA SOFIA",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023545855",
+    "nombre": "TORRES VELASQUEZ SANTIAGO",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022184317",
+    "nombre": "ZARTA RAMIREZ GERONIMO",
+    "grado": 4,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021200268",
+    "nombre": "BERMUDEZ AGUIRRE MARIAN SALOME",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024393607",
+    "nombre": "CARRILLO TRIVIÑO SAMUEL FELIPE",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023800600",
+    "nombre": "CASTRO ÁLZATE SALOME",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133374",
+    "nombre": "CHINGATE GUERRERO AVRIL JULIANA",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023402998",
+    "nombre": "CRUZ JABONERO MELANY SARAHI",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020834166",
+    "nombre": "DÍAZ BARRIOS ALLAN",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020678322",
+    "nombre": "GALEANO GARCÍA VICTORIA",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022091419",
+    "nombre": "GIL GOMEZ SAMUEL",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133389",
+    "nombre": "GUERRERO MESA CRISTOPHER",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023735665",
+    "nombre": "GUTIERREZ AVILES STEFANY",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023507893",
+    "nombre": "HIDALGO MORENO ANA SOFIA",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023608792",
+    "nombre": "LAVACUDE FERNANDEZ ISABELLA",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023590810",
+    "nombre": "MANGONEZ MONROY LUCÍANA",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023824576",
+    "nombre": "MARTINEZ RODRIGUEZ IVANNA ALESSANDRA",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022161340",
+    "nombre": "MORENO RIOS GABRIEL SANTIAGO",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021100093",
+    "nombre": "OCHOA GUAQUETA LUIS MIGUEL",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023599801",
+    "nombre": "PAEZ GARCIA EMMANUEL",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133373",
+    "nombre": "PERAZA ROMERO SAMUEL",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023502898",
+    "nombre": "PERNETT LINCE SARA VALENTINA",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023495905",
+    "nombre": "RAMIREZ BUENDIA DANNA GABRIELA",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022028473",
+    "nombre": "RIOS MOLINA MATEO MANUEL",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023529871",
+    "nombre": "RODRIGUEZ GONZALEZ JUAN SEBASTIAN",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023746654",
+    "nombre": "RODRIGUEZ VELASCO JERONIMO JOSHUE",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133370",
+    "nombre": "SALGADO AGUILAR THOMAS ALEJANDRO",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023634766",
+    "nombre": "SANCHEZ ACERO MATIAS",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023788612",
+    "nombre": "SIERRA MARTINEZ VALERY",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024277723",
+    "nombre": "SUAREZ YASNO MARIANA",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023798602",
+    "nombre": "ZULUAGA CUELLAR ESTEBAN",
+    "grado": 4,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022357144",
+    "nombre": "ABRIL GARCIA DANTE",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021000212",
+    "nombre": "AGUILERA ROMERO MARIANA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020578422",
+    "nombre": "ARANGO HERNANDEZ LUISA FERNANDA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023642758",
+    "nombre": "ARIAS GUERRERO SANTIAGO",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022133490",
+    "nombre": "BARRERA VASQUEZ JUAN JOSE",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023831569",
+    "nombre": "BERNAL MORALES SARA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022206354",
+    "nombre": "CALVO SANABRIA SAMUEL STIVEN",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022042459",
+    "nombre": "CASTELLANOS MATEUS MATEO",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022040461",
+    "nombre": "DIAZ MONROY KAROL ANDREA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022309192",
+    "nombre": "FAJARDO ARISTIZABAL NIKOL ANTONELLA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024336664",
+    "nombre": "FORERO OTAVO JOHAN NICOLAS",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022164337",
+    "nombre": "FUENTES ESCOBAR GABRIEL JOSE",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023623777",
+    "nombre": "GARAVITO SUAREZ SOFIA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023450950",
+    "nombre": "GUEVARA TORRES NIKOL MARIANA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020499501",
+    "nombre": "MESA ESTEVEZ MARIA CELESTE",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019791209",
+    "nombre": "NIÑO CORDOBA ANA ISABELLA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022278223",
+    "nombre": "OSORIO SIERRA ANA SOFIA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022046455",
+    "nombre": "PAEZ PAEZ JULIANA VALENTINA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020827173",
+    "nombre": "PINZON LARA LUCIANA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021000096",
+    "nombre": "RAMIREZ FONSECA GABRIELA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022174327",
+    "nombre": "ROBERTS VIVA SANTIAGO",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019921079",
+    "nombre": "ROMERO CARDONA JORGE EMMANUEL",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022150362",
+    "nombre": "SANCHEZ CARVAJAL KARIM SAMUEL",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022246255",
+    "nombre": "TORRES DAZA HELEN GABRIELA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023584816",
+    "nombre": "TORRES DELGADO ISABELLA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021001296",
+    "nombre": "VALENCIA PACHON LAURA SOFIA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020949051",
+    "nombre": "VERA ORTIZ VALERIA",
+    "grado": 5,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021000446",
+    "nombre": "ARIAS RAMIREZ GABRIELA",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024432568",
+    "nombre": "BARRIOS GONZALEZ DANNA SOFIA",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023795605",
+    "nombre": "BERNAL MUÑOZ EIMMY ISABELLA",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2018358358",
+    "nombre": "CARDENAS CARREÑO ALAN DAVID",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022298203",
+    "nombre": "CASTILLO NIETO SANTIAGO",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022091426",
+    "nombre": "CHACON SANCHEZ MAYRA ALEJANDRA",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019604396",
+    "nombre": "DUARTE BUITRAGO MARIA CAMILA",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022206325",
+    "nombre": "GARZON CAMELO JUAN JOSE",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021000008",
+    "nombre": "GARZON MONTAÑO MATHIAS",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021000172",
+    "nombre": "GUTIERREZ MARTINEZ DIEGO STEBAN",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021000298",
+    "nombre": "INFANTE MASMELA TOMAS",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023527873",
+    "nombre": "LOPEZ MORENO DAVID SANTIAGO",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133476",
+    "nombre": "MOLINA RODRIGUEZ MARIANA",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022206376",
+    "nombre": "ORJUELA BAUTISTA LUCIANA",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022249252",
+    "nombre": "OSPINA VILLAREAL JOHAN LUNN",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020816184",
+    "nombre": "PALACIOS LOPEZ GABRIELLA",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022091420",
+    "nombre": "PERDOMO MERCHAN MIA LUCIANA",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133367",
+    "nombre": "PRADA MARQUEZ NICOLAS ANDRES",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022038463",
+    "nombre": "RAMON PEDROZA MARIANA VALENTINA",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021000315",
+    "nombre": "REUTO BELTRÁN SAMUEL",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023827573",
+    "nombre": "RIOS REYES ANA SOFIA",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022206381",
+    "nombre": "RODRIGUEZ BELTRAN JULIAN DAVID",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022343158",
+    "nombre": "ROMERO DUSSAN JUAN ESTEBAN",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022387114",
+    "nombre": "SILVA RODRIGUEZ ESTEBAN ALEJANDRO",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023687713",
+    "nombre": "TRIANA GONZÁLEZ ASLEY NICOLE",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019928072",
+    "nombre": "VANEGAS GODOY DREICK",
+    "grado": 5,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019739261",
+    "nombre": "ARAUJO ORDOÑEZ ISABELLA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023945455",
+    "nombre": "AVILA CUELLAR LUIS ALEJANDRO",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021100204",
+    "nombre": "BONILLA ROA ANNE ISABELLA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019540460",
+    "nombre": "CALDERON MATEUS LAURA SOFIA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022048453",
+    "nombre": "CAMPOS DELGADO JUAN SEBASTIAN",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022171330",
+    "nombre": "CARDENAS GONZALEZ JULIANA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022334167",
+    "nombre": "CASTILLO RAMIREZ ESTEBAN",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023847553",
+    "nombre": "CHAVEZ CRISTANCHO GABRIELLA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024117883",
+    "nombre": "ESCALLON URUEÑA ESTEBAN",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022133470",
+    "nombre": "FLOREZ HERRERA JUAN ESTEBAN",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024310690",
+    "nombre": "GALAN PALOMINO BELLA VICTORIA ELIZABETH",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023414986",
+    "nombre": "JIMÉNEZ BUENDIA JUAN CAMILO",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022133443",
+    "nombre": "MALAVER RIAÑO JOEL EDUARDO",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022133481",
+    "nombre": "MORERA ALBERTO JUAN DIEGO",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023842558",
+    "nombre": "ORTIZ ESCAMILLA EMILY JERANY",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024280720",
+    "nombre": "OSSA JIMENEZ SALOME",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022047454",
+    "nombre": "PARRA MENDEZ JUANA VALENTINA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022227274",
+    "nombre": "PEREZ MORENO ADRIAN LEONARDO",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021001292",
+    "nombre": "RIVERA NINO MARIAN YALITZA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022287214",
+    "nombre": "ROA VIJA LUCIANA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023779621",
+    "nombre": "RODRIGUEZ CIFUENTES IKER KALED",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024349651",
+    "nombre": "RUIZ CARDONA KARLA LUCIANA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023934466",
+    "nombre": "SANCHEZ VARGAS VALERIA SOFIA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021000253",
+    "nombre": "URREGO LESMES JUANA VALENTINA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022133487",
+    "nombre": "VARGAS GARCIA ISABELLA",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019647353",
+    "nombre": "VILLOTA NAVARRO ALEJANDRO",
+    "grado": 5,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024275725",
+    "nombre": "ALFONSO GÓMEZ ANA GABRIELA",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022013488",
+    "nombre": "AVILA MUNOZ MARIA FERNANDA",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024306694",
+    "nombre": "BORDA PÉREZ THALIANA",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021000416",
+    "nombre": "CARDENAS TORRES ANGELICA",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022206324",
+    "nombre": "CASTAÑEDA GUERRERO JERONIMO",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020916084",
+    "nombre": "CASTRO QUINTANILLA MARIA JOSE",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023768632",
+    "nombre": "ESPINOSA SABOGAL CAREN NATALY",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021000287",
+    "nombre": "FLORIAN GALARZA HUGO TOMAS",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021000279",
+    "nombre": "GAMBOA ARCILA ANDRES MATIAS",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022206330",
+    "nombre": "GARZON RAMIREZ ERIC DANIEL",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022234267",
+    "nombre": "GONZALEZ RAMIREZ DAVID ALEJANDRO",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022053448",
+    "nombre": "JIMENEZ TORRES EMMANUEL",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020784216",
+    "nombre": "MATEUS VELASQUEZ MARTIN",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021000210",
+    "nombre": "ORJUELA ROJAS JUAN NICOLAS",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022036465",
+    "nombre": "ORTIZ RESTREPO SIMON ALEJANDRO",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022133482",
+    "nombre": "OVALLE ASTROS LUIS EDUARDO",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021000101",
+    "nombre": "PENAGOS SAMPAYO ADRIANA VALERIA",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022052449",
+    "nombre": "QUINTERO ROCHA IAN STEVEN",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022290211",
+    "nombre": "RAMIREZ CHAVES MATHIAS",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022268233",
+    "nombre": "RIVEROS ORTIZ NICKOLAS",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022308193",
+    "nombre": "RODRIGUEZ CRISTANCHO MARTINA",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022206382",
+    "nombre": "SANCLEMENTE CITA THIAGO ANDRES",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023858542",
+    "nombre": "TOCA RODRIGUEZ GABRIEL ALEJANDRO",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021100250",
+    "nombre": "URREGO MARIN IAN JOEL",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021001135",
+    "nombre": "VARGAS RIOS SALOME",
+    "grado": 5,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022319182",
+    "nombre": "ALCALA IBAÑEZ JUAN DAVID",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022091446",
+    "nombre": "ARDILA LOPEZ SAMUEL ANDRES",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022391110",
+    "nombre": "BAREÑO SUSATAMA LIA SALOME",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022366135",
+    "nombre": "CAMELO ALEMAN EIMY XIOMARA",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021000007",
+    "nombre": "CARDOZO MONTEALEGRE MARIA ALEJANDRA",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022180321",
+    "nombre": "CUBILLOS ERAZO SARA VALENTINA",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024413587",
+    "nombre": "ESPITALETA SIERRA ANDRES",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023840560",
+    "nombre": "FONSECA ESCAMILLA JULIAN CAMILO",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024260740",
+    "nombre": "GARAVITO SIERRA ANA ELIZABETH",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022328173",
+    "nombre": "GUAYACAN RAMIREZ ANA MARIA",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022091412",
+    "nombre": "HIDALGO HERNANDEZ MARIA VICTORIA",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022300201",
+    "nombre": "LEON BENITEZ KAROL LUCIANA",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021000173",
+    "nombre": "MELO BLANCO VANESSA",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023417983",
+    "nombre": "NIÑO CAÑON ANTONELLA",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022284217",
+    "nombre": "PACHON CIFUENTES JUAN ANDRES",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024429571",
+    "nombre": "PARDO POLANIA LUNA SALOME",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133371",
+    "nombre": "PERNA RAMIREZ SAMUEL DAVID",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024324676",
+    "nombre": "PEÑA VELOZA ALICE SALOME",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022032468",
+    "nombre": "RAMIREZ ACEVEDO MATIAS",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022399102",
+    "nombre": "RIANO HERNANDEZ GABRIEL SANTIAGO",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021000348",
+    "nombre": "RODRIGUEZ ACUÑA MIGUEL ANGEL",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019624376",
+    "nombre": "ROJAS SANABRIA CARLOS IVAN",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022206349",
+    "nombre": "SALVADOR PUENTES NICOLE MARIANA",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024186814",
+    "nombre": "URREGO MENDOZA DANNA SOFIA",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022206383",
+    "nombre": "VELASCO MARIN DIEGO ALEJANDRO",
+    "grado": 5,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018083083",
+    "nombre": "ARMERO MORALES GABRIELA CAROLINA",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021001345",
+    "nombre": "AYA MALAVER SALOME",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021001122",
+    "nombre": "AYALA PLAZAS VALERY SOFIA",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024435565",
+    "nombre": "BAQUERO MUÑOZ MARIA FERNANDA",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022069432",
+    "nombre": "CARDONA MARTINEZ CRISTOPHER JESUS",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023852548",
+    "nombre": "CARREÑO FORERO ADRIAN ALEJANDRO",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020850150",
+    "nombre": "CASTILLO PALACIOS MARIA JOSE",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024253747",
+    "nombre": "CASTRO ROMERO JUAN ESTEBAN",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023818582",
+    "nombre": "GOMEZ JIMENEZ SAMUEL STEVEN",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022072429",
+    "nombre": "GOMEZ LEON SALOME",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021001275",
+    "nombre": "HIDALGO MOSCOSO DANIEL FELIPE",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023665735",
+    "nombre": "JIMENEZ BOLAÑOS SOFIA",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020699301",
+    "nombre": "LOPEZ ANGULO JUANITA",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022397104",
+    "nombre": "MANCERA BELTRAN ISABELLA",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021001267",
+    "nombre": "MENDEZ CONTRERAS JUAN ESTEBAN",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021001323",
+    "nombre": "NAVARRO PARRA MATIAS",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020901099",
+    "nombre": "PALAÚ IIDA SARAH SOPHIA",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024147853",
+    "nombre": "QUIROGA JOYA LAURA SOFÍA",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020746254",
+    "nombre": "ROBLES GUTIERREZ GABRIEL",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018373373",
+    "nombre": "RODRIGUEZ ARIZA JADE ISABELLA",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021001076",
+    "nombre": "SANTANA TORRES LAURA ISABELLA",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023673727",
+    "nombre": "VELEZ QUINTERO AYLIN XIMENA",
+    "grado": 6,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019504496",
+    "nombre": "BELTRAN MARTINEZ LORENT ISABELLA",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020545455",
+    "nombre": "BETANCOURTH VARGAS MARTIN",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024212788",
+    "nombre": "CARDENAS MONTOYA SAMUEL ORLANDO",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024193807",
+    "nombre": "CORTES NAVARRETE ANA MARÍA",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020956044",
+    "nombre": "CRUZ GARCIA SALOME",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2018012012",
+    "nombre": "GODOY DIAZ ALEJANDRO",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024177823",
+    "nombre": "GRAJALES MONCADA ANDREA FERNANDA",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020720280",
+    "nombre": "GUANUME SOLANO MATIAS",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021001337",
+    "nombre": "LOAIZA NOVA JULIANA STEFANY",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020708292",
+    "nombre": "MARTINEZ AVILA GABRIEL",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021001128",
+    "nombre": "MILLAN RAMIREZ JUANITA SALOME",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024189811",
+    "nombre": "MUÑOZ RAMÍREZ SARA VALENTINA",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021001073",
+    "nombre": "OVIEDO FORERO LIAN SANTIAGO",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021001302",
+    "nombre": "OVIEDO LOAIZA EMMANUEL",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021001218",
+    "nombre": "RAIGOSO FONSECA DULCE MARIANA",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021001211",
+    "nombre": "ROJAS IDARRAGA SOPHIE ALEJANDRA",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021001021",
+    "nombre": "RUSINQUE ARIZA DANA SALOME",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021001300",
+    "nombre": "SILVA BARACALDO KEINY SAMANTHA",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023936464",
+    "nombre": "VARGAS ARIAS SAMUEL GUSTAVO",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021001152",
+    "nombre": "VILLA CASTRO MATHIAS",
+    "grado": 6,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020842158",
+    "nombre": "ALMANZA PINILLA SALOME",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019759241",
+    "nombre": "ALVAREZ BARRETO JUAN CAMILO",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023685715",
+    "nombre": "BAGUI PINZON LAURA VALENTINA",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022264237",
+    "nombre": "BERMUDEZ SIERRA MATIAS",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018359359",
+    "nombre": "CARDENAS CARREÑO EYLEEN NIKOLEE",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021001166",
+    "nombre": "CASTANEDA ACOSTA NICOLAS",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021001069",
+    "nombre": "CORREA CAJICA LUCIANA",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024121879",
+    "nombre": "FRACICA RODRÍGUEZ ANA MARÍA",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020958042",
+    "nombre": "JIMENEZ CAMACHO SANTIAGO",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022206366",
+    "nombre": "LOZANO PUENTES IANN MARIANA",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024495505",
+    "nombre": "MARTÍNEZ VIRVIESCAS MARIA PAULA",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019967033",
+    "nombre": "MORA GARZON ALISON JUANITA",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023602798",
+    "nombre": "MORA RAMÍREZ ANA MARÍA",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022206305",
+    "nombre": "PROAÑO CUCARIANO JUAN MANUEL",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022254247",
+    "nombre": "RODRIGUEZ CASALLAS EMMANUEL",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023932468",
+    "nombre": "SANCHEZ ROMERO LUNA SALOME",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024293707",
+    "nombre": "SUTACHAN GARNICA SALOME",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021001024",
+    "nombre": "TRIANA RODRIGUEZ ALISSON",
+    "grado": 6,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018025025",
+    "nombre": "ORTIZ TORRES MARIA PAULA",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024137863",
+    "nombre": "ACOSTA MONROY JUAN ESTEBAN",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021001121",
+    "nombre": "AMORTEGUI MARTINEZ GABRIELA",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024229771",
+    "nombre": "ARENAS ALVARADO DANNA SOFIA",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020984016",
+    "nombre": "BELTRAN MARIÑO MATIAS",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021001205",
+    "nombre": "CAICEDO GONZALEZ JUAN ESTEBAN",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022133504",
+    "nombre": "CASTRO CAMACHO LIAH LUCIANA",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021001217",
+    "nombre": "DEVIA MORENO LUCIANA",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020868132",
+    "nombre": "GALINDO SAAVEDRA LAURA SOFIA",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020981019",
+    "nombre": "GUTIERREZ AMADO NICOLAS",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023581819",
+    "nombre": "GÓMEZ SÁNCHEZ DAVID JERÓNIMO",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024420580",
+    "nombre": "LIZARAZO REYES MARIA KAMILA",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024362638",
+    "nombre": "LONDOÑO QUIROGA SAMUEL",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022133385",
+    "nombre": "MONTAÑO SILVA ANTONIA VALENTINA",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021001150",
+    "nombre": "PINZON VALBUENA DANIELA SOFIA",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021001198",
+    "nombre": "SANCHEZ PEÑA MARIANA",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024232768",
+    "nombre": "SANTANA TIBATÁ ISABELLA",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020771229",
+    "nombre": "VACA CALDERON JUAN MATEO",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021001409",
+    "nombre": "VASQUEZ BAUTISTA JUAN MARTIN",
+    "grado": 6,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021001200",
+    "nombre": "ABREU PUENTES SEBASTIAN",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024501499",
+    "nombre": "ARROYAVE SILVA EMILIA",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021001271",
+    "nombre": "AVILA NARANJO JERONIMO",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020874126",
+    "nombre": "BOGOTÁ ESCOBAR ANDRES JUAN",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021001010",
+    "nombre": "BOLÍVAR HURTADO KILIAN LLOYD",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021001283",
+    "nombre": "CRUZ MAYORGA VALERY SOFIA",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022066435",
+    "nombre": "ESPITIA MORA SAMANTHA",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021001015",
+    "nombre": "GOMEZ PEREZ SALOME",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019671329",
+    "nombre": "HOLGUIN TORRES LIA VALERIA",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024221779",
+    "nombre": "LLANOS POLO SANTIAGO",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024230770",
+    "nombre": "LOZANO VASQUEZ MIGUEL ANGEL",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021001316",
+    "nombre": "MIRANDA MONROY EDWIN SANTIAGO",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020550450",
+    "nombre": "MORENO ROMERO LUCIANA",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133381",
+    "nombre": "MUNOZ LEON VALERIA",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021001434",
+    "nombre": "NOVA ROMERO MARIA JOSE",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021001353",
+    "nombre": "PINILLA LOPEZ DAVID SANTIAGO",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021001237",
+    "nombre": "RAMIREZ PEREZ LIAM EIDAN",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020759241",
+    "nombre": "RODRIGUEZ BERNAL NICOLE SOFIA",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021001133",
+    "nombre": "RODRIGUEZ GRANADA MATIAS ALEXANDER",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024119881",
+    "nombre": "ZABALA GALLEGO NICOLAS",
+    "grado": 6,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019790210",
+    "nombre": "ALVAREZ PEREZ SARA",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2024190810",
+    "nombre": "ARCINIEGAS CARDENAS MIA LUCIANA",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2023851549",
+    "nombre": "CASAS LESMES JERONIMO",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2024401599",
+    "nombre": "DIAZ RUIZ CAMILA",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021001246",
+    "nombre": "GARCIA ROJAS JUAN SEBASTIAN",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021001070",
+    "nombre": "GARZON ANGEL GABRIEL ALBERTO",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2022320181",
+    "nombre": "GARZON MATEUS MARIANA",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2020523477",
+    "nombre": "LOPEZ MARTINEZ JUAN SEBASTIAN",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021001341",
+    "nombre": "LOZANO MOSQUERA ANDY SAMUEL",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021001390",
+    "nombre": "MARTINEZ PERILLA JERONIMO",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2022158343",
+    "nombre": "MORENO RIOS MATIAS MAURICIO",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2022165336",
+    "nombre": "PEREZ RODRIGUEZ SAMANTHA",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2020954046",
+    "nombre": "PULIDO TORRES MATIAS ALEJANDRO",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021001436",
+    "nombre": "QUINTERO JIMENEZ ISABELLA",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2022063438",
+    "nombre": "RODRIGUEZ QUINONEZ JUAN ESTEBAN",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2024471529",
+    "nombre": "ROJAS PEÑA MANUEL",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021001262",
+    "nombre": "RUIZ CALDERON MELANY GERALDINE",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021001105",
+    "nombre": "SANCHEZ CONTRERAS MARIANA",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021001256",
+    "nombre": "SOTELO MEDINA DANNA ISABELLA",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021001023",
+    "nombre": "SUAREZ CARDOZO VALERY",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021001025",
+    "nombre": "VILLARRAGA MUJICA LAURA VANESSA",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2019634366",
+    "nombre": "VIRGUEZ DONCEL MARIA JOSE",
+    "grado": 6,
+    "grupo": "F"
+  },
+  {
+    "documento": "2024344656",
+    "nombre": "ACOSTA AVENDAÑO EMILY SOFIA",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020787213",
+    "nombre": "ALVARADO POSADA JERONIMO",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020919081",
+    "nombre": "BERNAL HERNANDEZ JUAN MANUEL",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022206351",
+    "nombre": "CARDENAS PERILLA MARIANA",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019792208",
+    "nombre": "CORONADO DEL RIO SAMUEL",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020597403",
+    "nombre": "GARCIA CUEVAS MATHIAS",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024512488",
+    "nombre": "HERRERA CALDERON JUAN FELIPE",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019812188",
+    "nombre": "HINCAPIE BERNAL SARA SOFIA",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023433967",
+    "nombre": "LOSADA CRISTANCHO ABBY SARAY",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020923077",
+    "nombre": "MONTILLA NIÑO OMAR SEBASTIAN",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022133442",
+    "nombre": "NUNEZ ESPITIA SOPHIE",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020519481",
+    "nombre": "ORTIZ RESTREPO ANA VIOLETTA",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020982018",
+    "nombre": "RAMOS TORRIJOS DERECK SANTIAGO",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023448952",
+    "nombre": "RIAÑO GOMEZ SAMUEL DAVID",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022175326",
+    "nombre": "RIVERA REYES MATIAS ALEJANDRO",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020831169",
+    "nombre": "ROBERTS VIVAS MARIA VICTORIA",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019798202",
+    "nombre": "ROCHA CAMPOS ISABEL SOFIA",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020716284",
+    "nombre": "ROJAS FIGUEROA VALERIA",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019693307",
+    "nombre": "ROZO ROMERO MARIA CAMILA",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022092409",
+    "nombre": "SANTAMARIA RUIZ SEBASTIAN",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023620780",
+    "nombre": "TURGA CHAPARRO JUAN SEBASTIAN",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019862138",
+    "nombre": "ZALDUA TORRES SALOME",
+    "grado": 7,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020595405",
+    "nombre": "AMEZQUITA ORJUELA JUAN DIEGO",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023832568",
+    "nombre": "BERNAL MORALES ALEJANDRO",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022075426",
+    "nombre": "CARDOZO ESTUPINAN GABRIELA",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022150369",
+    "nombre": "DIAZ PARDO JUAN ANDRES",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020788212",
+    "nombre": "ELIZALDE RODRIGUEZ MIGUEL",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019745255",
+    "nombre": "GARCIA MENDEZ JHOSEPH",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133384",
+    "nombre": "GONZALEZ BUSTOS TOMAS JERONIMO",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023739661",
+    "nombre": "HENAO CASTRO VIOLETA",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023446954",
+    "nombre": "HERRERA GONZALEZ VALENTINA",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022091448",
+    "nombre": "LARGO CASTILLO MARIA CAMILA",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024506494",
+    "nombre": "MARQUEZ VERGARA JOEL SANTIAGO",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133457",
+    "nombre": "OLAYA ROJAS EVELYN MARIAN",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020962038",
+    "nombre": "PERDOMO MERCHAN IAN ANDRES",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020772228",
+    "nombre": "PERDOMO TUNJO MARIA VICTORIA",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020960040",
+    "nombre": "RAMIREZ PARDO LUCIANA",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023528872",
+    "nombre": "RODRÍGUEZ GONZÁLEZ DANNY ALEJANDRO",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019694306",
+    "nombre": "ROZO ROMERO SARA NICOLLE",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020966034",
+    "nombre": "TAUTIVA HERRERA ANDRES FELIPE",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020911089",
+    "nombre": "VASQUEZ CAGUA DULCE GABRIELA",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022077424",
+    "nombre": "ZAMORA RODRIGUEZ LUCIANA",
+    "grado": 7,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017115050",
+    "nombre": "FORERO BONILLA DANIEL DAVID",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020888112",
+    "nombre": "AGUDELO MENDOZA GABRIEL SANTIAGO",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023661739",
+    "nombre": "BARRAGAN JEREZ DIDIER FELIPE",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020644356",
+    "nombre": "BOTERO VARGAS MARIA SOFIA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017448911",
+    "nombre": "CALDERON NOVOA MARIA ISABELA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016900100",
+    "nombre": "CARRENO HERNANDEZ JOSHUA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017228713",
+    "nombre": "CIFUENTES HURTADO SERGIO NICOLAS",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018205205",
+    "nombre": "CUEVAS PEREZ KAREN NATHALY",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023850550",
+    "nombre": "DIAZ NARANJO SAMUEL",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024106894",
+    "nombre": "DÍAZ TIBAQUIRA ANDRÉS FELIPE",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020780220",
+    "nombre": "GELVEZ GARCIA DIEGO FERNANDO",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018220220",
+    "nombre": "GONZALEZ CASTILLO ANTHONIA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023862538",
+    "nombre": "HENAO LOPEZ ARIANA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024477523",
+    "nombre": "MANOSALVA LOAIZA JUAN SEBASTIAN",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017449802",
+    "nombre": "MAYORGA SALCEDO ISABELLA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020744256",
+    "nombre": "MORERA ROA SAMARA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020572428",
+    "nombre": "ORJUELA TRIANA JUANITA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020757243",
+    "nombre": "OVALLE CASTRO DANNA XIMENA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022133459",
+    "nombre": "PENA GARNICA MARIA STEPHANIE",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023600800",
+    "nombre": "PEREZ CLAVIJO MARIA FERNANDA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017557921",
+    "nombre": "PULIDO FIGUEROA MARIANNA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020736264",
+    "nombre": "RETAVISCA VILLARRAGA MARTIN",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020866134",
+    "nombre": "RINCON PEREZ PAULA ANDREA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020864136",
+    "nombre": "ROMERO RINCON EMILY",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018222222",
+    "nombre": "SILVA SANCHEZ DANNA SOFIA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021003339",
+    "nombre": "TINJACA MUÑOZ SARA ISABELLA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020763237",
+    "nombre": "VANEGAS PEDRAZA NICOLAS MATHIAS",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023669731",
+    "nombre": "VELASQUEZ ACOSTA MARIA FERNANDA",
+    "grado": 7,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017335545",
+    "nombre": "ESPITIA ALVARADO HUGO ALEJANDRO",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017110595",
+    "nombre": "LOPEZ GOMEZ DANIEL ALEJANDRO",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024249751",
+    "nombre": "AGUILAR MARTÍNEZ MARÍA JOSÉ",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024165835",
+    "nombre": "ARIAS CABEZAS SAIRA ISABELA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019833167",
+    "nombre": "BELLO GARZON ZHARICK DAYAN",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022133407",
+    "nombre": "BRITO BECERRA NATHALIA ALEJANDRA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020936064",
+    "nombre": "CHAPARRO VILLALOBOS SAMUEL ANDRES",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023941459",
+    "nombre": "ESPITIA MURCIA GABRIELA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017114654",
+    "nombre": "GIL CAÑON GABRIELA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020685315",
+    "nombre": "IBAÑEZ AROS MARTIN ALEJO",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024184816",
+    "nombre": "IZQUIERDO GUTIERREZ ISABELLA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019804196",
+    "nombre": "LENGUA CASTELLANA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019743257",
+    "nombre": "LEON PULIDO JOSEPH",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022133449",
+    "nombre": "MEDINA RIANO MELANY",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020783217",
+    "nombre": "MORENO GUTIERREZ DAYANA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020896104",
+    "nombre": "MORENO MORALES ELKIN SAMUEL",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023468932",
+    "nombre": "MÁRQUEZ PEDRAZA SANTIAGO",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023423977",
+    "nombre": "PACHECO RIVERA ALEJANDRO",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021002027",
+    "nombre": "PINZON CORTES NICOLAS ESTEBAN",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023552848",
+    "nombre": "QUEVEDO VELASCO DANNA SOFIA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019749251",
+    "nombre": "RINCON RINCON VALERY SOFIA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017224951",
+    "nombre": "RODRIGUEZ SALAZAR LUIS JERONIMO",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020625375",
+    "nombre": "ROMERO VEGA ISABELLA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020940060",
+    "nombre": "SANABRIA BOLAÑOS JULIAN DAVID",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019871129",
+    "nombre": "VARGAS ARIAS ISABELLA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024243757",
+    "nombre": "VILLAVISAN LEON MARIA PAULA",
+    "grado": 7,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024210790",
+    "nombre": "AGUIRRE LOPEZ MARIA FERNANDA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019736264",
+    "nombre": "ARIZA VELASCO CHRISTOPHER NICOLAS",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021002412",
+    "nombre": "BELTRAN VARGAS LINA MARIA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020645355",
+    "nombre": "BOTERO VARGAS MARIA KAMILA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019938062",
+    "nombre": "CARVAJAL CAJAMARCA MARTIN SANTIAGO",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020822178",
+    "nombre": "CHARRIS GARCIA ORIANA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023845555",
+    "nombre": "DEL CAIRO LÓPEZ LUCIANA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020726274",
+    "nombre": "ECHEVERRIA SANTAMARIA ANA LUCIA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023942458",
+    "nombre": "ESPITIA MURCIA VALENTINA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024155845",
+    "nombre": "FORERO SAENZ CRISTIAN EDUARDO",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022091424",
+    "nombre": "GUEVARA MELO SAMUEL DAVID",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133415",
+    "nombre": "HERNANDEZ POVEDA MARIA JOSE",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022074427",
+    "nombre": "MARIN LOPEZ JERONIMO",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020933067",
+    "nombre": "MARTINEZ GALVIS DANNA CATALINA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020910090",
+    "nombre": "MELGAREJO ROJAS PEDRO",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024426574",
+    "nombre": "MUJICA SANTANA JUAN JOSE",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024846154",
+    "nombre": "MURCIA ALBA EMMANUEL",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019875125",
+    "nombre": "ORTIZ CUENCA JOAQUIN",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020756244",
+    "nombre": "PALMAR BELLO ANA SOFIA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020812188",
+    "nombre": "PINZON ORGANISTA SAMUEL SANTIAGO",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020682318",
+    "nombre": "QUINTERO CABEZAS MARIANA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018210210",
+    "nombre": "RAMOS RODRIGUEZ OMAR STEVEN",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018303303",
+    "nombre": "REYES MERCHAN GABRIELA CATALINA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022097404",
+    "nombre": "RIOS CASTILLO LUIS FERNANDO",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020687313",
+    "nombre": "ROZO CONTRERAS VALERY JULIETH",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023776624",
+    "nombre": "SANCHEZ QUINTERO MARIA ISABELLA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020528472",
+    "nombre": "SUAREZ SANCHEZ MARIA ALEJANDRA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020586414",
+    "nombre": "VARGAS RICARDO JUAN SEBASTIAN",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020681319",
+    "nombre": "VIRGUEZ VASQUEZ SARA SOFIA",
+    "grado": 7,
+    "grupo": "E"
+  },
+  {
+    "documento": "2017111189",
+    "nombre": "ORTIZ PALACIOS SOFIA",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2022206297",
+    "nombre": "ALVARADO MONROY KAROL ANTONIA",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2023728672",
+    "nombre": "BERMUDEZ GELVEZ ANDREY",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2019584416",
+    "nombre": "CAMACHO PUENTES MARIANA",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2022390111",
+    "nombre": "CARO ARZAYUS MIGUEL ANGEL",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2022133445",
+    "nombre": "CARVAJAL HERNANDEZ JUAN DANIEL",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2020804196",
+    "nombre": "CIPAGAUTA GARZA SARAH",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2019971029",
+    "nombre": "GÓMEZ ALARCÓN MARÍA JULIANA",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2023912488",
+    "nombre": "HERNANDEZ LOPEZ JOAN SEBASTIAN",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2020990010",
+    "nombre": "HERNANDEZ SANCHEZ GABRIELA",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2020993007",
+    "nombre": "IBAÑEZ VARGAS NICOLAS",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2018139139",
+    "nombre": "LOPEZ VARGAS MANUEL",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2020989011",
+    "nombre": "MARIN RAMIREZ SANTIAGO",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2022206384",
+    "nombre": "MENDEZ LOPEZ SARA",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2020606394",
+    "nombre": "NARIÑO GONZALEZ SERGIO JOEL",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021002320",
+    "nombre": "PITA BERMUDEZ EMILY SOFIA",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2020909091",
+    "nombre": "QUINTERO CARREÑO SAMANTHA",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2020836164",
+    "nombre": "REYES MORENO JUAN SEBASTIAN",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2020629371",
+    "nombre": "SUAREZ YASNO SAMUEL DAVID",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2021002449",
+    "nombre": "TORRES HERNANDEZ ALEJANDRO",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2020948052",
+    "nombre": "VARGAS SOTO DANIEL SANTIAGO",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2024450550",
+    "nombre": "ZABALA CAGUA THOMAS JHOEL",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2024108892",
+    "nombre": "ÁVILA COSME VALENTINA",
+    "grado": 7,
+    "grupo": "F"
+  },
+  {
+    "documento": "2018045045",
+    "nombre": "CHALA TORRES MIGUEL ANGEL",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018299299",
+    "nombre": "ALVAREZ RAMIREZ MARIANA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024126874",
+    "nombre": "AVENDAÑO VASQUEZ SARA SUSANA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024273727",
+    "nombre": "AVILA GRANADOS MATIAS",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019783217",
+    "nombre": "BELTRAN BELTRAN JEREMY DAVID",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016942058",
+    "nombre": "BOHORQUEZ PEDRAZA LUNA VALENTINA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019622378",
+    "nombre": "CABEZAS CASTRO MAIRA ALEJANDRA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017557129",
+    "nombre": "CARDENAS CARREÑO JAVIER ANDRES",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017224654",
+    "nombre": "CASTRILLON GUTIERREZ JUAN SEBASTIAN",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024250750",
+    "nombre": "CHACON GONZALEZ EMANUEL",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024271729",
+    "nombre": "CORTÉS BLANCO DAVID SANTIAGO",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019720280",
+    "nombre": "DIAZ SANCHEZ SEBASTIAN",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019915085",
+    "nombre": "DIAZ TRUJILLO SANTIAGO ALEJANDRO",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017447327",
+    "nombre": "GALINDO VILLAMIL DIEGO SAMUEL",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023853547",
+    "nombre": "GONZALEZ ALVAREZ SARA JULIANA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019955045",
+    "nombre": "GRANADA VEGA MATIAS",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019805195",
+    "nombre": "JUNCO BUITRAGO DAVID",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016972028",
+    "nombre": "LLANOS MARROQUIN SOFIA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024146854",
+    "nombre": "LOAIZA RODRIGUEZ VALERY SARAI",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018033033",
+    "nombre": "LOPEZ JEREZ SARA VALENTINA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019883117",
+    "nombre": "MARTIN LOPEZ ISABELLA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022381120",
+    "nombre": "MENDEZ GARCIA DANNA VALENTINA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019672328",
+    "nombre": "MORENO HUERTAS SAMUEL",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016746254",
+    "nombre": "OLARTE MUÑOZ SANTIAGO",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016970030",
+    "nombre": "PEREZ CHAVARRO JUAN FELIPE",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018162162",
+    "nombre": "RAGUA GONZALEZ SERGIO ANDRES",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024314686",
+    "nombre": "RIAÑO ROJAS LAURA VALENTINA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024330670",
+    "nombre": "RINCON CABRERA GABRIELA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017110397",
+    "nombre": "RODRIGUEZ MARTINEZ VALERY JULIANA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019944056",
+    "nombre": "ROJAS ROJAS JUAN CAMILO",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019668332",
+    "nombre": "ROJAS ROJAS JUAN DAVID",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016908092",
+    "nombre": "ROMERO HERNANDEZ ASHLY STEPHANIA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016718282",
+    "nombre": "SANABRIA SABOGAL JUAN JOSE",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022377124",
+    "nombre": "SEPULVEDA OLARTE FEDERICO",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019927073",
+    "nombre": "VANEGAS GODOY DERICK",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024496504",
+    "nombre": "VELANDIA SALAZAR MARIA CAMILA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024483517",
+    "nombre": "VILLAGRAN HERRERA MATIAS",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024286714",
+    "nombre": "ZAMBRANO SANDOVAL ISABELLA",
+    "grado": 8,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021003424",
+    "nombre": "AGUDELO ROBAYO SHARON LUCIANA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024169831",
+    "nombre": "ALVAREZ ALVARADO SALOME",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021003335",
+    "nombre": "AMAYA NIAMPIRA JUAN SEBASTIAN",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024138862",
+    "nombre": "AVILA GALLEGO ANGEL MATIAS",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020559441",
+    "nombre": "BARRETO GALVAN STHEPHANI SOFIA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023759641",
+    "nombre": "BOHORQUEZ SUAREZ JOSEPH DAVID",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023910490",
+    "nombre": "CAICEDO CARDOZO EMMILY ANGELICA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2016738262",
+    "nombre": "CEBALLOS BERMUDEZ MARIA CAMILA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020594406",
+    "nombre": "CLAVIJO ORJUELA MARIANA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019947053",
+    "nombre": "CORTES CALVANO VALERIA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024182818",
+    "nombre": "CÁRDENAS LIZ JUAN PABLO",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019941059",
+    "nombre": "DEVIA MORENO MARTIN ESTEBAN",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024152848",
+    "nombre": "ESQUIVEL CALDERON ISABELLA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024197803",
+    "nombre": "FERNANDEZ RIAÑO ISABELLA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024449551",
+    "nombre": "GALVIS ROJAS MELANIE GISELLE",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021003422",
+    "nombre": "GARCIA ALVARADO KEILY SALOME",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019684316",
+    "nombre": "GONZALEZ DIAZ JOHAN SANTIAGO",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019889111",
+    "nombre": "GUERRERO PINILLA SARA SOFIA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020672328",
+    "nombre": "HERRERA PAEZ KMIL MARIANA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024231769",
+    "nombre": "LOPEZ VELA SARA VALENTINA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023576824",
+    "nombre": "MARTINEZ CAMELO VALERY SHARAY",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019942058",
+    "nombre": "MILLAN MORENO JULIANA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019931069",
+    "nombre": "MORENO LOZANO ISABELLA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024436564",
+    "nombre": "MORENO MARIÑO MELANIE DANIELA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023878522",
+    "nombre": "PINTO CANTOR SAMANTHA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2018103103",
+    "nombre": "RAMIREZ FONSECA SARA VALENTINA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019983017",
+    "nombre": "RINCÓN GÓNGORA NICOLÁS",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133422",
+    "nombre": "RODRIGUEZ ACOSTA JUAN SEBASTIAN",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019730270",
+    "nombre": "RODRIGUEZ MOYA JUAN DIEGO",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024405595",
+    "nombre": "ROZO FLOREZ DAVID SANTIAGO",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019626374",
+    "nombre": "SANCHEZ ACERO JULIAN DAVID",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2024125875",
+    "nombre": "SIABATO AVILA LUCIA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022355146",
+    "nombre": "TOLOSA CARDENAS MATEO",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021003028",
+    "nombre": "VARGAS MENDOZA SARA VALENTINA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2018181181",
+    "nombre": "ZARATE CORDOBA JESSICA LORENA",
+    "grado": 8,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020579421",
+    "nombre": "ARANGO HERNANDEZ MARIA JOSE",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024302698",
+    "nombre": "CALDERÓN MARTINEZ AARON FELIPE",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024278722",
+    "nombre": "CASTAÑEDA QUIROGA EMI SARITA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024110890",
+    "nombre": "CELIS VIRGÜEZ MARIA GABRIELA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024194806",
+    "nombre": "CONTRERAS RODRIGUEZ MIGUEL ANGEL",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020553447",
+    "nombre": "CRUZ MUNOZ LUCIANA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023761639",
+    "nombre": "CÁRDENAS ROJAS DAVID JOEL",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019636364",
+    "nombre": "DURAN CASTILLO THOMAS ALEJANDRO",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024168832",
+    "nombre": "FIGUEROA ARIAS GUSTAVO",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024309691",
+    "nombre": "GARCIA CASTILLO JUAN CAMILO",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019933067",
+    "nombre": "GONZÁLEZ IBAÑEZ LUNA MARIANA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020657343",
+    "nombre": "GUTIERREZ PAEZ SARA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019809191",
+    "nombre": "HERNANDEZ PARADA MAXIMILIANO",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019762238",
+    "nombre": "HURTADO VILLALOBOS OSCAR THOMAS",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022353148",
+    "nombre": "LAGOS VEGA JUAN SEBASTIAN",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019690310",
+    "nombre": "LEGUIZAMO BERMUDEZ THIAGO SAMUEL",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020883117",
+    "nombre": "LOPEZ ALFONSO MATTIAS",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024120880",
+    "nombre": "LOPEZ VILLARRAGA DANNA SOFIA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024399601",
+    "nombre": "MATEUS ROJAS DANNA SOPHIA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021003317",
+    "nombre": "MIRANDA MONROY DANIEL JESUS",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019869131",
+    "nombre": "MONTILLA RUIZ JUAN MANUEL",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024149851",
+    "nombre": "MORA LEON LUCIANA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019794206",
+    "nombre": "MORENO ORTIZ SALOME",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024196804",
+    "nombre": "NAVAS GARZÓN SARAH YOHANNA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019796204",
+    "nombre": "PARDO OSPINA MARIANA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019963037",
+    "nombre": "PUENTES MEDINA MARIA CAMILA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022091429",
+    "nombre": "RINCON OLAYA JUSTIN HAMID",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019614386",
+    "nombre": "RIVERA BAEZ ORIANNIS",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024159841",
+    "nombre": "RODRIGUEZ BUSTOS KENET GABRIEL",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023644756",
+    "nombre": "RODRIGUEZ ORTIZ EVELYN",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016920080",
+    "nombre": "ROMERO ARIZA ANA ISABELLA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019721279",
+    "nombre": "ROZO GALINDO SAMUEL ESTEBAN",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024359641",
+    "nombre": "SANDOVAL MANRIQUE VALERIA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024178822",
+    "nombre": "SILVA ZAPATA SARA VALENTINA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024135865",
+    "nombre": "TENZA PAZ KAITLYN NATASHA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019750250",
+    "nombre": "VALDERRAMA MURIEL SARA VALENTINA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018433433",
+    "nombre": "VARGAS MORALES HELLEN GABRIELA",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024389611",
+    "nombre": "VILLARREAL PINZÓN JUAN DIEGO",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019939061",
+    "nombre": "ZEA CUELLAR JOEL SEBASTIAN",
+    "grado": 8,
+    "grupo": "C"
+  },
+  {
+    "documento": "2024353647",
+    "nombre": "ALTAHONA SILVA ALISON GABRIELA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024269731",
+    "nombre": "AREVALO SANCHEZ JUAN DAVID",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020592408",
+    "nombre": "AVILA NIVIA MARIANA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024316684",
+    "nombre": "BETANCOURT VARGAS JHOAN STEVEN",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023610790",
+    "nombre": "BUSTOS LEÓN JUAN ESTEBAN",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019820180",
+    "nombre": "CANO OLARTE JUAN FELIPE",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020560440",
+    "nombre": "CARDONA GIL JUAN FELIPE",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024187813",
+    "nombre": "CASTILLO ACERO LIA SALOME",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024237763",
+    "nombre": "CORREA CUELLAR LUCIANA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023717683",
+    "nombre": "DAJOME CASTILLO SARAY",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016783217",
+    "nombre": "DURAN LEGUIZAMO JULIETTA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019968032",
+    "nombre": "GALEANO SANTACRUZ DIEGO ALEJANDRO",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020713287",
+    "nombre": "GALVIS GIL DANNA SOFIA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022392109",
+    "nombre": "GARZON PEREZ JUAN JOSE",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021003363",
+    "nombre": "GONZALEZ LARRARTE JUAN MATHIAS",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017228515",
+    "nombre": "GUTIERREZ RAMIREZ SANTIAGO",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019872128",
+    "nombre": "INFANTE FERNANDEZ SOFIA ISABELA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024317683",
+    "nombre": "LINARES PELAEZ JULIAN DAVID",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024394606",
+    "nombre": "LOPEZ BERNAL JUAN JOSE",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018334334",
+    "nombre": "LUENGAS SANCHEZ MICHAEL STEVE",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024160840",
+    "nombre": "MAYORGA RUIZ ALEJANDRO",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024157843",
+    "nombre": "MOLINA ROMERO KAROL SAMANTHA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021003431",
+    "nombre": "MUNOZ MARTINEZ GABRIEL DAVID",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023748652",
+    "nombre": "NAVARRETE OSORIO JUAN DAVID",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019952048",
+    "nombre": "NEIRA BUSTAMANTE MILAGROS",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021003209",
+    "nombre": "ORJUELA ROJAS ANDRES JULIAN",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019870130",
+    "nombre": "PARRA MORENO TOMAS",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022150351",
+    "nombre": "QUINTERO ALVAREZ SAMUEL ESTEBAN",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022151350",
+    "nombre": "RAMIREZ GONZALEZ MARIA FERNANDA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019984016",
+    "nombre": "RAVELO ROJAS JUAN SEBASTIAN",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022206373",
+    "nombre": "RIOS GALLO JUAN PABLO",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021003269",
+    "nombre": "RODRIGUEZ CASTELLANOS TOMAS",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022374127",
+    "nombre": "RODRIGUEZ GUEVARA ISABELA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023696704",
+    "nombre": "RODRIGUEZ OSPINA SAMUEL",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024357643",
+    "nombre": "ROMERO BERMUDEZ MANUELA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020502498",
+    "nombre": "RUBIO PRADA JULIA ANDREA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019737263",
+    "nombre": "SALAZAR ACERO MARIA CAMILA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022323178",
+    "nombre": "SANTAMARIA RODRIGUEZ DANNA SOFIA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024102898",
+    "nombre": "SUAREZ SAMUDIO LUISA FERNANDA",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019986014",
+    "nombre": "VINASCO CASTAÑEDA DEBIAN ALEJANDRO",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024208792",
+    "nombre": "ZUÑIGA PEÑA SANTIAGO",
+    "grado": 8,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018055055",
+    "nombre": "DUSSAN ARTUNDUAGA SARA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019748252",
+    "nombre": "ACEVEDO ZAMORA JUAN FERNANDO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133447",
+    "nombre": "ASCUNTAR PULIDO MAYRA JULIANA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024492508",
+    "nombre": "BETANCUR GUZMAN EVANGELIN GABRIELA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133408",
+    "nombre": "BRITO BECERRA NICOLLE PATRICIA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019568432",
+    "nombre": "CABANZO VARELA SEBASTIAN",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021003386",
+    "nombre": "CARDENAS BARRIOS EMANUEL",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018265265",
+    "nombre": "CARRILLO ROMERO THIAGO DANOVIC",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019572428",
+    "nombre": "CASAS VALDES VIOLETA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019571429",
+    "nombre": "CASTAÑEDA GUARIN MATIAS",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2016917083",
+    "nombre": "CASTILLO VEGA MARIANA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021004349",
+    "nombre": "CHACON CARDENAS JUAN ESTEBAN",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024373627",
+    "nombre": "CORREA GARCIA JEAN PAUL SAMUEL",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019998002",
+    "nombre": "DIAZ GARCIA ALEJANDRO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023510890",
+    "nombre": "ESCOBAR SUÁREZ DAVID SANTIAGO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024113887",
+    "nombre": "GALINDO HERRERA SAMUEL ESTEBAN",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019991009",
+    "nombre": "GÓMEZ CHACÓN SAMUEL ALEJANDRO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020773227",
+    "nombre": "HERNANDEZ CONTRERAS DANTE ALEJANDRO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019788212",
+    "nombre": "JIMENEZ LOPEZ THOMAS SANTIAGO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024434566",
+    "nombre": "LOPEZ FLORIDO DANNA GABRIELA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2016844156",
+    "nombre": "MARIN BELLO JUAN DAVID",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019816184",
+    "nombre": "MELO CALDERON DAVID SANTIAGO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024206794",
+    "nombre": "MOLINA TORRES MARIA ALEJANDRA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018074074",
+    "nombre": "MONROY CONDE JUAN JACOBO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018363363",
+    "nombre": "MONTES CESPEDES JUAN JOSE",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024195805",
+    "nombre": "MORENO GARCIA LUCIANA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020951049",
+    "nombre": "MUÑOZ BOHORQUEZ MARIAN",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024287713",
+    "nombre": "OCHOA RODRIGUEZ MARIANA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018168168",
+    "nombre": "PEDROZA PERDOMO JHOELL SANTIAGO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018087087",
+    "nombre": "QUIROGA ALVAREZ ISABELLA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023834566",
+    "nombre": "RIOS RINCON SOFIA ALEJANDRA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020673327",
+    "nombre": "ROJAS MARTINEZ ANA GABRIELA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024101899",
+    "nombre": "ROMERO GIL SAMUEL LEANDRO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020562438",
+    "nombre": "SALAZAR RAMIREZ ISABELLA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133414",
+    "nombre": "SANTAMARIA VARON JUANITA ISABELLA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019674326",
+    "nombre": "TELLEZ ROMERO JUAN DIEGO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024144856",
+    "nombre": "VALENCIA ARTEAGA VALERIA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024167833",
+    "nombre": "VEGA ARIAS KEVIN THOMASS",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019691309",
+    "nombre": "WIESNER ROJAS DAVID ARTURO",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2024118882",
+    "nombre": "ÁLVAREZ LAMUS ISABELA",
+    "grado": 8,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018040040",
+    "nombre": "STIVENSON MARTIN GIAN MARCOS",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023633767",
+    "nombre": "ALDANA SANCHEZ SANTIAGO",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016936064",
+    "nombre": "ALONSO HORTUA KEVIN CAMILO",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018105105",
+    "nombre": "APAZA CALDERON ALEJANDRO",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021004180",
+    "nombre": "ASCENCIO MURCIA SEBASTIAN",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022145356",
+    "nombre": "BENAVIDES OLIVEROS JUAN ESTEBAN",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023757643",
+    "nombre": "CACERES GONZALEZ NOHELIA NAHOMY",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022101400",
+    "nombre": "CAPERA CLAROS ALEXANDER",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017551783",
+    "nombre": "CARDOZO MARTINEZ DANNA SOFIA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018287287",
+    "nombre": "CELY ROJAS MIGUEL SANTIAGO",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018112112",
+    "nombre": "CHOCONTA OSUNA JUAN JOSE",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021004399",
+    "nombre": "DELGADO BERNAL SAMUEL",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019601399",
+    "nombre": "DIAZ MORENO SAMUEL ALEJANDRO",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017332278",
+    "nombre": "FAJARDO PENAGOS MARIA JOSE",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023626774",
+    "nombre": "FUENTES FIGUEROA LUISA FERNANDA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023424976",
+    "nombre": "GARCIA LAGUNA DIEGO ALEJANDRO",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018414414",
+    "nombre": "GUTIERREZ TORRES VALERY DAYANA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023578822",
+    "nombre": "GÓMEZ GUALTEROS MARIAM FERNANDA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018148148",
+    "nombre": "LEON ALFONSO ALEJANDRA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023652748",
+    "nombre": "MALDONADO SOTO ANA SOFIA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017113268",
+    "nombre": "MARTIN PINTO JUAN SEBASTIAN",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023426974",
+    "nombre": "MEZA NEIRA MARIA ALEJANDRA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023704696",
+    "nombre": "MONTILLA SUÁREZ LAURA ALEJANDRA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022125376",
+    "nombre": "MORA MORALES SAMUEL ALEJANDRO",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024448552",
+    "nombre": "ORDOÑEZ MORALES MARIA ISABELLA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018024024",
+    "nombre": "ORTIZ TORRES SARA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018023023",
+    "nombre": "PACHON CIFUENTES ANA MARIA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022133436",
+    "nombre": "POLANCO PIRAGAUTA HELEN CAMILA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022206363",
+    "nombre": "POVEDA AGUILERA MANUEL SANTIAGO",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023516884",
+    "nombre": "RAMÍREZ PINZÓN SANTIAGO",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017115149",
+    "nombre": "RINCON ALVAREZ GABRIELA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021004441",
+    "nombre": "RINCON CARRILLO JUAN ESTEBAN",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018177177",
+    "nombre": "SANCHEZ PERILLA MARIA VALENTINA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023575825",
+    "nombre": "TORRES CASAS NICOLE DANIELA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023628772",
+    "nombre": "TOVAR RIVERA DANIEL SANTIAGO",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016768232",
+    "nombre": "TRUJILLO CRUZ JOSE FELIPE",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022112389",
+    "nombre": "VEGA RODRIGUEZ HAROLD DAVID",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022375126",
+    "nombre": "VEZGA ALFERES MARIANA",
+    "grado": 9,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018020020",
+    "nombre": "MORA PAEZ SERGIO SAMUEL",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021004178",
+    "nombre": "BELTRAN CASTIBLANCO JUAN DAVID",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2018026026",
+    "nombre": "BERMUDEZ GARCES VALLERIE SAMANTHA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019789211",
+    "nombre": "BLANCO CORREA ANDRES FELIPE",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020873127",
+    "nombre": "BOGOTÁ ESCOBAR JUANA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2016969031",
+    "nombre": "BUITRAGO CASTILLO ISABELLA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023764636",
+    "nombre": "CABALLERO SILVA PAULA SOFÍA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023546854",
+    "nombre": "CADENA TUNAROSA MARIANA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017223862",
+    "nombre": "CARRERO HUERTAS SANTIAGO",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023641759",
+    "nombre": "CASTRO MESA KAMILA ALEJANDRA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017559010",
+    "nombre": "DUARTE VALERO IAN CAMILO",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023821579",
+    "nombre": "FERNANDEZ AVENDAÑO ELISABETH",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020875125",
+    "nombre": "FLOREZ HERRERA DANIEL FELIPE",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020750250",
+    "nombre": "GALEANO RUIZ DANA ISABELA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021004191",
+    "nombre": "GARCIA CARRERO IAN XAVIER",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023607793",
+    "nombre": "GOMEZ ORTIZ PAULA VALERIA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133501",
+    "nombre": "GUILLEN PEREZ SAMUEL SEBASTIAN",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021004201",
+    "nombre": "GUTIERREZ GUTIERREZ MARIA FERNANDA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017336040",
+    "nombre": "HERRERA HERRERA JUAN DAVID",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023463937",
+    "nombre": "LONDOÑO ORTEGA JUAN DAVID",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023683717",
+    "nombre": "MEDINA PEREZ YULIAN SANTIAGO",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022395106",
+    "nombre": "MESIAS GOMEZ JUAN SEBASTIAN",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023772628",
+    "nombre": "MORENO LÓPEZ NATALIA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023733667",
+    "nombre": "MURCIA ALAPE NICOLÁS EDUARDO",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022073428",
+    "nombre": "NOGUERA LEON MARIA CAMILA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023401999",
+    "nombre": "OTALORA BRIÑEZ JUAN ESTEBAN",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020832168",
+    "nombre": "PABON PUENTES MARIANA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023565835",
+    "nombre": "PRECIADO SOTO SARA SOFIA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023537863",
+    "nombre": "RAMIREZ RINCÓN SEBASTIAN DAVID",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021004368",
+    "nombre": "RIAÑO BAYONA CAMILO ANDRES",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022103398",
+    "nombre": "ROMERO VERGARA YESID",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020824176",
+    "nombre": "RUIZ CASTRO VICTORIA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017116634",
+    "nombre": "SANCHEZ QUIJANO JUANA ISABELLA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023745655",
+    "nombre": "TORRES CONTRERAS VALERY SOFIA",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023765635",
+    "nombre": "VASQUEZ JIMENEZ JUAN STEVAN",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023616784",
+    "nombre": "VASQUEZ TORRES CHRISTOPHER DAVID",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023826574",
+    "nombre": "VERA BERNAL ANDRES FELIPE",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023791609",
+    "nombre": "ÁVILA MURILLO ALEJANDRO",
+    "grado": 9,
+    "grupo": "B"
+  },
+  {
+    "documento": "2018015015",
+    "nombre": "PUERTO BENAVIDES JUANA VALENTINA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016671329",
+    "nombre": "ALMARIO ANDRADE GABRIELA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019879121",
+    "nombre": "ALONSO DAZA VALERIA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018413413",
+    "nombre": "ARCOS PUENTES SARA SOFIA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018183183",
+    "nombre": "BOLIVAR CARDENAS SARA LUCIA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023509891",
+    "nombre": "BURBANO CRUZ DANIELA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023511889",
+    "nombre": "CASALLAS CAMARGO ISABELLA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018046046",
+    "nombre": "CONTRERAS GARCIA DANNA LUCIANA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023518882",
+    "nombre": "CORONADO GUTIÉRREZ EMANUEL",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018134134",
+    "nombre": "DURAN MURCIA DANNA SOFIA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018077077",
+    "nombre": "FIGUEROA CASTILLO VALERIA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018147147",
+    "nombre": "GALINDO MEJIA ANGELA SOFIA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018013013",
+    "nombre": "GODOY DIAZ STEPHANNY",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018270270",
+    "nombre": "GORDILLO RIVEROS SARA VALENTINA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017227228",
+    "nombre": "HERNANDEZ MORALES SOFIA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019877123",
+    "nombre": "LOPEZ MORENO SARA SOFIA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017114159",
+    "nombre": "LOPEZ OLMOS SARA NICOL",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018264264",
+    "nombre": "MORENO GUTIERREZ SERGIO ANDRES",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022133431",
+    "nombre": "MOYANO TORRES ANA MARIA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018118118",
+    "nombre": "NOVA HERNANDEZ SAMUEL FELIPE",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018251251",
+    "nombre": "ORTIZ RAMIREZ SARA ISABELLA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023870530",
+    "nombre": "OSPINA BARBOSA THOMAS FELIPE",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019990010",
+    "nombre": "PEDROZA CARRILLO DANIEL MATTIAS",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021004079",
+    "nombre": "PICON VARGAS MARIA FERNANDA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022147354",
+    "nombre": "RAMIREZ ARARAT ISABELLA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022206322",
+    "nombre": "RESTREPO CORTES MARTIN STIVEN",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019769231",
+    "nombre": "RIVERA SANCHEZ JUSTIN",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023498902",
+    "nombre": "ROA RODRÍGUEZ ETHAN ALEJANDRO",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020811189",
+    "nombre": "RUGE VARGAS MARIA PAULA",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016727273",
+    "nombre": "SANCHEZ MURCIA JUAN SEBASTIAN",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023838562",
+    "nombre": "SOLER GONZALEZ JOSE DANIEL",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018217217",
+    "nombre": "TABORDA VELASQUEZ JUAN MANUEL",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021004080",
+    "nombre": "TRIANA GUTIERREZ SIMON",
+    "grado": 9,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018005005",
+    "nombre": "MARTINEZ CARDONA SAMANTHA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018070070",
+    "nombre": "DELGADO BELTRAN MELANIE",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018060060",
+    "nombre": "PARRA VIASUS JUAN CAMILO",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017336238",
+    "nombre": "QUIROGA BOHORQUEZ SAMUEL",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023497903",
+    "nombre": "AREVALO GOMEZ MARIANA SOFIA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017330397",
+    "nombre": "BLANCO DIAZ MARIA CAMILA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018227227",
+    "nombre": "BUSTAMANTE ALVAREZ LAURA ALEJANDRA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024457543",
+    "nombre": "CALDERON RANGEL JUAN DIEGO",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016879121",
+    "nombre": "CASTELLANOS RAMIREZ DANNA GABRIELA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019961039",
+    "nombre": "CUPITRA HERNANDEZ MIGUEL ANGEL",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022206387",
+    "nombre": "ECHEVERRY PINZON MARIEN ALEJANDRA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019712288",
+    "nombre": "ENCISO CALVO ISABELLA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018187187",
+    "nombre": "GARAVITO BARRETO MARIANA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023606794",
+    "nombre": "GIL RUIZ HANNA SOFIA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019766234",
+    "nombre": "GOMEZ CAICEDO DANIEL ALEJANDRO",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022150359",
+    "nombre": "GOMEZ DAZA MARIA CAMILA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019773227",
+    "nombre": "LAGOS RIASCOS JERONIMO",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018305305",
+    "nombre": "LOPEZ LOPEZ KEVIN DANIEL",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023542858",
+    "nombre": "MONROY GOMEZ SOFIA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023512888",
+    "nombre": "PALMA CHACÓN DANNA MANUELA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021004321",
+    "nombre": "PARRA MENDEZ ISABELLA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022133395",
+    "nombre": "PENA GUTIERREZ MANOLO",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021004318",
+    "nombre": "PINEDA LÓPEZ SHARON STEPHANY",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016830170",
+    "nombre": "QUINTERO PINZON CRISTIAN DAVID",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018163163",
+    "nombre": "RAGUA GONZALEZ JUAN ESTEBAN",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017559208",
+    "nombre": "RAMIREZ CADAVID JUAN ESTEBAN",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022270231",
+    "nombre": "RODRIGUEZ BELTRAN SAMANTHA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018117117",
+    "nombre": "RODRIGUEZ ROJAS ISABELLA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023597803",
+    "nombre": "SANTAFE REYES VALERY ALEJANDRA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018018018",
+    "nombre": "SARMIENTO CASTRO VALERIA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018320320",
+    "nombre": "SILVA GARCIA LUCIANA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021004388",
+    "nombre": "SULVARA BALLEN JULIANA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018076076",
+    "nombre": "TAUTIVA HERRERA MARIAN LUCIANA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2023656744",
+    "nombre": "TORRES RODRIGUEZ MARCO ANTONIO",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018062062",
+    "nombre": "VARGAS SIERRA SOPHIA",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021004377",
+    "nombre": "VILLARRUEL ARIAS DANIEL FELIPE",
+    "grado": 9,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021004334",
+    "nombre": "AMAYA NIAMPIRA JUAN FELIPE",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133393",
+    "nombre": "ARIAS SAENZ JULIAN MATEO",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018188188",
+    "nombre": "BARRETO BARRERA JUAN FELIPE",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019847153",
+    "nombre": "BOHADA AGUDELO NICOLAS",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020785215",
+    "nombre": "BUSTOS BERNAL SOFIA",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019824176",
+    "nombre": "CAPERA AMAYA ALEJANDRO",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018279279",
+    "nombre": "CASTRILLO RIOS GABRIELA VALENTINA",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023809591",
+    "nombre": "CORTES SINISTERRA ISABELLA",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021004392",
+    "nombre": "DIAZ MELO SARA CAMILA",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023487913",
+    "nombre": "DÍAZ MARTÍNEZ DUVEL MATHIAS",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023703697",
+    "nombre": "ESPAÑA PÉREZ STANLEY",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023457943",
+    "nombre": "FORERO CARDENAS JUAN JOSE",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023442958",
+    "nombre": "GARCES SEDANO DANNA ISABELLA",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023702698",
+    "nombre": "GARZÓN CIFUENTES MATEO",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2017224555",
+    "nombre": "GIRALDO DEVIA NATALIA ISABEL",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019768232",
+    "nombre": "GOMEZ CAICEDO OMAR DANILO",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2016836164",
+    "nombre": "GUERRERO MORA MATIAS",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023553847",
+    "nombre": "GUTIÉRREZ FONSECA ISABELLA",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018213213",
+    "nombre": "LAGUNA LAGUNA JULIAN DAVID",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023700700",
+    "nombre": "PINZON MOLANO MARIA JOSE",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018203203",
+    "nombre": "QUINTERO PUIN SALOME",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018300300",
+    "nombre": "RAMIREZ GARZON SHAYRA DANIELA",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018259259",
+    "nombre": "RAMIREZ ORTEGA VALERIA",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023475925",
+    "nombre": "RINCÓN AGUILAR JANNA MANUELA",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023434966",
+    "nombre": "SANCHEZ CUESTA ANDRES FELIPE",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018211211",
+    "nombre": "SOCHA GALINDO MIGUEL ANGEL",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023738662",
+    "nombre": "TALERO SÁNCHEZ MIGUEL ÁNGEL",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023775625",
+    "nombre": "TELLEZ AFANADOR JUAN FELIPE",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2018403403",
+    "nombre": "TORRES CABALLERO TOMAS SANTIAGO",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2017559802",
+    "nombre": "TORRES DIAZ DYLAN SANTIAGO",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133394",
+    "nombre": "VARON CHAPARRO MARIANA ALEJANDRA",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023525875",
+    "nombre": "YAYA MARTINEZ PAULA SOFIA",
+    "grado": 9,
+    "grupo": "E"
+  },
+  {
+    "documento": "2017111090",
+    "nombre": "SANABRIA BOLAÑOS JUAN FELIPE",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017330793",
+    "nombre": "CORREDOR CANARIA JOHANN SANTIAGO",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018082082",
+    "nombre": "ARMERO MORALES MIGUEL ANGEL",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022321180",
+    "nombre": "ACEVEDO NINO MANUELA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019528472",
+    "nombre": "AMAYA RAMÍREZ FEDERICO",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022108393",
+    "nombre": "ARDILA TRIGOS MARIA ALEJANDRA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2023727673",
+    "nombre": "ARIZA AULLON SARA VALENTINA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022379122",
+    "nombre": "CADENA CASTRO NICOLE VALENTINA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021005371",
+    "nombre": "CAMACHO SANCHEZ SARA SOFIA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024460540",
+    "nombre": "CARDENAS FLOREZ DANNA VALERIA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006042",
+    "nombre": "CASTILLO GOMEZ LAURA SOFIA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006041",
+    "nombre": "CAÑON AVILA CRISTOPHER DANIEL",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018206206",
+    "nombre": "CUEVAS PEREZ ERICK ALEJANDRO",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022347154",
+    "nombre": "ESTRADA HERRERA MARIA FERNANDA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022133368",
+    "nombre": "FIRAVITOVA FAJARDO SANTIAGO",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018335335",
+    "nombre": "GARCIA BLANCO MARTINA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006319",
+    "nombre": "GOMEZ PINEDA JEAN JAVIER",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022206386",
+    "nombre": "GONZALEZ DURAN LUCIANA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016764236",
+    "nombre": "GONZALEZ ERAZO SALOME",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006146",
+    "nombre": "HERNANDEZ CONTRERAS GIOVANNI",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022105396",
+    "nombre": "JIMENEZ IBAï½EZ JULIAN DAVID",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2024545455",
+    "nombre": "LEÓN BUSTOS DANNA SOFIA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021005417",
+    "nombre": "MARTINEZ RAMIREZ MARIA JOSE",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018090090",
+    "nombre": "MONCADA CARDONA KAROL SOFIA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022303198",
+    "nombre": "NEGRET CASTANEDA JUAN ALEJANDRO",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017557525",
+    "nombre": "OVALLOS ROA ALEJANDRA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016923077",
+    "nombre": "PULIDO COMBITA MELANIE TATIANA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022206385",
+    "nombre": "RICO CARDENAS MARIA FERNANDA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016728272",
+    "nombre": "RODRIGUEZ SALAZAR ANA SOFIA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006116",
+    "nombre": "SARMIENTO MENDEZ SOFIA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022111390",
+    "nombre": "TORRES VALENCIA JUAN DAVID",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022360141",
+    "nombre": "VARGAS GALVIS ISABELLA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022244257",
+    "nombre": "VILLALBA GUERRERO AYLYN VALENTINA",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017449010",
+    "nombre": "ZAMBRANO CAMPOS JUAN SEBASTIAN",
+    "grado": 10,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017116238",
+    "nombre": "TOVAR MANRIQUE SANTIAGO",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017330892",
+    "nombre": "CAICEDO PEÑA STEBAN FERNEY",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2018365365",
+    "nombre": "ACOSTA ESPINOSA VALERIE SOFIA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017113466",
+    "nombre": "AMORTEGUI SANCHEZ NICOLAS ESTEBAN",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022179322",
+    "nombre": "ARIAS CASTRO ANGEL STIVEN",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022206337",
+    "nombre": "BELTRAN APONTE STIVEN FELIPE",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017114852",
+    "nombre": "CARDENAS RUIZ SERGIO",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2018278278",
+    "nombre": "CASTILLO MONROY JUAN PABLO",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006113",
+    "nombre": "CASTILLO VELARDE IARA GABRIELA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017554258",
+    "nombre": "CATAÑO SANCHEZ NICOLAS SANTIAGO",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022231270",
+    "nombre": "CORTES BLANCO NICOLE DIANE",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022275226",
+    "nombre": "DAZA ARBOLEDA SAMUEL STICK",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023594806",
+    "nombre": "DUARTE MORERAS JUAN JOSÉ",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023716684",
+    "nombre": "FORERO ZAMBRANO KAROL MARIANNE",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021005036",
+    "nombre": "GALAN CARRANZA JUAN PABLO",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023666734",
+    "nombre": "GARZON ZUÑIGA GABRIELA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022150364",
+    "nombre": "HERNANDEZ TORRES BRAYAN SANTIAGO",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020596404",
+    "nombre": "JIMENEZ RODRIGUEZ DANNA VALENTINA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020620380",
+    "nombre": "JURADO PEREZ ISABELLA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022206346",
+    "nombre": "LESMES CHICA ALEJANDRO",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021005333",
+    "nombre": "MALDONADO ORTIZ LIZETH YULIANA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021005382",
+    "nombre": "MAYORGA MARTINEZ MARIA PAULA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006050",
+    "nombre": "MENDOZA ROMERO NAIRI",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2016891109",
+    "nombre": "MORENO QUIROGA MARIA PAULA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022325176",
+    "nombre": "PAIVA SANDOVAL AARON PHILLIPE",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022237264",
+    "nombre": "PINZON AREVALO JUAN ANDRES",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017112080",
+    "nombre": "QUIÑONES BUSTOS LAURA VALENTINA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2016653347",
+    "nombre": "RAMIREZ LIZARAZO VALERIE SAMARA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020798202",
+    "nombre": "RINCON ROBAYO EDSON JULIAN",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022091431",
+    "nombre": "ROA GOMEZ SOL SAMANTA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022262239",
+    "nombre": "RODRIGUEZ CHAPARRO DANIEL STEVEN",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023489911",
+    "nombre": "ROJAS RIVEROS SERGIO CAMILO",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2023699701",
+    "nombre": "ROMERO NARVAEZ SERGIO ALEJANDRO",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017229208",
+    "nombre": "SANABRIA MALDONADO LAURA VALENTINA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022150363",
+    "nombre": "VELOZA GUANUMEN MATIAS",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022131370",
+    "nombre": "ZAMORA RODRIGUEZ VALENTINA",
+    "grado": 10,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017225644",
+    "nombre": "GAVIRIA ROJAS MARIA JOSE",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022091423",
+    "nombre": "ANAYA ALTAMAR DANNA SOFIA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022206344",
+    "nombre": "ARIAS NUÑEZ JUAN DAVID",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023684716",
+    "nombre": "BAGUI PINZÓN SERGIO ALEJANDRO",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016807193",
+    "nombre": "BELTRAN DIAZ SOPHIA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022202299",
+    "nombre": "BUITRAGO LOPEZ SAMUEL",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022133402",
+    "nombre": "CALDERON REYES JULIANA SOFIA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022401100",
+    "nombre": "CARO ROJAS ALISSON LICETH",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019977023",
+    "nombre": "CASTILLO SOLANO MARIA ALEJANDRA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019803197",
+    "nombre": "CORTES CONTRERAS SHARICK TATIANA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022129372",
+    "nombre": "CUELLAR GUTIERREZ CRISTIAN GIOVANNY",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2018022022",
+    "nombre": "DAZA HERNANDEZ ANDRES FELIPE",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022206369",
+    "nombre": "GALINDO CARDENAS WILSON FELIPE",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022206390",
+    "nombre": "GUERRERO ESPITIA PABLO ESTEBAN",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2023740660",
+    "nombre": "HENAO CASTRO VALERIA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021005280",
+    "nombre": "HERRERA CANTE ISABELLA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017222674",
+    "nombre": "LAISECA HERRENO MARIANA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022127374",
+    "nombre": "LINARES VELA WILMAN NICOLAS",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017334951",
+    "nombre": "MANTILLA SAENZ JOSEPH DANIEL",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006179",
+    "nombre": "MEJIA HERRERA JOSTHYN",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016898102",
+    "nombre": "MURCIA PUENTES MARIA ALEJANDRA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006207",
+    "nombre": "PINILLA BAYONA DANNA ALEJANDRA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022133411",
+    "nombre": "QUIROGA SILVA DANNA SOFIA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022091425",
+    "nombre": "RESTREPO BELTRAN VALERIA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022250251",
+    "nombre": "RODRIGUEZ CRISTANCHO FEDERICO",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017112971",
+    "nombre": "ROJAS SOTO JULIAN ESTEBAN",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021005440",
+    "nombre": "RUIZ PARIS STEPHANYA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020661339",
+    "nombre": "RUIZ SACHICA JUAN FELIPE",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016907093",
+    "nombre": "SANCHEZ CORONADO ESTEBAN",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022206362",
+    "nombre": "SERRATO ROJAS VALERIA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022305196",
+    "nombre": "VILLADA MARTINEZ MARIANA ALEJANDRA",
+    "grado": 10,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017115545",
+    "nombre": "DURAN SARMIENTO MARTIN",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017110694",
+    "nombre": "DAZA OSPINA MARCO SANTIAGO",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022120381",
+    "nombre": "ARAUJO HERNANDEZ JOHAN CAMILO",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022279222",
+    "nombre": "ARIAS RODRIGUEZ MARIA FERNANDA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022091445",
+    "nombre": "BENAVIDES GARZON ISABELLA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016986014",
+    "nombre": "BERNAL CASTAÑEDA MARIA GABRIELA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017559307",
+    "nombre": "BUITRAGO PINTO ALEJANDRO",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017225446",
+    "nombre": "CAMELO ALEMAN JUAN FERNANDO",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016975025",
+    "nombre": "CARRERO PRIETO LAURA SOFIA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020998002",
+    "nombre": "COGOLLOS RIOS SANTIAGO",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017336634",
+    "nombre": "CUESTA ALVARADO JEAN NICOLAS",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022206308",
+    "nombre": "FERNANDEZ RIAÑO VALERY",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006046",
+    "nombre": "GIRALDO MANTILLA SANTIAGO",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022206370",
+    "nombre": "GONZALEZ ROJAS MELANY SOFIA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022124377",
+    "nombre": "GUTIERREZ LEON GABRIEL SANTIAGO",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021005366",
+    "nombre": "HENAO LAGUNA MARIANA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022217284",
+    "nombre": "HUERTAS MELO VALENTINA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006161",
+    "nombre": "JIMENEZ LEAL MARIANA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017337327",
+    "nombre": "LASSO REYES MARIANA ISABELA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022313188",
+    "nombre": "LOPEZ RIVERA ANDERSON ESTIBEN",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017221783",
+    "nombre": "MENDEZ PAVA JOHANN SEBASTIAN",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006190",
+    "nombre": "MONTOYA LOPEZ SAMANTHA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016819181",
+    "nombre": "NEUTA ARIZA SARAY NIKOLE",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020536464",
+    "nombre": "ORTIZ VASQUEZ ANA ISABELLA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020837163",
+    "nombre": "PRENS PONTON SHARON SAMANTHA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019992008",
+    "nombre": "QUITIAN MONROY LUNA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016705295",
+    "nombre": "RAMIREZ CIFUENTES SARA LUCIA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022257244",
+    "nombre": "RESTREPO BERMUDEZ JUAN SEBASTIAN",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016953047",
+    "nombre": "ROA SALGADO JUAN CAMILO",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018394394",
+    "nombre": "RODRIGUEZ GARCIA MIGUEL ANGEL",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022107394",
+    "nombre": "ROMERO ESPEJO JUAN DAVID",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017337723",
+    "nombre": "SALGADO AGUILAR MARIA ISABELLA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2018347347",
+    "nombre": "SANTANA REYES LEIRE SOFIA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022243258",
+    "nombre": "SORZA ESCOBAR MARIA CAMILA",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022239262",
+    "nombre": "VALENCIA ARTEAGA JUAN FELIPE",
+    "grado": 10,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021005140",
+    "nombre": "GUERRERO ALDANA JHULIAN DAVID",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2017225743",
+    "nombre": "CORREDOR CALDERON SARA ISABELLA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2017225842",
+    "nombre": "VILLALBA SOTO LUCIANA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2017220595",
+    "nombre": "OCHOA CASTRO SARA ISABELLA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019826174",
+    "nombre": "ALZATE VERA SEBASTIAN",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019949051",
+    "nombre": "ARDILA LOZANO ALEJANDRA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022312189",
+    "nombre": "BARRAGAN ALMANZA LAURA VALENTINA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020723277",
+    "nombre": "BARRERA ROCHA JHOAN SAMUEL",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2016985015",
+    "nombre": "BERNAL CASTAÑEDA MARTIN ANTONIO",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022126375",
+    "nombre": "CABALLERO URQUIJO BRAYAN SNEIDER",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022110391",
+    "nombre": "CAMPOS DELGADO VALENTINA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022206334",
+    "nombre": "CASTILLO ESCOBAR NIKOL",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2017336535",
+    "nombre": "CASTRO ESTUPIÑAN LAURA CAMILA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2017113169",
+    "nombre": "CUESTA MORA DANNA GABRIELA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133485",
+    "nombre": "DELGADO PEREZ DAVID EDUARDO",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2017447129",
+    "nombre": "ESCALANTE HURTADO SEBASTIAN ANTONIO",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133372",
+    "nombre": "FORERO MORENO JUAN DIEGO",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022267234",
+    "nombre": "GALINDO INFANTE NICOLAS ALEJANDRO",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022123378",
+    "nombre": "GIRALDO RAMIREZ SARA VALENTINA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019607393",
+    "nombre": "GONZALEZ OSPINA SOFÍA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133388",
+    "nombre": "INFANTE ROJAS NICOLAS",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022299202",
+    "nombre": "LEON BENITEZ HANNA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2016916084",
+    "nombre": "MAHECHA FARFAN NICOLAS",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022317184",
+    "nombre": "MARTINEZ MARTINEZ LUISA MARIANA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021006051",
+    "nombre": "MOGOLLON SALAZAR LAURA VALENTINA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022091432",
+    "nombre": "MORALES RINCON MARIA FERNANDA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2023604796",
+    "nombre": "OLIVEROS HERNÁNDEZ MARIA FERNANDA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021006163",
+    "nombre": "OSMA BARBOSA KAROL TATIANA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021006053",
+    "nombre": "PABON PARRADO JOAN SEBASTIAN",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2016675325",
+    "nombre": "PENAGOS ARDILA KEVIN EDUARDO",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2019873127",
+    "nombre": "PUENTES PINZON IBI JULIETA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022363138",
+    "nombre": "REYES QUEVEDO SARA KAMILA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021006089",
+    "nombre": "RIAÑO MAHECHA LINA ISABELLA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022263238",
+    "nombre": "RODRIGUEZ RODRIGUEZ ISABELLA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022159342",
+    "nombre": "ROMERO ROJAS JULIAN ANDRES",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022285216",
+    "nombre": "SAMBONI MOLANO VALERIA",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2016792208",
+    "nombre": "SANTOS PATIÑO KLISHMAN FELIPE",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2022133375",
+    "nombre": "TORRES GARCIA MARTIN SANTIAGO",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021006092",
+    "nombre": "TRIANA GUTIERREZ SAMUEL",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2021006398",
+    "nombre": "VALERO SUAREZ MARLON ANDREY",
+    "grado": 10,
+    "grupo": "E"
+  },
+  {
+    "documento": "2020991009",
+    "nombre": "ABADIA RODRIGUEZ NATHALIA",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019625375",
+    "nombre": "ALVAREZ ACERO MARLON SANTIAGO",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006112",
+    "nombre": "ARIAS MENDIVELSO GABRIELA",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020725275",
+    "nombre": "BECERRA ARCILA DANNIEL SANTIAGO",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020849151",
+    "nombre": "BERNAL CUBILLOS SEBASTIAN",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020715285",
+    "nombre": "CARO ZEA YENZI VALENTINA",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2018376376",
+    "nombre": "CASTILLO RAMIREZ SOPHIA",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020548452",
+    "nombre": "CASTRO PERDOMO JUAN FELIPE",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2022206315",
+    "nombre": "CUCARIANO VELASQUEZ MARIANA",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019714286",
+    "nombre": "DIAZ RODRIGUEZ JUAN DIEGO",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017448119",
+    "nombre": "FRAILE VASQUEZ MARIA JULIANA",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006044",
+    "nombre": "GALAN CARRANZA SARAHI",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006085",
+    "nombre": "GOMEZ ACOSTA JOSEPH THOMAS",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020778222",
+    "nombre": "HERNANDEZ GUZMAN ISABELLA",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006049",
+    "nombre": "LOPEZ YARA MARIA PAULA",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006114",
+    "nombre": "MENDEZ DUQUE SARA JULIANA",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016752248",
+    "nombre": "MORENO LARA SHARICK NICOLL",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006203",
+    "nombre": "NOHA RINCON ISABELLA",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016816184",
+    "nombre": "ORTIZ ORJUELA DAVID SANTIAGO",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2017440991",
+    "nombre": "PEREZ CASTILLO JUAN CARLOS",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020527473",
+    "nombre": "RINCON ROJAS KENNETH DAVID",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016855145",
+    "nombre": "RODRIGUEZ MORENO SIMON",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016919081",
+    "nombre": "ROMERO ARIZA MATHIAS",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006295",
+    "nombre": "ROMERO CORTES DANIELA ALEJANDRA",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2016932068",
+    "nombre": "SALAMANCA AREVALO SAMUEL",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2020802198",
+    "nombre": "SARMIENTO RESTREPO DANIEL SANTIAGO",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2019563437",
+    "nombre": "TORRES PEREZ JUAN BARTOLOME",
+    "grado": 11,
+    "grupo": "A"
+  },
+  {
+    "documento": "2021006385",
+    "nombre": "ARISTIZABAL ARISTIZABAL SARA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020894106",
+    "nombre": "AVENDAÑO QUEVEDO MARIA ALEJANDRA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2018401401",
+    "nombre": "DIAZ JIMENEZ HANNA KATHERIN",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020588412",
+    "nombre": "DIAZ RAMIREZ DAIRA GISELLE",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020942058",
+    "nombre": "GAMBOA DELGADO NICOLAS",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019951049",
+    "nombre": "GARZON ANGEL ANA SOFIA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006282",
+    "nombre": "GUERRERO RAMOS VALERIA ANDREA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006169",
+    "nombre": "HENAO LOPEZ SHELY JULIE",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2016814186",
+    "nombre": "IBAGUE ROCHA NATALIA SOFIA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006086",
+    "nombre": "KURMEN BAEZ SARAH SOFIA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006248",
+    "nombre": "MARTINEZ GUERRERO SARA GABRIELA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019593407",
+    "nombre": "MOLANO APONTE MARIA FERNANDA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2018116116",
+    "nombre": "MOLINA BOLIVAR SARA JULIETA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2017220397",
+    "nombre": "OCHOA CASTRO DANNA VALERIA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2016847153",
+    "nombre": "OSPINA CARVAJAL MIGUEL ANGEL",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022133428",
+    "nombre": "OTALORA ROJAS JUAN DAVID",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2016963037",
+    "nombre": "OVIEDO HURTADO DIEGO FELIPE",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2016880120",
+    "nombre": "PATARROYO DIAZ DAVID SANTIAGO",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006054",
+    "nombre": "PAYAN MANRIQUE DANNA GABRIELA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006195",
+    "nombre": "PEÑA CUBIDES MARIO ALEJANDRO",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020634366",
+    "nombre": "RENGIFO RODRIGUEZ AIDER SANTIAGO",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006273",
+    "nombre": "ROMERO GIL SALOME",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006091",
+    "nombre": "SANCHEZ RODRIGUEZ SEBASTIAN",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2019746254",
+    "nombre": "TORRES SANDOVAL DAVID SANTIAGO",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006060",
+    "nombre": "VEGA RODRIGUEZ LAURA VALENTINA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2020638362",
+    "nombre": "VELA CAMARGO DANNA SOFIA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2022338163",
+    "nombre": "VILLAMIL CHAVEZ AIRIT MARIANA",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2018028028",
+    "nombre": "ZIPA ROMERO YIRET NALIDE",
+    "grado": 11,
+    "grupo": "B"
+  },
+  {
+    "documento": "2021006082",
+    "nombre": "ALDANA MOJICA JUAN DIEGO",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016863137",
+    "nombre": "ALDANA RIVERA ANA MARIA",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006040",
+    "nombre": "BULLA MUÑOZ ALEJANDRO",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016790210",
+    "nombre": "CANO OLARTE MARIANA",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006158",
+    "nombre": "CASTRO SANCHEZ ANGIE LORENA",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2022352149",
+    "nombre": "CHACON CRUZ JUAN MANUEL",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019782218",
+    "nombre": "DIAZ ROJAS JEISSON EDWAR STEVEN",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017118317",
+    "nombre": "DUARTE SANCHEZ DANIEL ESTEBAN",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006213",
+    "nombre": "FORERO GUALTEROS ANA MARIA",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2017447525",
+    "nombre": "GALVIS RODRIGUEZ MATEO",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006254",
+    "nombre": "GOMEZ PULIDO MIGUEL ANGEL",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016745255",
+    "nombre": "LOPEZ CASTRO ESTEFANYA",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016897103",
+    "nombre": "MONTANO RAMIREZ CARLOS ANDRES",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006314",
+    "nombre": "MORA LUENGAS JUAN DIEGO",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006087",
+    "nombre": "OSPINA GARRIDO MARTIN SAMUEL",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006164",
+    "nombre": "PEREZ CELY PAULA DANIELA",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2020997003",
+    "nombre": "PEREZ IBAÑEZ ITANA INES",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006059",
+    "nombre": "VARGAS MENDOZA ADRIANA KATHERINE",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006221",
+    "nombre": "VELASCO SANDOVAL SARA SOFIA",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2016925075",
+    "nombre": "VILLARRAGA MUJICA JUAN SEBASTIAN",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2019613387",
+    "nombre": "ZAPATA BAEZ SEBASTIAN DAVID",
+    "grado": 11,
+    "grupo": "C"
+  },
+  {
+    "documento": "2021006039",
+    "nombre": "AVENDAÑO RODRIGUEZ LAURA SOFIA",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016776224",
+    "nombre": "BARAJAS VASQUEZ PAULA XIMENA",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016997003",
+    "nombre": "CANTOR CHARRY JUAN SEBASTIAN",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006406",
+    "nombre": "CASTRO VELASQUEZ GABRIEL ALEJANDRO",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2022253248",
+    "nombre": "COBOS RUIZ ANA MARIA",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006421",
+    "nombre": "CRISTANCHO QUINCHIA CATALINA",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016832168",
+    "nombre": "CUBILLOS VARGAS TATIANA",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006227",
+    "nombre": "DELGADO FRANCO JUAN ESTEBAN",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006143",
+    "nombre": "FANDIÑO RUIZ DAVID SANTIAGO",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006144",
+    "nombre": "GARCIA SANCHEZ DILAN ANDRES",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019751249",
+    "nombre": "HOLGUIN GARZON MARIA JOSE",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006306",
+    "nombre": "MIRANDA GUIO JUANA ISABELLA",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006147",
+    "nombre": "MORA MOLANO DANNA VALENTINA",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2016870130",
+    "nombre": "PEREZ BERNAL JUAN PABLO",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006055",
+    "nombre": "QUINTERO RUIZ JONATHAN DAVID",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2024428572",
+    "nombre": "RAMIREZ TORRES NICOLAS DAVID",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020514486",
+    "nombre": "RIAÑO ALARCON GABRIELA",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2019716284",
+    "nombre": "RIVERA MONROY JOEL",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006206",
+    "nombre": "ROA VANEGAS SAMUEL ESTEBAN",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021006090",
+    "nombre": "RUIZ AGUIRRE ISABELLA",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2021007372",
+    "nombre": "SOLANO SANCHEZ JERONIMO",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2020530470",
+    "nombre": "SOSA ORTIZ SARAI SOFIA",
+    "grado": 11,
+    "grupo": "D"
+  },
+  {
+    "documento": "2017115743",
+    "nombre": "VELASCO FIGUEROA LINA MARIANA",
+    "grado": 11,
+    "grupo": "D"
+  }
+]
